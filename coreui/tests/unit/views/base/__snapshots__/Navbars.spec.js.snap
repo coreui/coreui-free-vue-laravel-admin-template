@@ -1,0 +1,581 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbars.vue renders correctly 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="animated fadeIn"
+  >
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Navbar 
+        </strong>
+         
+        <div
+          class="card-header-actions"
+        >
+          <a
+            class="card-header-action"
+            href="https://bootstrap-vue.js.org/docs/components/navbar"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <small
+              class="text-muted"
+            >
+              docs
+            </small>
+          </a>
+        </div>
+      </div>
+       
+      <b-navbar-stub
+        tag="nav"
+        toggleable="md"
+        type="dark"
+        variant="info"
+      >
+        <b-navbar-toggle-stub
+          label="Toggle navigation"
+          target="nav_collapse"
+        />
+         
+        <b-navbar-brand-stub
+          event="click"
+          href="#"
+          routertag="a"
+          tag="div"
+          target="_self"
+        >
+          NavBar
+        </b-navbar-brand-stub>
+         
+        <b-collapse-stub
+          id="nav_collapse"
+          isnav="true"
+          tag="div"
+        >
+          <b-navbar-nav-stub
+            tag="ul"
+          >
+            <b-nav-item-stub
+              event="click"
+              href="#"
+              linkattrs="[object Object]"
+              routertag="a"
+              target="_self"
+            >
+              Link
+            </b-nav-item-stub>
+             
+            <b-nav-item-stub
+              disabled="true"
+              event="click"
+              href="#"
+              linkattrs="[object Object]"
+              routertag="a"
+              target="_self"
+            >
+              Disabled
+            </b-nav-item-stub>
+          </b-navbar-nav-stub>
+           
+          <b-navbar-nav-stub
+            class="ml-auto"
+            tag="ul"
+          >
+            <b-nav-form-stub>
+              <b-form-input-stub
+                class="mr-sm-2"
+                placeholder="Search"
+                size="sm"
+                type="text"
+                value=""
+              />
+               
+              <b-button-stub
+                class="my-2 my-sm-0"
+                event="click"
+                routertag="a"
+                size="sm"
+                tag="button"
+                target="_self"
+                type="submit"
+                variant="secondary"
+              >
+                Search
+              </b-button-stub>
+            </b-nav-form-stub>
+             
+            <b-nav-item-dropdown-stub
+              extramenuclasses=""
+              extratoggleclasses=""
+              offset="0"
+              right="true"
+              role="menu"
+              text="Lang"
+            >
+              <b-dropdown-item-stub
+                event="click"
+                href="#"
+                routertag="a"
+                target="_self"
+              >
+                EN
+              </b-dropdown-item-stub>
+               
+              <b-dropdown-item-stub
+                event="click"
+                href="#"
+                routertag="a"
+                target="_self"
+              >
+                ES
+              </b-dropdown-item-stub>
+               
+              <b-dropdown-item-stub
+                event="click"
+                href="#"
+                routertag="a"
+                target="_self"
+              >
+                RU
+              </b-dropdown-item-stub>
+               
+              <b-dropdown-item-stub
+                event="click"
+                href="#"
+                routertag="a"
+                target="_self"
+              >
+                FA
+              </b-dropdown-item-stub>
+            </b-nav-item-dropdown-stub>
+             
+            <b-nav-item-dropdown-stub
+              extramenuclasses=""
+              extratoggleclasses=""
+              offset="0"
+              right="true"
+              role="menu"
+              text=""
+            >
+              <template>
+                <em>
+                  User
+                </em>
+              </template>
+               
+              <b-dropdown-item-stub
+                event="click"
+                href="#"
+                routertag="a"
+                target="_self"
+              >
+                Profile
+              </b-dropdown-item-stub>
+               
+              <b-dropdown-item-stub
+                event="click"
+                href="#"
+                routertag="a"
+                target="_self"
+              >
+                Signout
+              </b-dropdown-item-stub>
+            </b-nav-item-dropdown-stub>
+          </b-navbar-nav-stub>
+        </b-collapse-stub>
+      </b-navbar-stub>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Navbar 
+        </strong>
+         
+        <small>
+          brand
+        </small>
+      </div>
+       
+      <div>
+        <b-navbar-stub
+          tag="nav"
+          type="light"
+          variant="faded"
+        >
+          <b-navbar-brand-stub
+            event="click"
+            href="#"
+            routertag="a"
+            tag="h1"
+            target="_self"
+          >
+            <img
+              alt="BV"
+              class="d-inline-block align-top"
+              src="https://placekitten.com/g/30/30"
+            />
+            
+            BootstrapVue
+          
+          </b-navbar-brand-stub>
+        </b-navbar-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Navbar 
+        </strong>
+         
+        <small>
+          text
+        </small>
+      </div>
+       
+      <div>
+        <b-navbar-stub
+          tag="nav"
+          toggleable="true"
+          type="light"
+          variant="light"
+        >
+          <b-navbar-toggle-stub
+            label="Toggle navigation"
+            target="nav_text_collapse"
+          />
+           
+          <b-navbar-brand-stub
+            event="click"
+            routertag="a"
+            tag="div"
+            target="_self"
+          >
+            BootstrapVue
+          </b-navbar-brand-stub>
+           
+          <b-collapse-stub
+            id="nav_text_collapse"
+            isnav="true"
+            tag="div"
+          >
+            <b-navbar-nav-stub
+              tag="ul"
+            >
+              <b-nav-text-stub
+                tag="span"
+              >
+                Navbar text
+              </b-nav-text-stub>
+            </b-navbar-nav-stub>
+          </b-collapse-stub>
+        </b-navbar-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Navbar 
+        </strong>
+         
+        <small>
+          dropdown
+        </small>
+      </div>
+       
+      <div>
+        <b-navbar-stub
+          tag="nav"
+          toggleable="true"
+          type="dark"
+          variant="primary"
+        >
+          <b-navbar-toggle-stub
+            label="Toggle navigation"
+            target="nav_dropdown_collapse"
+          />
+           
+          <b-collapse-stub
+            id="nav_dropdown_collapse"
+            isnav="true"
+            tag="div"
+          >
+            <b-navbar-nav-stub
+              tag="ul"
+            >
+              <b-nav-item-stub
+                event="click"
+                href="#"
+                linkattrs="[object Object]"
+                routertag="a"
+                target="_self"
+              >
+                Home
+              </b-nav-item-stub>
+               
+              <b-nav-item-stub
+                event="click"
+                href="#"
+                linkattrs="[object Object]"
+                routertag="a"
+                target="_self"
+              >
+                Link
+              </b-nav-item-stub>
+               
+              <b-nav-item-dropdown-stub
+                extramenuclasses=""
+                extratoggleclasses=""
+                offset="0"
+                right="true"
+                role="menu"
+                text="Lang"
+              >
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  EN
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  ES
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  RU
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  FA
+                </b-dropdown-item-stub>
+              </b-nav-item-dropdown-stub>
+               
+              <b-nav-item-dropdown-stub
+                extramenuclasses=""
+                extratoggleclasses=""
+                offset="0"
+                right="true"
+                role="menu"
+                text="User"
+              >
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  Account
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  Settings
+                </b-dropdown-item-stub>
+              </b-nav-item-dropdown-stub>
+            </b-navbar-nav-stub>
+          </b-collapse-stub>
+        </b-navbar-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Navbar 
+        </strong>
+         
+        <small>
+          form
+        </small>
+      </div>
+       
+      <div>
+        <b-navbar-stub
+          tag="nav"
+          type="light"
+          variant="light"
+        >
+          <b-nav-form-stub>
+            <b-form-input-stub
+              class="mr-sm-2"
+              placeholder="Search"
+              type="text"
+              value=""
+            />
+             
+            <b-button-stub
+              class="my-2 my-sm-0"
+              event="click"
+              routertag="a"
+              tag="button"
+              target="_self"
+              type="submit"
+              variant="outline-success"
+            >
+              Search
+            </b-button-stub>
+          </b-nav-form-stub>
+        </b-navbar-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Navbar 
+        </strong>
+         
+        <small>
+          input group
+        </small>
+      </div>
+       
+      <div>
+        <b-navbar-stub
+          tag="nav"
+          type="light"
+          variant="light"
+        >
+          <b-nav-form-stub>
+            <b-input-group-stub
+              left="@"
+              tag="div"
+            >
+              <b-form-input-stub
+                class="mr-sm-2"
+                placeholder="Username"
+                type="text"
+                value=""
+              />
+            </b-input-group-stub>
+          </b-nav-form-stub>
+        </b-navbar-stub>
+      </div>
+    </b-card-stub>
+  </div>
+</div>
+`;

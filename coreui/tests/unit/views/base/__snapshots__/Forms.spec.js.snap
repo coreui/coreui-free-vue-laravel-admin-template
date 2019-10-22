@@ -1,0 +1,3615 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Forms.vue renders correctly 1`] = `
+<div
+  class="animated fadeIn"
+>
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      sm="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Credit Card 
+          </strong>
+           
+          <small>
+            Form
+          </small>
+        </div>
+         
+        <b-row-stub
+          tag="div"
+        >
+          <b-col-stub
+            sm="12"
+            tag="div"
+          >
+            <b-form-group-stub
+              feedbackarialive="assertive"
+            >
+              <label
+                for="name"
+              >
+                Name
+              </label>
+               
+              <b-form-input-stub
+                id="name"
+                placeholder="Enter your name"
+                type="text"
+                value=""
+              />
+            </b-form-group-stub>
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          tag="div"
+        >
+          <b-col-stub
+            sm="12"
+            tag="div"
+          >
+            <b-form-group-stub
+              feedbackarialive="assertive"
+            >
+              <label
+                for="ccnumber"
+              >
+                Credit Card Number
+              </label>
+               
+              <b-form-input-stub
+                id="ccnumber"
+                placeholder="0000 0000 0000 0000"
+                type="text"
+                value=""
+              />
+            </b-form-group-stub>
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          tag="div"
+        >
+          <b-col-stub
+            sm="4"
+            tag="div"
+          >
+            <b-form-group-stub
+              feedbackarialive="assertive"
+            >
+              <label
+                for="month1"
+              >
+                Month
+              </label>
+               
+              <b-form-select-stub
+                disabledfield="disabled"
+                htmlfield="html"
+                id="month1"
+                options="1,2,3,4,5,6,7,8,9,10,11,12"
+                plain="true"
+                selectsize="0"
+                textfield="text"
+                valuefield="value"
+              />
+            </b-form-group-stub>
+          </b-col-stub>
+           
+          <b-col-stub
+            sm="4"
+            tag="div"
+          >
+            <b-form-group-stub
+              feedbackarialive="assertive"
+            >
+              <label
+                for="year1"
+              >
+                Year
+              </label>
+               
+              <b-form-select-stub
+                disabledfield="disabled"
+                htmlfield="html"
+                id="year1"
+                options="2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025"
+                plain="true"
+                selectsize="0"
+                textfield="text"
+                valuefield="value"
+              />
+            </b-form-group-stub>
+          </b-col-stub>
+           
+          <b-col-stub
+            sm="4"
+            tag="div"
+          >
+            <b-form-group-stub
+              feedbackarialive="assertive"
+            >
+              <label
+                for="cvv"
+              >
+                CVV/CVC
+              </label>
+               
+              <b-form-input-stub
+                id="cvv"
+                placeholder="123"
+                type="text"
+                value=""
+              />
+            </b-form-group-stub>
+          </b-col-stub>
+        </b-row-stub>
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      sm="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Company 
+          </strong>
+          <small>
+            Form
+          </small>
+        </div>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <label
+            for="company"
+          >
+            Company
+          </label>
+           
+          <b-form-input-stub
+            id="company"
+            placeholder="Enter your company name"
+            type="text"
+            value=""
+          />
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <label
+            for="vat"
+          >
+            VAT
+          </label>
+           
+          <b-form-input-stub
+            id="vat"
+            placeholder="PL1234567890"
+            type="text"
+            value=""
+          />
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <label
+            for="street"
+          >
+            Street
+          </label>
+           
+          <b-form-input-stub
+            id="street"
+            placeholder="Enter street name"
+            type="text"
+            value=""
+          />
+        </b-form-group-stub>
+         
+        <b-row-stub
+          tag="div"
+        >
+          <b-col-stub
+            sm="8"
+            tag="div"
+          >
+            <b-form-group-stub
+              feedbackarialive="assertive"
+            >
+              <label
+                for="city"
+              >
+                City
+              </label>
+               
+              <b-form-input-stub
+                id="city"
+                placeholder="Enter your city"
+                type="text"
+                value=""
+              />
+            </b-form-group-stub>
+          </b-col-stub>
+           
+          <b-col-stub
+            sm="4"
+            tag="div"
+          >
+            <b-form-group-stub
+              feedbackarialive="assertive"
+            >
+              <label
+                for="postal-code"
+              >
+                Postal Code
+              </label>
+               
+              <b-form-input-stub
+                id="postal-code"
+                placeholder="Postal Code"
+                type="text"
+                value=""
+              />
+            </b-form-group-stub>
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <label
+            for="country"
+          >
+            Country
+          </label>
+           
+          <b-form-input-stub
+            id="country"
+            placeholder="Country name"
+            type="text"
+            value=""
+          />
+        </b-form-group-stub>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+   
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      md="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Basic Form
+          </strong>
+           Elements
+        
+        </div>
+         
+        <b-form-stub>
+          <b-form-group-stub
+            description="Let us know your full name."
+            feedbackarialive="assertive"
+            label="Enter your name"
+            labelcols="3"
+            labelfor="basicName"
+          >
+            <b-form-input-stub
+              autocomplete="name"
+              id="basicName"
+              type="text"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Static"
+            labelcols="3"
+            labelfor="basicStatic"
+          >
+            <b-form-input-stub
+              id="basicStatic"
+              plaintext="true"
+              type="text"
+              value="Username"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            description="This is a help text"
+            feedbackarialive="assertive"
+            label="Text Input"
+            labelcols="3"
+            labelfor="basicText"
+          >
+            <b-form-input-stub
+              id="basicText"
+              placeholder="Text"
+              type="text"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Date"
+            labelcols="3"
+            labelfor="date"
+          >
+            <b-form-input-stub
+              id="date"
+              type="date"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            description="Please enter your email"
+            feedbackarialive="assertive"
+            label="Email Input"
+            labelcols="3"
+            labelfor="basicEmail"
+          >
+            <b-form-input-stub
+              autocomplete="email"
+              id="basicEmail"
+              placeholder="Enter your email"
+              type="email"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            description="Please enter a complex password"
+            feedbackarialive="assertive"
+            label="Password Input"
+            labelcols="3"
+            labelfor="basicPassword"
+          >
+            <b-form-input-stub
+              autocomplete="current-password"
+              id="basicPassword"
+              placeholder="Enter your password"
+              type="password"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Disabled Input"
+            labelcols="3"
+            labelfor="basicInputDisabled"
+          >
+            <b-form-input-stub
+              disabled="true"
+              id="basicInputDisabled"
+              placeholder="Disabled"
+              type="text"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Textarea"
+            labelcols="3"
+            labelfor="basicTextarea"
+          >
+            <b-form-textarea-stub
+              id="basicTextarea"
+              placeholder="Content.."
+              rows="9"
+              value=""
+              wrap="soft"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Select"
+            labelcols="3"
+            labelfor="basicSelect"
+          >
+            <b-form-select-stub
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicSelect"
+              options="Please select,Option 1,Option 2,Option 3"
+              plain="true"
+              selectsize="0"
+              textfield="text"
+              value="Please select"
+              valuefield="value"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Select large"
+            labelcols="3"
+            labelfor="basicSelectLg"
+          >
+            <b-form-select-stub
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicSelectLg"
+              options="Please select,Option 1,Option 2,Option 3"
+              plain="true"
+              selectsize="0"
+              size="lg"
+              textfield="text"
+              value="Please select"
+              valuefield="value"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Select small"
+            labelcols="3"
+            labelfor="basicSelectSm"
+          >
+            <b-form-select-stub
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicSelectSm"
+              options="Please select,Option 1,Option 2,Option 3"
+              plain="true"
+              selectsize="0"
+              size="sm"
+              textfield="text"
+              value="Please select"
+              valuefield="value"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Disabled select"
+            labelcols="3"
+            labelfor="basicSelectDisabled"
+          >
+            <b-form-select-stub
+              disabled="true"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicSelectDisabled"
+              options="Please select,Option 1,Option 2,Option 3"
+              plain="true"
+              selectsize="0"
+              textfield="text"
+              value="Please select"
+              valuefield="value"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Select"
+            labelcols="3"
+            labelfor="basicMultiSelect"
+          >
+            <b-form-select-stub
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicMultiSelect"
+              multiple="true"
+              options="[object Object],[object Object],[object Object],[object Object],[object Object]"
+              plain="true"
+              selectsize="0"
+              textfield="text"
+              value=",c"
+              valuefield="value"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Radios"
+            labelcols="3"
+            labelfor="basicRadios"
+          >
+            <b-form-radio-group-stub
+              buttonvariant="secondary"
+              checked="2"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicRadios"
+              options="[object Object],[object Object],[object Object]"
+              plain="true"
+              stacked="true"
+              textfield="text"
+              valuefield="value"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Inline radios"
+            labelcols="3"
+            labelfor="basicInlineRadios"
+          >
+            <b-form-radio-group-stub
+              buttonvariant="secondary"
+              checked="3"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicInlineRadios"
+              options="[object Object],[object Object],[object Object]"
+              plain="true"
+              textfield="text"
+              valuefield="value"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Checkboxes"
+            labelcols="3"
+            labelfor="basicCheckboxes"
+          >
+            <b-form-checkbox-group-stub
+              buttonvariant="secondary"
+              checked="2,3"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicCheckboxes"
+              name="Checkboxes"
+              options=""
+              plain="true"
+              stacked="true"
+              textfield="text"
+              valuefield="value"
+            >
+              <b-form-checkbox-stub
+                value="1"
+              >
+                Option 1
+              </b-form-checkbox-stub>
+               
+              <b-form-checkbox-stub
+                value="2"
+              >
+                Option 2
+              </b-form-checkbox-stub>
+               
+              <b-form-checkbox-stub
+                value="3"
+              >
+                Option 3
+              </b-form-checkbox-stub>
+            </b-form-checkbox-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Inline checkboxes"
+            labelcols="3"
+            labelfor="basicInlineCheckboxes"
+          >
+            <b-form-checkbox-group-stub
+              buttonvariant="secondary"
+              checked="1,3"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicInlineCheckboxes"
+              name="InlineCheckboxes"
+              options=""
+              plain="true"
+              textfield="text"
+              valuefield="value"
+            >
+              <b-form-checkbox-stub
+                plain="true"
+                value="1"
+              >
+                Option 1
+              </b-form-checkbox-stub>
+               
+              <b-form-checkbox-stub
+                plain="true"
+                value="2"
+              >
+                Option 2
+              </b-form-checkbox-stub>
+               
+              <b-form-checkbox-stub
+                plain="true"
+                value="3"
+              >
+                Option 3
+              </b-form-checkbox-stub>
+            </b-form-checkbox-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Radios - custom"
+            labelcols="3"
+            labelfor="basicRadiosCustom"
+          >
+            <b-form-radio-group-stub
+              buttonvariant="secondary"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicRadiosCustom"
+              options=""
+              stacked="true"
+              textfield="text"
+              value="1"
+              valuefield="value"
+            >
+              <div
+                class="custom-control custom-radio"
+              >
+                <input
+                  class="custom-control-input"
+                  id="customRadio1"
+                  name="customRadio"
+                  type="radio"
+                  value="1"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customRadio1"
+                >
+                  Option 1
+                </label>
+              </div>
+               
+              <div
+                class="custom-control custom-radio"
+              >
+                <input
+                  checked="checked"
+                  class="custom-control-input"
+                  id="customRadio2"
+                  name="customRadio"
+                  type="radio"
+                  value="2"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customRadio2"
+                >
+                  Option 2
+                </label>
+              </div>
+               
+              <div
+                class="custom-control custom-radio"
+              >
+                <input
+                  class="custom-control-input"
+                  id="customRadio3"
+                  name="customRadio"
+                  type="radio"
+                  value="3"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customRadio3"
+                >
+                  Option 3
+                </label>
+              </div>
+            </b-form-radio-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Inline radios - custom"
+            labelcols="3"
+            labelfor="basicCustomRadios1"
+          >
+            <b-form-radio-group-stub
+              buttonvariant="secondary"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicCustomRadios1"
+              name="customRadioInline1"
+              options=""
+              textfield="text"
+              valuefield="value"
+            >
+              <div
+                class="custom-control custom-radio custom-control-inline"
+              >
+                <input
+                  class="custom-control-input"
+                  id="customRadioInline1"
+                  name="customRadioInline1"
+                  type="radio"
+                  value="1"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customRadioInline1"
+                >
+                  Option 1
+                </label>
+              </div>
+               
+              <div
+                class="custom-control custom-radio custom-control-inline"
+              >
+                <input
+                  checked="checked"
+                  class="custom-control-input"
+                  id="customRadioInline2"
+                  name="customRadioInline1"
+                  type="radio"
+                  value="2"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customRadioInline2"
+                >
+                  Option 2
+                </label>
+              </div>
+               
+              <div
+                class="custom-control custom-radio custom-control-inline"
+              >
+                <input
+                  class="custom-control-input"
+                  id="customRadioInline3"
+                  name="customRadioInline1"
+                  type="radio"
+                  value="3"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customRadioInline3"
+                >
+                  Option 3
+                </label>
+              </div>
+            </b-form-radio-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Checkboxes - custom"
+            labelcols="3"
+            labelfor="basicCustomCheckboxes"
+          >
+            <b-form-checkbox-group-stub
+              buttonvariant="secondary"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicCustomCheckboxes"
+              options=""
+              stacked="true"
+              textfield="text"
+              valuefield="value"
+            >
+              <div
+                class="custom-control custom-checkbox"
+              >
+                <input
+                  checked="checked"
+                  class="custom-control-input"
+                  id="customChk1"
+                  type="checkbox"
+                  value="1"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customChk1"
+                >
+                  Option 1
+                </label>
+              </div>
+               
+              <div
+                class="custom-control custom-checkbox"
+              >
+                <input
+                  class="custom-control-input"
+                  id="customChk2"
+                  type="checkbox"
+                  value="2"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customChk2"
+                >
+                  Option 2
+                </label>
+              </div>
+               
+              <div
+                class="custom-control custom-checkbox"
+              >
+                <input
+                  class="custom-control-input"
+                  id="customChk3"
+                  type="checkbox"
+                  value="3"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customChk3"
+                >
+                  Option 3
+                </label>
+              </div>
+            </b-form-checkbox-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Inline checkboxes - custom"
+            labelcols="3"
+            labelfor="basicInlineCustomCheckboxes"
+          >
+            <b-form-checkbox-group-stub
+              buttonvariant="secondary"
+              disabledfield="disabled"
+              htmlfield="html"
+              id="basicInlineCustomCheckboxes"
+              options=""
+              textfield="text"
+              valuefield="value"
+            >
+              <div
+                class="custom-control custom-checkbox custom-control-inline"
+              >
+                <input
+                  class="custom-control-input"
+                  id="customInChk1"
+                  type="checkbox"
+                  value="1"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customInChk1"
+                >
+                  Option 1
+                </label>
+              </div>
+               
+              <div
+                class="custom-control custom-checkbox custom-control-inline"
+              >
+                <input
+                  checked="checked"
+                  class="custom-control-input"
+                  id="customInChk2"
+                  type="checkbox"
+                  value="2"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customInChk2"
+                >
+                  Option 2
+                </label>
+              </div>
+               
+              <div
+                class="custom-control custom-checkbox custom-control-inline"
+              >
+                <input
+                  class="custom-control-input"
+                  id="customInChk3"
+                  type="checkbox"
+                  value="3"
+                />
+                 
+                <label
+                  class="custom-control-label"
+                  for="customInChk3"
+                >
+                  Option 3
+                </label>
+              </div>
+            </b-form-checkbox-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="File input"
+            labelcols="3"
+            labelfor="fileInput"
+          >
+            <b-form-file-stub
+              accept=""
+              browsetext="Browse"
+              dropplaceholder="Drop files here"
+              id="fileInput"
+              placeholder="No file chosen"
+              plain="true"
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+            label="Multiple file input"
+            labelcols="3"
+            labelfor="fileInputMulti"
+          >
+            <b-form-file-stub
+              accept=""
+              browsetext="Browse"
+              dropplaceholder="Drop files here"
+              id="fileInputMulti"
+              multiple="true"
+              placeholder="No file chosen"
+              plain="true"
+            />
+          </b-form-group-stub>
+           
+          <div
+            slot="footer"
+          >
+            <b-button-stub
+              event="click"
+              routertag="a"
+              size="sm"
+              tag="button"
+              target="_self"
+              type="submit"
+              variant="primary"
+            >
+              <i
+                class="fa fa-dot-circle-o"
+              />
+               Submit
+            </b-button-stub>
+             
+            <b-button-stub
+              event="click"
+              routertag="a"
+              size="sm"
+              tag="button"
+              target="_self"
+              type="reset"
+              variant="danger"
+            >
+              <i
+                class="fa fa-ban"
+              />
+               Reset
+            </b-button-stub>
+          </div>
+        </b-form-stub>
+      </b-card-stub>
+       
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Inline
+          </strong>
+           Form
+        
+        </div>
+         
+        <b-form-stub
+          inline="true"
+        >
+          <label
+            class="mr-sm-2"
+            for="inlineInput1"
+          >
+            Name: 
+          </label>
+           
+          <b-input-stub
+            id="inlineInput1"
+            placeholder="Jane Doe"
+            type="text"
+            value=""
+          />
+           
+          <label
+            class="mx-sm-2"
+            for="inlineInput2"
+          >
+            Email: 
+          </label>
+           
+          <b-input-stub
+            autocomplete="email"
+            id="inlineInput2"
+            placeholder="jane.doe@example.com"
+            type="email"
+            value=""
+          />
+        </b-form-stub>
+         
+        <div
+          slot="footer"
+        >
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="submit"
+            variant="primary"
+          >
+            <i
+              class="fa fa-dot-circle-o"
+            />
+             Submit
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="reset"
+            variant="danger"
+          >
+            <i
+              class="fa fa-ban"
+            />
+             Reset
+          </b-button-stub>
+        </div>
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      md="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Horizontal
+          </strong>
+           Form
+        
+        </div>
+         
+        <b-form-stub>
+          <b-form-group-stub
+            description="Please enter your email."
+            feedbackarialive="assertive"
+            label="Email"
+            labelcols="3"
+            labelfor="horizEmail"
+          >
+            <b-form-input-stub
+              autocomplete="username email"
+              id="horizEmail"
+              placeholder="Enter Email.."
+              type="email"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            description="Please enter your password."
+            feedbackarialive="assertive"
+            label="Password"
+            labelcols="3"
+            labelfor="horizPass"
+          >
+            <b-form-input-stub
+              autocomplete="current-password"
+              id="horizPass"
+              placeholder="Enter Password.."
+              type="password"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <div
+            slot="footer"
+          >
+            <b-button-stub
+              event="click"
+              routertag="a"
+              size="sm"
+              tag="button"
+              target="_self"
+              type="submit"
+              variant="primary"
+            >
+              <i
+                class="fa fa-dot-circle-o"
+              />
+               Submit
+            </b-button-stub>
+             
+            <b-button-stub
+              event="click"
+              routertag="a"
+              size="sm"
+              tag="button"
+              target="_self"
+              type="reset"
+              variant="danger"
+            >
+              <i
+                class="fa fa-ban"
+              />
+               Reset
+            </b-button-stub>
+          </div>
+        </b-form-stub>
+      </b-card-stub>
+       
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Normal
+          </strong>
+           Form
+        
+        </div>
+         
+        <b-form-stub>
+          <b-form-group-stub
+            description="Please enter your email."
+            feedbackarialive="assertive"
+            label="Email"
+            labelfor="normalEmail"
+            validated="true"
+          >
+            <b-form-input-stub
+              autocomplete="email"
+              id="normalEmail"
+              placeholder="Enter Email.."
+              required="true"
+              type="email"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            description="Please enter your password."
+            feedbackarialive="assertive"
+            label="Password"
+            labelfor="normalPass"
+            validated="true"
+          >
+            <b-form-input-stub
+              autocomplete="current-password"
+              id="normalPass"
+              placeholder="Enter Password.."
+              required="true"
+              type="password"
+              value=""
+            />
+          </b-form-group-stub>
+           
+          <div
+            slot="footer"
+          >
+            <b-button-stub
+              event="click"
+              routertag="a"
+              size="sm"
+              tag="button"
+              target="_self"
+              type="submit"
+              variant="primary"
+            >
+              <i
+                class="fa fa-dot-circle-o"
+              />
+               Submit
+            </b-button-stub>
+             
+            <b-button-stub
+              event="click"
+              routertag="a"
+              size="sm"
+              tag="button"
+              target="_self"
+              type="reset"
+              variant="danger"
+            >
+              <i
+                class="fa fa-ban"
+              />
+               Reset
+            </b-button-stub>
+          </div>
+        </b-form-stub>
+      </b-card-stub>
+       
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        no-block="true"
+        nobody="true"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          
+          Input 
+          <strong>
+            Grid
+          </strong>
+        </div>
+         
+        <b-card-body-stub
+          bodytag="div"
+          subtitle=""
+          subtitletag="h6"
+          subtitletextvariant="muted"
+          title=""
+          titletag="h4"
+        >
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="3"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-3"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="4"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-4"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="5"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-5"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="6"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-6"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="7"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-7"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="8"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-8"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="9"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-9"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="10"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-10"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="11"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-11"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+           
+          <b-row-stub
+            class="form-group"
+            tag="div"
+          >
+            <b-col-stub
+              sm="12"
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder=".col-sm-12"
+                type="text"
+                value=""
+              />
+            </b-col-stub>
+          </b-row-stub>
+        </b-card-body-stub>
+         
+        <div
+          slot="footer"
+        >
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="submit"
+            variant="primary"
+          >
+            <i
+              class="fa fa-user"
+            />
+             Login
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="reset"
+            variant="danger"
+          >
+            <i
+              class="fa fa-ban"
+            />
+             Reset
+          </b-button-stub>
+        </div>
+      </b-card-stub>
+       
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          
+          Input 
+          <strong>
+            Sizes
+          </strong>
+        </div>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+          label="Small input"
+          labelcols="5"
+          labelfor="smInput"
+          labelsize="sm"
+        >
+          <b-form-input-stub
+            id="smInput"
+            placeholder="size='sm'"
+            size="sm"
+            type="text"
+            value=""
+          />
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+          label="Default input"
+          labelcols="5"
+          labelfor="defaultInput"
+        >
+          <b-form-input-stub
+            id="defaultInput"
+            placeholder="normal"
+            type="text"
+            value=""
+          />
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+          label="Large input"
+          labelcols="5"
+          labelfor="lgInput"
+          labelsize="lg"
+        >
+          <b-form-input-stub
+            id="lgInput"
+            placeholder="size='lg'"
+            size="lg"
+            type="text"
+            value=""
+          />
+        </b-form-group-stub>
+         
+        <div
+          slot="footer"
+        >
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="submit"
+            variant="primary"
+          >
+            <i
+              class="fa fa-dot-circle-o"
+            />
+             Submit
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="reset"
+            variant="danger"
+          >
+            <i
+              class="fa fa-ban"
+            />
+             Reset
+          </b-button-stub>
+        </div>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+   
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      md="6"
+      sm="12"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        no-block="true"
+        nobody="true"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Validation feedback
+          </strong>
+           Form
+        
+        </div>
+         
+        <b-card-body-stub
+          bodytag="div"
+          subtitle=""
+          subtitletag="h6"
+          subtitletextvariant="muted"
+          title=""
+          titletag="h4"
+        >
+          <b-form-stub>
+            <b-form-group-stub
+              feedbackarialive="assertive"
+              validated="true"
+            >
+              <label
+                class="col-form-label"
+                for="inputIsValid"
+              >
+                Input is valid
+              </label>
+               
+              <input
+                class="form-control is-valid"
+                id="inputIsValid"
+                type="text"
+              />
+               
+              <b-form-valid-feedback-stub
+                tag="div"
+              >
+                
+                Input is valid.
+              
+              </b-form-valid-feedback-stub>
+            </b-form-group-stub>
+             
+            <b-form-group-stub
+              feedbackarialive="assertive"
+            >
+              <label
+                class="col-form-label"
+                for="inputIsInvalid"
+              >
+                Input is invalid
+              </label>
+               
+              <input
+                class="form-control is-invalid"
+                id="inputIsInvalid"
+                type="text"
+              />
+               
+              <b-form-invalid-feedback-stub
+                tag="div"
+              >
+                
+                Please provide a valid information.
+              
+              </b-form-invalid-feedback-stub>
+            </b-form-group-stub>
+          </b-form-stub>
+        </b-card-body-stub>
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      md="6"
+      sm="12"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        no-block="true"
+        nobody="true"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Validation feedback
+          </strong>
+           Form
+        
+        </div>
+         
+        <b-card-body-stub
+          bodytag="div"
+          subtitle=""
+          subtitletag="h6"
+          subtitletextvariant="muted"
+          title=""
+          titletag="h4"
+        >
+          <b-form-stub
+            novalidate="true"
+            validated="true"
+          >
+            <b-form-group-stub
+              feedbackarialive="assertive"
+              label="Non-required input"
+              labelfor="inputSuccess2"
+            >
+              <b-form-input-stub
+                class="form-control-success"
+                id="inputSuccess2"
+                type="text"
+                value=""
+              />
+               
+              <b-form-valid-feedback-stub
+                tag="div"
+              >
+                
+                Input is not required.
+              
+              </b-form-valid-feedback-stub>
+            </b-form-group-stub>
+             
+            <b-form-group-stub
+              feedbackarialive="assertive"
+              label="Required input"
+              labelfor="inputError2"
+            >
+              <b-form-input-stub
+                class="form-control-warning"
+                id="inputError2"
+                required="true"
+                type="text"
+                value=""
+              />
+               
+              <b-form-valid-feedback-stub
+                tag="div"
+              >
+                
+                Input provided.
+              
+              </b-form-valid-feedback-stub>
+               
+              <b-form-invalid-feedback-stub
+                tag="div"
+              >
+                
+                Please provide a required input.
+              
+              </b-form-invalid-feedback-stub>
+            </b-form-group-stub>
+          </b-form-stub>
+        </b-card-body-stub>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+   
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      md="4"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Icon/Text
+          </strong>
+           Groups
+        
+        </div>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-input-group-prepend-stub
+              tag="div"
+            >
+              <b-input-group-text-stub
+                tag="div"
+              >
+                <i
+                  class="fa fa-user"
+                />
+              </b-input-group-text-stub>
+            </b-input-group-prepend-stub>
+             
+            <b-form-input-stub
+              placeholder="Username"
+              type="text"
+              value=""
+            />
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-form-input-stub
+              autocomplete="email"
+              placeholder="Email"
+              type="email"
+              value=""
+            />
+             
+            <b-input-group-append-stub
+              tag="div"
+            >
+              <b-input-group-text-stub
+                tag="div"
+              >
+                <i
+                  class="fa fa-envelope-o"
+                />
+              </b-input-group-text-stub>
+            </b-input-group-append-stub>
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-input-group-prepend-stub
+              tag="div"
+            >
+              <b-input-group-text-stub
+                tag="div"
+              >
+                <i
+                  class="fa fa-euro"
+                />
+              </b-input-group-text-stub>
+            </b-input-group-prepend-stub>
+             
+            <b-form-input-stub
+              placeholder="ex. $1.000.000"
+              type="text"
+              value=""
+            />
+             
+            <b-input-group-append-stub
+              tag="div"
+            >
+              <b-input-group-text-stub
+                tag="div"
+              >
+                .00
+              </b-input-group-text-stub>
+            </b-input-group-append-stub>
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <div
+          slot="footer"
+        >
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="submit"
+            variant="success"
+          >
+            <i
+              class="fa fa-dot-circle-o"
+            />
+             Submit
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="reset"
+            variant="danger"
+          >
+            <i
+              class="fa fa-ban"
+            />
+             Reset
+          </b-button-stub>
+        </div>
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      md="4"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Buttons
+          </strong>
+           Groups
+        
+        </div>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-input-group-prepend-stub
+              tag="div"
+            >
+              <b-button-stub
+                event="click"
+                routertag="a"
+                tag="button"
+                target="_self"
+                type="button"
+                variant="primary"
+              >
+                <i
+                  class="fa fa-search"
+                />
+                 Search
+              
+              </b-button-stub>
+            </b-input-group-prepend-stub>
+             
+            <b-form-input-stub
+              placeholder="Username"
+              type="text"
+              value=""
+            />
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-form-input-stub
+              autocomplete="email"
+              placeholder="Email"
+              type="email"
+              value=""
+            />
+             
+            <b-input-group-append-stub
+              tag="div"
+            >
+              <b-button-stub
+                event="click"
+                routertag="a"
+                tag="button"
+                target="_self"
+                type="button"
+                variant="primary"
+              >
+                Submit
+              </b-button-stub>
+            </b-input-group-append-stub>
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-input-group-prepend-stub
+              tag="div"
+            >
+              <b-button-stub
+                event="click"
+                routertag="a"
+                tag="button"
+                target="_self"
+                type="button"
+                variant="primary"
+              >
+                <i
+                  class="fa fa-facebook"
+                />
+              </b-button-stub>
+            </b-input-group-prepend-stub>
+             
+            <b-form-input-stub
+              autocomplete="email"
+              placeholder="Email"
+              type="email"
+              value=""
+            />
+             
+            <b-input-group-append-stub
+              tag="div"
+            >
+              <b-button-stub
+                event="click"
+                routertag="a"
+                tag="button"
+                target="_self"
+                type="button"
+                variant="primary"
+              >
+                <i
+                  class="fa fa-twitter"
+                />
+              </b-button-stub>
+            </b-input-group-append-stub>
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <div
+          slot="footer"
+        >
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="submit"
+            variant="success"
+          >
+            <i
+              class="fa fa-dot-circle-o"
+            />
+             Submit
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="reset"
+            variant="danger"
+          >
+            <i
+              class="fa fa-ban"
+            />
+             Reset
+          </b-button-stub>
+        </div>
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      md="4"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <strong>
+            Dropdowns
+          </strong>
+           Groups
+        
+        </div>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-input-group-prepend-stub
+              tag="div"
+            >
+              <b-dropdown-stub
+                boundary="scrollParent"
+                offset="0"
+                role="menu"
+                text="Action"
+                toggletag="button"
+                toggletext="Toggle Dropdown"
+                variant="primary"
+              >
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Action
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Another action
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Something else here...
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  disabled="true"
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Disabled action
+                </b-dropdown-item-stub>
+              </b-dropdown-stub>
+            </b-input-group-prepend-stub>
+             
+            <b-form-input-stub
+              placeholder="Username"
+              type="text"
+              value=""
+            />
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder="Email"
+              type="text"
+              value=""
+            />
+             
+            <b-input-group-append-stub
+              tag="div"
+            >
+              <b-dropdown-stub
+                boundary="scrollParent"
+                offset="0"
+                right="true"
+                role="menu"
+                text="Action"
+                toggletag="button"
+                toggletext="Toggle Dropdown"
+                variant="primary"
+              >
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Action
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Another action
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Something else here...
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  disabled="true"
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Disabled action
+                </b-dropdown-item-stub>
+              </b-dropdown-stub>
+            </b-input-group-append-stub>
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <b-form-group-stub
+          feedbackarialive="assertive"
+        >
+          <b-input-group-stub
+            tag="div"
+          >
+            <b-input-group-prepend-stub
+              tag="div"
+            >
+              <b-dropdown-stub
+                boundary="scrollParent"
+                offset="0"
+                role="menu"
+                split="true"
+                text="Split"
+                toggletag="button"
+                toggletext="Toggle Dropdown"
+                variant="primary"
+              >
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  Action
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  Another action
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  href="#"
+                  routertag="a"
+                  target="_self"
+                >
+                  Something else here...
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  disabled="true"
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Disabled action
+                </b-dropdown-item-stub>
+              </b-dropdown-stub>
+            </b-input-group-prepend-stub>
+             
+            <b-form-input-stub
+              placeholder="..."
+              type="text"
+              value=""
+            />
+             
+            <b-input-group-append-stub
+              tag="div"
+            >
+              <b-dropdown-stub
+                boundary="scrollParent"
+                offset="0"
+                right="true"
+                role="menu"
+                text="Action"
+                toggletag="button"
+                toggletext="Toggle Dropdown"
+                variant="primary"
+              >
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Action
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Another action
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Something else here...
+                </b-dropdown-item-stub>
+                 
+                <b-dropdown-item-stub
+                  disabled="true"
+                  event="click"
+                  routertag="a"
+                  target="_self"
+                >
+                  Disabled action
+                </b-dropdown-item-stub>
+              </b-dropdown-stub>
+            </b-input-group-append-stub>
+          </b-input-group-stub>
+        </b-form-group-stub>
+         
+        <div
+          slot="footer"
+        >
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="submit"
+            variant="success"
+          >
+            <i
+              class="fa fa-dot-circle-o"
+            />
+             Submit
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="reset"
+            variant="danger"
+          >
+            <i
+              class="fa fa-ban"
+            />
+             Reset
+          </b-button-stub>
+        </div>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+   
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      md="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          
+          Use the grid for big devices! 
+          <small>
+            <code>
+              .col-lg-*
+            </code>
+             
+            <code>
+              .col-md-*
+            </code>
+             
+            <code>
+              .col-sm-*
+            </code>
+          </small>
+        </div>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            md="8"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-8"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            md="4"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-4"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            md="7"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-7"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            md="5"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-5"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            md="6"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-6"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            md="6"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-6"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            md="5"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-5"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            md="7"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-7"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            md="4"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-4"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            md="8"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-md-8"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <div
+          slot="footer"
+        >
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="submit"
+            variant="primary"
+          >
+            Action
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="danger"
+          >
+            Action
+          </b-button-stub>
+           
+          <b-button-stub
+            class="btn btn-sm btn-warning"
+            event="click"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="secondary"
+          >
+            Action
+          </b-button-stub>
+           
+          <b-button-stub
+            class="btn btn-sm btn-info"
+            event="click"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="secondary"
+          >
+            Action
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="success"
+          >
+            Action
+          </b-button-stub>
+        </div>
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      md="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          
+          Input Grid for small devices! 
+          <small>
+            <code>
+              .col-*
+            </code>
+          </small>
+        </div>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            cols="4"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-4"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            cols="8"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-8"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            cols="5"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-5"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            cols="7"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-7"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            cols="6"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-6"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            cols="6"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-6"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            cols="7"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-5"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            cols="5"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-5"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <b-row-stub
+          class="form-group"
+          tag="div"
+        >
+          <b-col-stub
+            cols="8"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-8"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+           
+          <b-col-stub
+            cols="4"
+            tag="div"
+          >
+            <b-form-input-stub
+              placeholder=".col-4"
+              type="text"
+              value=""
+            />
+          </b-col-stub>
+        </b-row-stub>
+         
+        <div
+          slot="footer"
+        >
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="submit"
+            variant="primary"
+          >
+            Action
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="danger"
+          >
+            Action
+          </b-button-stub>
+           
+          <b-button-stub
+            class="btn btn-sm btn-warning"
+            event="click"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="secondary"
+          >
+            Action
+          </b-button-stub>
+           
+          <b-button-stub
+            class="btn btn-sm btn-info"
+            event="click"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="secondary"
+          >
+            Action
+          </b-button-stub>
+           
+          <b-button-stub
+            event="click"
+            routertag="a"
+            size="sm"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="success"
+          >
+            Action
+          </b-button-stub>
+        </div>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+   
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      md="4"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          
+          Example Form
+        
+        </div>
+         
+        <b-form-stub>
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-input-group-prepend-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  Username
+                </b-input-group-text-stub>
+              </b-input-group-prepend-stub>
+               
+              <b-form-input-stub
+                type="text"
+                value=""
+              />
+               
+              <b-input-group-append-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-user"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-append-stub>
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-input-group-prepend-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  Email
+                </b-input-group-text-stub>
+              </b-input-group-prepend-stub>
+               
+              <b-form-input-stub
+                autocomplete="email"
+                type="email"
+                value=""
+              />
+               
+              <b-input-group-append-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-envelope"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-append-stub>
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-input-group-prepend-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  Password
+                </b-input-group-text-stub>
+              </b-input-group-prepend-stub>
+               
+              <b-form-input-stub
+                autocomplete="current-password"
+                type="password"
+                value=""
+              />
+               
+              <b-input-group-append-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-asterisk"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-append-stub>
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <div
+            class="form-group form-actions"
+          >
+            <b-button-stub
+              event="click"
+              routertag="a"
+              size="sm"
+              tag="button"
+              target="_self"
+              type="submit"
+              variant="primary"
+            >
+              Submit
+            </b-button-stub>
+          </div>
+        </b-form-stub>
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      md="4"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          
+          Example Form
+        
+        </div>
+         
+        <b-form-stub>
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-form-input-stub
+                placeholder="Username"
+                type="text"
+                value=""
+              />
+               
+              <b-input-group-append-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-user"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-append-stub>
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-form-input-stub
+                autocomplete="email"
+                placeholder="Email"
+                type="email"
+                value=""
+              />
+               
+              <b-input-group-append-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-envelope"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-append-stub>
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-form-input-stub
+                autocomplete="current-password"
+                placeholder="Password"
+                type="password"
+                value=""
+              />
+               
+              <b-input-group-append-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-asterisk"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-append-stub>
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <div
+            class="form-group form-actions"
+          >
+            <b-button-stub
+              class="btn btn-sm btn-secondary"
+              event="click"
+              routertag="a"
+              tag="button"
+              target="_self"
+              type="submit"
+              variant="secondary"
+            >
+              Submit
+            </b-button-stub>
+          </div>
+        </b-form-stub>
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      md="4"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          
+          Example Form
+        
+        </div>
+         
+        <b-form-stub>
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-input-group-prepend-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-user"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-prepend-stub>
+               
+              <b-form-input-stub
+                placeholder="Username"
+                type="text"
+                value=""
+              />
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-input-group-prepend-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-envelope"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-prepend-stub>
+               
+              <b-form-input-stub
+                autocomplete="email"
+                placeholder="Email"
+                type="email"
+                value=""
+              />
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <b-form-group-stub
+            feedbackarialive="assertive"
+          >
+            <b-input-group-stub
+              tag="div"
+            >
+              <b-input-group-prepend-stub
+                tag="div"
+              >
+                <b-input-group-text-stub
+                  tag="div"
+                >
+                  <i
+                    class="fa fa-asterisk"
+                  />
+                </b-input-group-text-stub>
+              </b-input-group-prepend-stub>
+               
+              <b-form-input-stub
+                autocomplete="current-password"
+                placeholder="Password"
+                type="password"
+                value=""
+              />
+            </b-input-group-stub>
+          </b-form-group-stub>
+           
+          <div
+            class="form-group form-actions"
+          >
+            <b-button-stub
+              event="click"
+              routertag="a"
+              size="sm"
+              tag="button"
+              target="_self"
+              type="submit"
+              variant="success"
+            >
+              Submit
+            </b-button-stub>
+          </div>
+        </b-form-stub>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+   
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      lg="12"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        headertag="div"
+        name="fade"
+        nobody="true"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <div
+          slot="header"
+        >
+          <i
+            class="fa fa-edit"
+          />
+           Form Elements
+            
+          <div
+            class="card-header-actions"
+          >
+            <b-link-stub
+              class="card-header-action btn-setting"
+              event="click"
+              href="#"
+              routertag="a"
+              target="_self"
+            >
+              <i
+                class="icon-settings"
+              />
+            </b-link-stub>
+             
+            <b-link-stub
+              class="card-header-action btn-minimize"
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              <i
+                class="icon-arrow-up"
+              />
+            </b-link-stub>
+             
+            <b-link-stub
+              class="card-header-action btn-close"
+              event="click"
+              href="#"
+              routertag="a"
+              target="_self"
+            >
+              <i
+                class="icon-close"
+              />
+            </b-link-stub>
+          </div>
+        </div>
+         
+        <b-collapse-stub
+          id="collapse1"
+          tag="div"
+          visible="true"
+        >
+          <b-card-body-stub
+            bodytag="div"
+            subtitle=""
+            subtitletag="h6"
+            subtitletextvariant="muted"
+            title=""
+            titletag="h4"
+          >
+            <b-form-group-stub
+              description="Here's some help text"
+              feedbackarialive="assertive"
+              label="Prepended text"
+              labelfor="elementsEmail"
+            >
+              <b-input-group-stub
+                tag="div"
+              >
+                <b-input-group-prepend-stub
+                  tag="div"
+                >
+                  <b-input-group-text-stub
+                    tag="div"
+                  >
+                    @
+                  </b-input-group-text-stub>
+                </b-input-group-prepend-stub>
+                 
+                <b-form-input-stub
+                  autocomplete="email"
+                  id="elementsEmail"
+                  type="email"
+                  value=""
+                />
+              </b-input-group-stub>
+            </b-form-group-stub>
+             
+            <b-form-group-stub
+              description="Here's some help text"
+              feedbackarialive="assertive"
+              label="Appended text"
+              labelfor="elementsAppend"
+            >
+              <b-input-group-stub
+                tag="div"
+              >
+                <b-form-input-stub
+                  id="elementsAppend"
+                  type="text"
+                  value=""
+                />
+                 
+                <b-input-group-append-stub
+                  tag="div"
+                >
+                  <b-input-group-text-stub
+                    tag="div"
+                  >
+                    .00
+                  </b-input-group-text-stub>
+                </b-input-group-append-stub>
+              </b-input-group-stub>
+            </b-form-group-stub>
+             
+            <b-form-group-stub
+              description="Here's some help text"
+              feedbackarialive="assertive"
+              label="Append and prepend"
+              labelfor="elementsPrependAppend"
+            >
+              <b-input-group-stub
+                tag="div"
+              >
+                <b-input-group-prepend-stub
+                  tag="div"
+                >
+                  <b-input-group-text-stub
+                    tag="div"
+                  >
+                    $
+                  </b-input-group-text-stub>
+                </b-input-group-prepend-stub>
+                 
+                <b-form-input-stub
+                  id="elementsPrependAppend"
+                  type="text"
+                  value=""
+                />
+                 
+                <b-input-group-append-stub
+                  tag="div"
+                >
+                  <b-input-group-text-stub
+                    tag="div"
+                  >
+                    .00
+                  </b-input-group-text-stub>
+                </b-input-group-append-stub>
+              </b-input-group-stub>
+            </b-form-group-stub>
+             
+            <b-form-group-stub
+              description="Here's some help text"
+              feedbackarialive="assertive"
+              label="Append with button"
+              labelfor="elementsAppendButton"
+            >
+              <b-input-group-stub
+                tag="div"
+              >
+                <b-form-input-stub
+                  id="elementsAppendButton"
+                  type="text"
+                  value=""
+                />
+                 
+                <b-input-group-append-stub
+                  tag="div"
+                >
+                  <b-button-stub
+                    event="click"
+                    routertag="a"
+                    tag="button"
+                    target="_self"
+                    type="button"
+                    variant="primary"
+                  >
+                    Go!
+                  </b-button-stub>
+                </b-input-group-append-stub>
+              </b-input-group-stub>
+            </b-form-group-stub>
+             
+            <b-form-group-stub
+              feedbackarialive="assertive"
+              label="Two-buttons append"
+              labelfor="elementsTwoButtons"
+            >
+              <b-input-group-stub
+                tag="div"
+              >
+                <b-form-input-stub
+                  id="elementsTwoButtons"
+                  type="text"
+                  value=""
+                />
+                 
+                <b-input-group-append-stub
+                  tag="div"
+                >
+                  <b-button-stub
+                    event="click"
+                    routertag="a"
+                    tag="button"
+                    target="_self"
+                    type="button"
+                    variant="primary"
+                  >
+                    Search
+                  </b-button-stub>
+                   
+                  <b-button-stub
+                    event="click"
+                    routertag="a"
+                    tag="button"
+                    target="_self"
+                    type="button"
+                    variant="danger"
+                  >
+                    Options
+                  </b-button-stub>
+                </b-input-group-append-stub>
+              </b-input-group-stub>
+            </b-form-group-stub>
+             
+            <div
+              class="form-actions"
+            >
+              <b-button-stub
+                event="click"
+                routertag="a"
+                tag="button"
+                target="_self"
+                type="submit"
+                variant="primary"
+              >
+                Save changes
+              </b-button-stub>
+               
+              <b-button-stub
+                event="click"
+                routertag="a"
+                tag="button"
+                target="_self"
+                type="button"
+                variant="secondary"
+              >
+                Cancel
+              </b-button-stub>
+            </div>
+          </b-card-body-stub>
+        </b-collapse-stub>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+</div>
+`;

@@ -1,0 +1,1703 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard.vue renders correctly 1`] = `
+<div
+  class="animated fadeIn"
+>
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      lg="3"
+      sm="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        class="bg-primary"
+        footertag="div"
+        headertag="div"
+        nobody="true"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <b-card-body-stub
+          bodytag="div"
+          class="pb-0"
+          subtitle=""
+          subtitletag="h6"
+          subtitletextvariant="muted"
+          title=""
+          titletag="h4"
+        >
+          <b-dropdown-stub
+            boundary="scrollParent"
+            class="float-right"
+            offset="0"
+            right="true"
+            role="menu"
+            text=""
+            toggletag="button"
+            toggletext="Toggle Dropdown"
+            variant="transparent p-0"
+          >
+            <template>
+              <i
+                class="icon-settings"
+              />
+            </template>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Action
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Another action
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Something else here...
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              disabled="true"
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Disabled action
+            </b-dropdown-item-stub>
+          </b-dropdown-stub>
+           
+          <h4
+            class="mb-0"
+          >
+            9.823
+          </h4>
+           
+          <p>
+            Members online
+          </p>
+        </b-card-body-stub>
+         
+        <card-line1-chart-example-stub
+          chartid="card-chart-01"
+          class="chart-wrapper px-3"
+          cssclasses=""
+          height="70"
+          plugins=""
+          style="height: 70px;"
+        />
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      lg="3"
+      sm="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        class="bg-info"
+        footertag="div"
+        headertag="div"
+        nobody="true"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <b-card-body-stub
+          bodytag="div"
+          class="pb-0"
+          subtitle=""
+          subtitletag="h6"
+          subtitletextvariant="muted"
+          title=""
+          titletag="h4"
+        >
+          <b-dropdown-stub
+            boundary="scrollParent"
+            class="float-right"
+            nocaret="true"
+            offset="0"
+            right="true"
+            role="menu"
+            text=""
+            toggletag="button"
+            toggletext="Toggle Dropdown"
+            variant="transparent p-0"
+          >
+            <template>
+              <i
+                class="icon-location-pin"
+              />
+            </template>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Action
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Another action
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Something else here...
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              disabled="true"
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Disabled action
+            </b-dropdown-item-stub>
+          </b-dropdown-stub>
+           
+          <h4
+            class="mb-0"
+          >
+            9.823
+          </h4>
+           
+          <p>
+            Members online
+          </p>
+        </b-card-body-stub>
+         
+        <card-line2-chart-example-stub
+          chartid="card-chart-02"
+          class="chart-wrapper px-3"
+          cssclasses=""
+          height="70"
+          plugins=""
+          style="height: 70px;"
+        />
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      lg="3"
+      sm="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        class="bg-warning"
+        footertag="div"
+        headertag="div"
+        nobody="true"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <b-card-body-stub
+          bodytag="div"
+          class="pb-0"
+          subtitle=""
+          subtitletag="h6"
+          subtitletextvariant="muted"
+          title=""
+          titletag="h4"
+        >
+          <b-dropdown-stub
+            boundary="scrollParent"
+            class="float-right"
+            offset="0"
+            right="true"
+            role="menu"
+            text=""
+            toggletag="button"
+            toggletext="Toggle Dropdown"
+            variant="transparent p-0"
+          >
+            <template>
+              <i
+                class="icon-settings"
+              />
+            </template>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Action
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Another action
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Something else here...
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              disabled="true"
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Disabled action
+            </b-dropdown-item-stub>
+          </b-dropdown-stub>
+           
+          <h4
+            class="mb-0"
+          >
+            9.823
+          </h4>
+           
+          <p>
+            Members online
+          </p>
+        </b-card-body-stub>
+         
+        <card-line3-chart-example-stub
+          chartid="card-chart-03"
+          class="chart-wrapper"
+          cssclasses=""
+          height="70"
+          plugins=""
+          style="height: 70px;"
+        />
+      </b-card-stub>
+    </b-col-stub>
+     
+    <b-col-stub
+      lg="3"
+      sm="6"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        class="bg-danger"
+        footertag="div"
+        headertag="div"
+        nobody="true"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <b-card-body-stub
+          bodytag="div"
+          class="pb-0"
+          subtitle=""
+          subtitletag="h6"
+          subtitletextvariant="muted"
+          title=""
+          titletag="h4"
+        >
+          <b-dropdown-stub
+            boundary="scrollParent"
+            class="float-right"
+            offset="0"
+            right="true"
+            role="menu"
+            text=""
+            toggletag="button"
+            toggletext="Toggle Dropdown"
+            variant="transparent p-0"
+          >
+            <template>
+              <i
+                class="icon-settings"
+              />
+            </template>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Action
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Another action
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Something else here...
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              disabled="true"
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              Disabled action
+            </b-dropdown-item-stub>
+          </b-dropdown-stub>
+           
+          <h4
+            class="mb-0"
+          >
+            9.823
+          </h4>
+           
+          <p>
+            Members online
+          </p>
+        </b-card-body-stub>
+         
+        <card-bar-chart-example-stub
+          chartid="card-chart-04"
+          class="chart-wrapper px-3"
+          cssclasses=""
+          height="70"
+          plugins=""
+          style="height: 70px;"
+          width="400"
+        />
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+   
+  <b-card-stub
+    bodytag="div"
+    footertag="div"
+    headertag="div"
+    subtitle=""
+    subtitletag="h6"
+    subtitletextvariant="muted"
+    tag="div"
+    title=""
+    titletag="h4"
+  >
+    <b-row-stub
+      tag="div"
+    >
+      <b-col-stub
+        sm="5"
+        tag="div"
+      >
+        <h4
+          class="card-title mb-0"
+          id="traffic"
+        >
+          Traffic
+        </h4>
+         
+        <div
+          class="small text-muted"
+        >
+          November 2017
+        </div>
+      </b-col-stub>
+       
+      <b-col-stub
+        class="d-none d-md-block"
+        sm="7"
+        tag="div"
+      >
+        <b-button-stub
+          class="float-right"
+          event="click"
+          routertag="a"
+          tag="button"
+          target="_self"
+          type="button"
+          variant="primary"
+        >
+          <i
+            class="icon-cloud-download"
+          />
+        </b-button-stub>
+         
+        <b-button-toolbar-stub
+          aria-label="Toolbar with buttons group"
+          class="float-right"
+        >
+          <b-form-radio-group-stub
+            buttons="true"
+            buttonvariant="outline-secondary"
+            class="mr-3"
+            disabledfield="disabled"
+            htmlfield="html"
+            id="radiosBtn"
+            name="radiosBtn"
+            options=""
+            textfield="text"
+            value="Month"
+            valuefield="value"
+          >
+            <b-form-radio-stub
+              class="mx-0"
+              value="Day"
+            >
+              Day
+            </b-form-radio-stub>
+             
+            <b-form-radio-stub
+              class="mx-0"
+              value="Month"
+            >
+              Month
+            </b-form-radio-stub>
+             
+            <b-form-radio-stub
+              class="mx-0"
+              value="Year"
+            >
+              Year
+            </b-form-radio-stub>
+          </b-form-radio-group-stub>
+        </b-button-toolbar-stub>
+      </b-col-stub>
+    </b-row-stub>
+     
+    <main-chart-example-stub
+      chartid="main-chart-01"
+      class="chart-wrapper"
+      cssclasses=""
+      height="300"
+      plugins=""
+      style="height: 300px; margin-top: 40px;"
+      width="400"
+    />
+     
+    <div
+      slot="footer"
+    >
+      <b-row-stub
+        class="text-center"
+        tag="div"
+      >
+        <b-col-stub
+          class="mb-sm-2 mb-0"
+          tag="div"
+        >
+          <div
+            class="text-muted"
+          >
+            Visits
+          </div>
+           
+          <strong>
+            29.703 Users (40%)
+          </strong>
+           
+          <b-progress-stub
+            class="progress-xs mt-2"
+            height="{}"
+            max="100"
+            precision="1"
+            value="40"
+            variant="success"
+          />
+        </b-col-stub>
+         
+        <b-col-stub
+          class="mb-sm-2 mb-0 d-md-down-none"
+          tag="div"
+        >
+          <div
+            class="text-muted"
+          >
+            Unique
+          </div>
+           
+          <strong>
+            24.093 Users (20%)
+          </strong>
+           
+          <b-progress-stub
+            class="progress-xs mt-2"
+            height="{}"
+            max="100"
+            precision="1"
+            value="20"
+            variant="info"
+          />
+        </b-col-stub>
+         
+        <b-col-stub
+          class="mb-sm-2 mb-0"
+          tag="div"
+        >
+          <div
+            class="text-muted"
+          >
+            Pageviews
+          </div>
+           
+          <strong>
+            78.706 Views (60%)
+          </strong>
+           
+          <b-progress-stub
+            class="progress-xs mt-2"
+            height="{}"
+            max="100"
+            precision="1"
+            value="60"
+            variant="warning"
+          />
+        </b-col-stub>
+         
+        <b-col-stub
+          class="mb-sm-2 mb-0"
+          tag="div"
+        >
+          <div
+            class="text-muted"
+          >
+            New Users
+          </div>
+           
+          <strong>
+            22.123 Users (80%)
+          </strong>
+           
+          <b-progress-stub
+            class="progress-xs mt-2"
+            height="{}"
+            max="100"
+            precision="1"
+            value="80"
+            variant="danger"
+          />
+        </b-col-stub>
+         
+        <b-col-stub
+          class="mb-sm-2 mb-0 d-md-down-none"
+          tag="div"
+        >
+          <div
+            class="text-muted"
+          >
+            Bounce Rate
+          </div>
+           
+          <strong>
+            Average Rate (40.15%)
+          </strong>
+           
+          <b-progress-stub
+            class="progress-xs mt-2"
+            height="{}"
+            max="100"
+            precision="1"
+            value="40"
+          />
+        </b-col-stub>
+      </b-row-stub>
+    </div>
+  </b-card-stub>
+   
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      lg="3"
+      sm="6"
+      tag="div"
+    >
+      <div
+        class="brand-card"
+      >
+        <div
+          class="brand-card-header bg-facebook"
+        >
+          <i
+            class="fa fa-facebook"
+          />
+           
+          <div
+            class="chart-wrapper"
+          >
+            <social-box-chart-example-stub
+              chartid="box-chart-01"
+              cssclasses=""
+              data="65,59,84,84,51,55,40"
+              height="100"
+              plugins=""
+              width="400"
+            />
+          </div>
+        </div>
+         
+        <div
+          class="brand-card-body"
+        >
+          <div>
+            <div
+              class="text-value"
+            >
+              89k
+            </div>
+             
+            <div
+              class="text-uppercase text-muted small"
+            >
+              friends
+            </div>
+          </div>
+           
+          <div>
+            <div
+              class="text-value"
+            >
+              459
+            </div>
+             
+            <div
+              class="text-uppercase text-muted small"
+            >
+              feeds
+            </div>
+          </div>
+        </div>
+      </div>
+    </b-col-stub>
+     
+    <b-col-stub
+      lg="3"
+      sm="6"
+      tag="div"
+    >
+      <div
+        class="brand-card"
+      >
+        <div
+          class="brand-card-header bg-twitter"
+        >
+          <i
+            class="fa fa-twitter"
+          />
+           
+          <div
+            class="chart-wrapper"
+          >
+            <social-box-chart-example-stub
+              chartid="box-chart-02"
+              cssclasses=""
+              data="1,13,9,17,34,41,38"
+              height="100"
+              plugins=""
+              width="400"
+            />
+          </div>
+        </div>
+         
+        <div
+          class="brand-card-body"
+        >
+          <div>
+            <div
+              class="text-value"
+            >
+              973k
+            </div>
+             
+            <div
+              class="text-uppercase text-muted small"
+            >
+              followers
+            </div>
+          </div>
+           
+          <div>
+            <div
+              class="text-value"
+            >
+              1.792
+            </div>
+             
+            <div
+              class="text-uppercase text-muted small"
+            >
+              tweets
+            </div>
+          </div>
+        </div>
+      </div>
+    </b-col-stub>
+     
+    <b-col-stub
+      lg="3"
+      sm="6"
+      tag="div"
+    >
+      <div
+        class="brand-card"
+      >
+        <div
+          class="brand-card-header bg-linkedin"
+        >
+          <i
+            class="fa fa-linkedin"
+          />
+           
+          <div
+            class="chart-wrapper"
+          >
+            <social-box-chart-example-stub
+              chartid="box-chart-03"
+              cssclasses=""
+              data="78,81,80,45,34,12,40"
+              height="100"
+              plugins=""
+              width="400"
+            />
+          </div>
+        </div>
+         
+        <div
+          class="brand-card-body"
+        >
+          <div>
+            <div
+              class="text-value"
+            >
+              500+
+            </div>
+             
+            <div
+              class="text-uppercase text-muted small"
+            >
+              contacts
+            </div>
+          </div>
+           
+          <div>
+            <div
+              class="text-value"
+            >
+              292
+            </div>
+             
+            <div
+              class="text-uppercase text-muted small"
+            >
+              feeds
+            </div>
+          </div>
+        </div>
+      </div>
+    </b-col-stub>
+     
+    <b-col-stub
+      lg="3"
+      sm="6"
+      tag="div"
+    >
+      <div
+        class="brand-card"
+      >
+        <div
+          class="brand-card-header bg-google-plus"
+        >
+          <i
+            class="fa fa-google-plus"
+          />
+           
+          <div
+            class="chart-wrapper"
+          >
+            <social-box-chart-example-stub
+              chartid="box-chart-04"
+              cssclasses=""
+              data="35,23,56,22,97,23,64"
+              height="100"
+              plugins=""
+              width="400"
+            />
+          </div>
+        </div>
+         
+        <div
+          class="brand-card-body"
+        >
+          <div>
+            <div
+              class="text-value"
+            >
+              894
+            </div>
+             
+            <div
+              class="text-uppercase text-muted small"
+            >
+              followers
+            </div>
+          </div>
+           
+          <div>
+            <div
+              class="text-value"
+            >
+              92
+            </div>
+             
+            <div
+              class="text-uppercase text-muted small"
+            >
+              circles
+            </div>
+          </div>
+        </div>
+      </div>
+    </b-col-stub>
+  </b-row-stub>
+   
+  <b-row-stub
+    tag="div"
+  >
+    <b-col-stub
+      md="12"
+      tag="div"
+    >
+      <b-card-stub
+        bodytag="div"
+        footertag="div"
+        header="Traffic & Sales"
+        headertag="div"
+        subtitle=""
+        subtitletag="h6"
+        subtitletextvariant="muted"
+        tag="div"
+        title=""
+        titletag="h4"
+      >
+        <b-row-stub
+          tag="div"
+        >
+          <b-col-stub
+            lg="6"
+            sm="12"
+            tag="div"
+          >
+            <b-row-stub
+              tag="div"
+            >
+              <b-col-stub
+                sm="6"
+                tag="div"
+              >
+                <callout-stub
+                  variant="info"
+                >
+                  <small
+                    class="text-muted"
+                  >
+                    New Clients
+                  </small>
+                  <br />
+                   
+                  <strong
+                    class="h4"
+                  >
+                    9,123
+                  </strong>
+                   
+                  <div
+                    class="chart-wrapper"
+                    style="top: -10px;"
+                  >
+                    <callout-chart-example-stub
+                      chartid="callout-chart-01"
+                      cssclasses=""
+                      data="35,23,56,22,97,23,64"
+                      height="30"
+                      plugins=""
+                      variant="info"
+                      width="80"
+                    />
+                  </div>
+                </callout-stub>
+              </b-col-stub>
+               
+              <b-col-stub
+                sm="6"
+                tag="div"
+              >
+                <callout-stub
+                  variant="danger"
+                >
+                  <small
+                    class="text-muted"
+                  >
+                    Recurring Clients
+                  </small>
+                  <br />
+                   
+                  <strong
+                    class="h4"
+                  >
+                    22,643
+                  </strong>
+                   
+                  <div
+                    class="chart-wrapper"
+                    style="top: -10px;"
+                  >
+                    <callout-chart-example-stub
+                      chartid="callout-chart-02"
+                      cssclasses=""
+                      data="65,59,84,84,51,55,40"
+                      height="30"
+                      plugins=""
+                      variant="danger"
+                      width="80"
+                    />
+                  </div>
+                </callout-stub>
+              </b-col-stub>
+            </b-row-stub>
+             
+            <hr
+              class="mt-0"
+            />
+             
+            <div
+              class="progress-group mb-4"
+            >
+              <div
+                class="progress-group-prepend"
+              >
+                <span
+                  class="progress-group-text"
+                >
+                  
+                  Monday
+                
+                </span>
+              </div>
+               
+              <div
+                class="progress-group-bars"
+              >
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="34"
+                  variant="info"
+                />
+                 
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="78"
+                  variant="danger"
+                />
+              </div>
+            </div>
+             
+            <div
+              class="progress-group mb-4"
+            >
+              <div
+                class="progress-group-prepend"
+              >
+                <span
+                  class="progress-group-text"
+                >
+                  
+                  Tuesday
+                
+                </span>
+              </div>
+               
+              <div
+                class="progress-group-bars"
+              >
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="56"
+                  variant="info"
+                />
+                 
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="94"
+                  variant="danger"
+                />
+              </div>
+            </div>
+             
+            <div
+              class="progress-group mb-4"
+            >
+              <div
+                class="progress-group-prepend"
+              >
+                <span
+                  class="progress-group-text"
+                >
+                  
+                  Wednesday
+                
+                </span>
+              </div>
+               
+              <div
+                class="progress-group-bars"
+              >
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="12"
+                  variant="info"
+                />
+                 
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="67"
+                  variant="danger"
+                />
+              </div>
+            </div>
+             
+            <div
+              class="progress-group mb-4"
+            >
+              <div
+                class="progress-group-prepend"
+              >
+                <span
+                  class="progress-group-text"
+                >
+                  
+                  Thursday
+                
+                </span>
+              </div>
+               
+              <div
+                class="progress-group-bars"
+              >
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="43"
+                  variant="info"
+                />
+                 
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="91"
+                  variant="danger"
+                />
+              </div>
+            </div>
+             
+            <div
+              class="progress-group mb-4"
+            >
+              <div
+                class="progress-group-prepend"
+              >
+                <span
+                  class="progress-group-text"
+                >
+                  
+                  Friday
+                
+                </span>
+              </div>
+               
+              <div
+                class="progress-group-bars"
+              >
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="22"
+                  variant="info"
+                />
+                 
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="73"
+                  variant="danger"
+                />
+              </div>
+            </div>
+             
+            <div
+              class="progress-group mb-4"
+            >
+              <div
+                class="progress-group-prepend"
+              >
+                <span
+                  class="progress-group-text"
+                >
+                  
+                  Saturday
+                
+                </span>
+              </div>
+               
+              <div
+                class="progress-group-bars"
+              >
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="53"
+                  variant="info"
+                />
+                 
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="82"
+                  variant="danger"
+                />
+              </div>
+            </div>
+             
+            <div
+              class="progress-group mb-4"
+            >
+              <div
+                class="progress-group-prepend"
+              >
+                <span
+                  class="progress-group-text"
+                >
+                  
+                  Sunday
+                
+                </span>
+              </div>
+               
+              <div
+                class="progress-group-bars"
+              >
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="9"
+                  variant="info"
+                />
+                 
+                <b-progress-stub
+                  class="progress-xs"
+                  height="{}"
+                  max="100"
+                  precision="0"
+                  value="69"
+                  variant="danger"
+                />
+              </div>
+            </div>
+             
+            <div
+              class="legend text-center"
+            >
+              <small>
+                <sup>
+                  <b-badge-stub
+                    event="click"
+                    pill="true"
+                    routertag="a"
+                    tag="span"
+                    target="_self"
+                    variant="info"
+                  >
+                     
+                  </b-badge-stub>
+                </sup>
+                
+                New clients
+                  
+                
+                <sup>
+                  <b-badge-stub
+                    event="click"
+                    pill="true"
+                    routertag="a"
+                    tag="span"
+                    target="_self"
+                    variant="danger"
+                  >
+                     
+                  </b-badge-stub>
+                </sup>
+                
+                Recurring clients
+              
+              </small>
+            </div>
+          </b-col-stub>
+           
+          <b-col-stub
+            lg="6"
+            sm="12"
+            tag="div"
+          >
+            <b-row-stub
+              tag="div"
+            >
+              <b-col-stub
+                sm="6"
+                tag="div"
+              >
+                <callout-stub
+                  variant="warning"
+                >
+                  <small
+                    class="text-muted"
+                  >
+                    Pageviews
+                  </small>
+                  <br />
+                   
+                  <strong
+                    class="h4"
+                  >
+                    78,623
+                  </strong>
+                   
+                  <div
+                    class="chart-wrapper"
+                    style="top: -10px;"
+                  >
+                    <callout-chart-example-stub
+                      chartid="callout-chart-03"
+                      cssclasses=""
+                      data="35,23,56,22,97,23,64"
+                      height="30"
+                      plugins=""
+                      variant="#f8cb00"
+                      width="80"
+                    />
+                  </div>
+                </callout-stub>
+              </b-col-stub>
+               
+              <b-col-stub
+                sm="6"
+                tag="div"
+              >
+                <callout-stub
+                  variant="success"
+                >
+                  <small
+                    class="text-muted"
+                  >
+                    Organic
+                  </small>
+                  <br />
+                   
+                  <strong
+                    class="h4"
+                  >
+                    49,123
+                  </strong>
+                   
+                  <div
+                    class="chart-wrapper"
+                    style="top: -10px;"
+                  >
+                    <callout-chart-example-stub
+                      chartid="callout-chart-04"
+                      cssclasses=""
+                      data="65,59,84,84,51,55,40"
+                      height="30"
+                      plugins=""
+                      variant="#4dbd74"
+                      width="80"
+                    />
+                  </div>
+                </callout-stub>
+              </b-col-stub>
+            </b-row-stub>
+             
+            <hr
+              class="mt-0"
+            />
+             
+            <ul
+              class="horizontal-bars type-2"
+            >
+              <div
+                class="progress-group"
+              >
+                <div
+                  class="progress-group-header"
+                >
+                  <i
+                    class="icon-user progress-group-icon"
+                  />
+                   
+                  <span
+                    class="title"
+                  >
+                    Male
+                  </span>
+                   
+                  <span
+                    class="ml-auto font-weight-bold"
+                  >
+                    43%
+                  </span>
+                </div>
+                 
+                <div
+                  class="progress-group-bars"
+                >
+                  <b-progress-stub
+                    class="progress-xs"
+                    height="{}"
+                    max="100"
+                    precision="0"
+                    value="43"
+                    variant="warning"
+                  />
+                </div>
+              </div>
+               
+              <div
+                class="progress-group mb-5"
+              >
+                <div
+                  class="progress-group-header"
+                >
+                  <i
+                    class="icon-user-female progress-group-icon"
+                  />
+                   
+                  <span
+                    class="title"
+                  >
+                    Female
+                  </span>
+                   
+                  <span
+                    class="ml-auto font-weight-bold"
+                  >
+                    37%
+                  </span>
+                </div>
+                 
+                <div
+                  class="progress-group-bars"
+                >
+                  <b-progress-stub
+                    class="progress-xs"
+                    height="{}"
+                    max="100"
+                    precision="0"
+                    value="37"
+                    variant="warning"
+                  />
+                </div>
+              </div>
+               
+              <div
+                class="progress-group"
+              >
+                <div
+                  class="progress-group-header"
+                >
+                  <i
+                    class="icon-globe progress-group-icon"
+                  />
+                   
+                  <span
+                    class="title"
+                  >
+                    Organic Search
+                  </span>
+                   
+                  <span
+                    class="ml-auto font-weight-bold"
+                  >
+                    191,235 
+                    <span
+                      class="text-muted small"
+                    >
+                      (56%)
+                    </span>
+                  </span>
+                </div>
+                 
+                <div
+                  class="progress-group-bars"
+                >
+                  <b-progress-stub
+                    class="progress-xs"
+                    height="{}"
+                    max="100"
+                    precision="0"
+                    value="56"
+                    variant="success"
+                  />
+                </div>
+              </div>
+               
+              <div
+                class="progress-group"
+              >
+                <div
+                  class="progress-group-header"
+                >
+                  <i
+                    class="icon-social-facebook progress-group-icon"
+                  />
+                   
+                  <span
+                    class="title"
+                  >
+                    Facebook
+                  </span>
+                   
+                  <span
+                    class="ml-auto font-weight-bold"
+                  >
+                    51,223 
+                    <span
+                      class="text-muted small"
+                    >
+                      (15%)
+                    </span>
+                  </span>
+                </div>
+                 
+                <div
+                  class="progress-group-bars"
+                >
+                  <b-progress-stub
+                    class="progress-xs"
+                    height="{}"
+                    max="100"
+                    precision="0"
+                    value="15"
+                    variant="success"
+                  />
+                </div>
+              </div>
+               
+              <div
+                class="progress-group"
+              >
+                <div
+                  class="progress-group-header"
+                >
+                  <i
+                    class="icon-social-twitter progress-group-icon"
+                  />
+                   
+                  <span
+                    class="title"
+                  >
+                    Twitter
+                  </span>
+                   
+                  <span
+                    class="ml-auto font-weight-bold"
+                  >
+                    37,564 
+                    <span
+                      class="text-muted small"
+                    >
+                      (11%)
+                    </span>
+                  </span>
+                </div>
+                 
+                <div
+                  class="progress-group-bars"
+                >
+                  <b-progress-stub
+                    class="progress-xs"
+                    height="{}"
+                    max="100"
+                    precision="0"
+                    value="11"
+                    variant="success"
+                  />
+                </div>
+              </div>
+               
+              <div
+                class="progress-group"
+              >
+                <div
+                  class="progress-group-header"
+                >
+                  <i
+                    class="icon-social-linkedin progress-group-icon"
+                  />
+                   
+                  <span
+                    class="title"
+                  >
+                    LinkedIn
+                  </span>
+                   
+                  <span
+                    class="ml-auto font-weight-bold"
+                  >
+                    27,319 
+                    <span
+                      class="text-muted small"
+                    >
+                       (8%)
+                    </span>
+                  </span>
+                </div>
+                 
+                <div
+                  class="progress-group-bars"
+                >
+                  <b-progress-stub
+                    class="progress-xs"
+                    height="{}"
+                    max="100"
+                    precision="0"
+                    value="8"
+                    variant="success"
+                  />
+                </div>
+              </div>
+               
+              <div
+                class="divider text-center"
+              >
+                <b-button-stub
+                  class="text-muted"
+                  event="click"
+                  routertag="a"
+                  size="sm"
+                  tag="button"
+                  target="_self"
+                  type="button"
+                  variant="link"
+                >
+                  <i
+                    class="icon-options"
+                  />
+                </b-button-stub>
+              </div>
+            </ul>
+          </b-col-stub>
+        </b-row-stub>
+         
+        <br />
+         
+        <b-table-stub
+          apiurl=""
+          class="mb-0 table-outline"
+          currentpage="1"
+          emptyfilteredtext="There are no records matching your request"
+          emptytext="There are no records to show"
+          fields="[object Object]"
+          headvariant="light"
+          hover="true"
+          items="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+          labelsortasc="Click to sort Ascending"
+          labelsortclear="Click to clear sorting"
+          labelsortdesc="Click to sort Descending"
+          perpage="0"
+          responsive="sm"
+          selectedvariant="primary"
+          selectmode="multi"
+          sortby=""
+          sortdirection="asc"
+          value=""
+        >
+             
+          <i
+            class="flag-icon flag-icon-pw h1"
+            id="pw"
+            title="pw"
+          />
+        </b-table-stub>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
+</div>
+`;

@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register.vue renders correctly 1`] = `
+<div
+  class="app flex-row align-items-center"
+>
+  <div
+    class="container"
+  >
+    <b-row-stub
+      class="justify-content-center"
+      tag="div"
+    >
+      <b-col-stub
+        md="6"
+        sm="8"
+        tag="div"
+      >
+        <b-card-stub
+          bodytag="div"
+          class="mx-4"
+          footertag="div"
+          headertag="div"
+          nobody="true"
+          subtitle=""
+          subtitletag="h6"
+          subtitletextvariant="muted"
+          tag="div"
+          title=""
+          titletag="h4"
+        >
+          <b-card-body-stub
+            bodytag="div"
+            class="p-4"
+            subtitle=""
+            subtitletag="h6"
+            subtitletextvariant="muted"
+            title=""
+            titletag="h4"
+          >
+            <b-form-stub>
+              <h1>
+                Register
+              </h1>
+               
+              <p
+                class="text-muted"
+              >
+                Create your account
+              </p>
+               
+              <b-input-group-stub
+                class="mb-3"
+                tag="div"
+              >
+                <b-input-group-prepend-stub
+                  tag="div"
+                >
+                  <b-input-group-text-stub
+                    tag="div"
+                  >
+                    <i
+                      class="icon-user"
+                    />
+                  </b-input-group-text-stub>
+                </b-input-group-prepend-stub>
+                 
+                <b-form-input-stub
+                  autocomplete="username"
+                  class="form-control"
+                  placeholder="Username"
+                  type="text"
+                  value=""
+                />
+              </b-input-group-stub>
+               
+              <b-input-group-stub
+                class="mb-3"
+                tag="div"
+              >
+                <b-input-group-prepend-stub
+                  tag="div"
+                >
+                  <b-input-group-text-stub
+                    tag="div"
+                  >
+                    @
+                  </b-input-group-text-stub>
+                </b-input-group-prepend-stub>
+                 
+                <b-form-input-stub
+                  autocomplete="email"
+                  class="form-control"
+                  placeholder="Email"
+                  type="text"
+                  value=""
+                />
+              </b-input-group-stub>
+               
+              <b-input-group-stub
+                class="mb-3"
+                tag="div"
+              >
+                <b-input-group-prepend-stub
+                  tag="div"
+                >
+                  <b-input-group-text-stub
+                    tag="div"
+                  >
+                    <i
+                      class="icon-lock"
+                    />
+                  </b-input-group-text-stub>
+                </b-input-group-prepend-stub>
+                 
+                <b-form-input-stub
+                  autocomplete="new-password"
+                  class="form-control"
+                  placeholder="Password"
+                  type="password"
+                  value=""
+                />
+              </b-input-group-stub>
+               
+              <b-input-group-stub
+                class="mb-4"
+                tag="div"
+              >
+                <b-input-group-prepend-stub
+                  tag="div"
+                >
+                  <b-input-group-text-stub
+                    tag="div"
+                  >
+                    <i
+                      class="icon-lock"
+                    />
+                  </b-input-group-text-stub>
+                </b-input-group-prepend-stub>
+                 
+                <b-form-input-stub
+                  autocomplete="new-password"
+                  class="form-control"
+                  placeholder="Repeat password"
+                  type="password"
+                  value=""
+                />
+              </b-input-group-stub>
+               
+              <b-button-stub
+                block="true"
+                event="click"
+                routertag="a"
+                tag="button"
+                target="_self"
+                type="button"
+                variant="success"
+              >
+                Create Account
+              </b-button-stub>
+            </b-form-stub>
+          </b-card-body-stub>
+           
+          <b-card-footer-stub
+            class="p-4"
+            footertag="div"
+          >
+            <b-row-stub
+              tag="div"
+            >
+              <b-col-stub
+                cols="6"
+                tag="div"
+              >
+                <b-button-stub
+                  block="true"
+                  class="btn btn-facebook"
+                  event="click"
+                  routertag="a"
+                  tag="button"
+                  target="_self"
+                  type="button"
+                  variant="secondary"
+                >
+                  <span>
+                    facebook
+                  </span>
+                </b-button-stub>
+              </b-col-stub>
+               
+              <b-col-stub
+                cols="6"
+                tag="div"
+              >
+                <b-button-stub
+                  block="true"
+                  class="btn btn-twitter"
+                  event="click"
+                  routertag="a"
+                  tag="button"
+                  target="_self"
+                  type="button"
+                  variant="secondary"
+                >
+                  <span>
+                    twitter
+                  </span>
+                </b-button-stub>
+              </b-col-stub>
+            </b-row-stub>
+          </b-card-footer-stub>
+        </b-card-stub>
+      </b-col-stub>
+    </b-row-stub>
+  </div>
+</div>
+`;

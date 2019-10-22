@@ -1,0 +1,543 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navs.vue renders correctly 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="animated fadeIn"
+  >
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Navs
+        </strong>
+         
+        <div
+          class="card-header-actions"
+        >
+          <a
+            class="card-header-action"
+            href="https://bootstrap-vue.js.org/docs/components/nav"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <small
+              class="text-muted"
+            >
+              docs
+            </small>
+          </a>
+        </div>
+      </div>
+       
+      <div>
+        <b-nav-stub
+          tag="ul"
+        >
+          <b-nav-item-stub
+            active="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Active
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Another Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            disabled="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Disabled
+          </b-nav-item-stub>
+        </b-nav-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Navs 
+        </strong>
+        <small>
+          tab style
+        </small>
+      </div>
+       
+      <div>
+        <b-nav-stub
+          tabs="true"
+          tag="ul"
+        >
+          <b-nav-item-stub
+            active="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Active
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Another Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            disabled="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Disabled
+          </b-nav-item-stub>
+        </b-nav-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Navs 
+        </strong>
+        <small>
+          pill style
+        </small>
+      </div>
+       
+      <div>
+        <b-nav-stub
+          pills="true"
+          tag="ul"
+        >
+          <b-nav-item-stub
+            active="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Active
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Another Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            disabled="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Disabled
+          </b-nav-item-stub>
+        </b-nav-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Navs 
+        </strong>
+        <small>
+          fill tabs
+        </small>
+      </div>
+       
+      <div>
+        <b-nav-stub
+          fill="true"
+          tabs="true"
+          tag="ul"
+        >
+          <b-nav-item-stub
+            active="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Active
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link with a long name 
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            disabled="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Disabled
+          </b-nav-item-stub>
+        </b-nav-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Navs 
+        </strong>
+        <small>
+          justified tabs
+        </small>
+      </div>
+       
+      <div>
+        <b-nav-stub
+          justified="true"
+          tabs="true"
+          tag="ul"
+        >
+          <b-nav-item-stub
+            active="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Active
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link with a long name 
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            disabled="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Disabled
+          </b-nav-item-stub>
+        </b-nav-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Navs 
+        </strong>
+        <small>
+          dropdown support
+        </small>
+      </div>
+       
+      <div>
+        <b-nav-stub
+          pills="true"
+          tag="ul"
+        >
+          <b-nav-item-stub
+            active="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Active
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-dropdown-stub
+            extramenuclasses=""
+            extratoggleclasses=""
+            id="nav7_ddown"
+            offset="0"
+            right="true"
+            role="menu"
+            text="Dropdown"
+          >
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              one
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              two
+            </b-dropdown-item-stub>
+             
+            <b-dropdown-divider-stub
+              tag="hr"
+            />
+             
+            <b-dropdown-item-stub
+              event="click"
+              routertag="a"
+              target="_self"
+            >
+              three
+            </b-dropdown-item-stub>
+          </b-nav-item-dropdown-stub>
+        </b-nav-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Navs 
+        </strong>
+        <small>
+          vertical variation
+        </small>
+      </div>
+       
+      <div>
+        <b-nav-stub
+          class="w-25"
+          tag="ul"
+          vertical="true"
+        >
+          <b-nav-item-stub
+            active="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Active
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Another Link
+          </b-nav-item-stub>
+           
+          <b-nav-item-stub
+            disabled="true"
+            event="click"
+            linkattrs="[object Object]"
+            routertag="a"
+            target="_self"
+          >
+            Disabled
+          </b-nav-item-stub>
+        </b-nav-stub>
+      </div>
+    </b-card-stub>
+  </div>
+</div>
+`;

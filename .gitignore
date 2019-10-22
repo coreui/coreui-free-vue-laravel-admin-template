@@ -1,20 +1,49 @@
-vendor/
-node_modules/
-npm-debug.log
+/composer.phar
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+!/public/index.php
+!/public/.htaccess
+!/public/web.config
+!/public/robots
+!/public/mix-manifest.json
+/laravel/public
+/laravel/node_modules
+/laravel/public/hot
+/laravel/public/storage
+/laravel/storage/*.key
+/laravel/vendor
+/laravel/.env
+/laravel/.env.backup
+/laravel/.phpunit.result.cache
+/laravel/Homestead.json
+/laravel/Homestead.yaml
+/laravel/npm-debug.log
+/laravel/yarn-error.log
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-storage/*.key
-.env.*.php
-.env.php
-.env
-Homestead.yaml
-Homestead.json
 
-# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
-.rocketeer/
+/coreui/.DS_Store
+/coreui/node_modules
+/coreui/dist
+/coreui/coverage
+
+/coreui/tests/e2e/reports/
+/coreui/selenium-debug.log
+
+# local env files
+/coreui/.env.local
+/coreui/.env.*.local
+
+# Log files
+/coreui/npm-debug.log*
+/coreui/yarn-debug.log*
+/coreui/yarn-error.log*
+
+# Editor directories and files
+/coreui/.idea
+/coreui/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+ściąga.txt

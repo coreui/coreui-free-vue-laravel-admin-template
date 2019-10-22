@@ -1,0 +1,490 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltips.vue renders correctly 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="animated fadeIn"
+  >
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Tooltips 
+        </strong>
+        <small>
+          <code>
+            v-b-tooltip
+          </code>
+           directive
+        </small>
+         
+        <div
+          class="card-header-actions"
+        >
+          <a
+            class="card-header-action"
+            href="https://bootstrap-vue.js.org/docs/components/tooltip"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <small
+              class="text-muted"
+            >
+              docs
+            </small>
+          </a>
+        </div>
+      </div>
+       
+      <b-row-stub
+        tag="div"
+      >
+        <b-col-stub
+          cols="6"
+          tag="div"
+        >
+          <div
+            class="text-center my-3"
+          >
+            <b-btn-stub
+              event="click"
+              routertag="a"
+              tag="button"
+              target="_self"
+              title="I am a tooltip!"
+              type="button"
+              variant="secondary"
+            >
+              Hover Me
+            </b-btn-stub>
+          </div>
+        </b-col-stub>
+         
+        <b-col-stub
+          cols="6"
+          tag="div"
+        >
+          <div
+            class="text-center my-3"
+          >
+            <b-btn-stub
+              event="click"
+              id="tooltipButton-2"
+              routertag="a"
+              tag="button"
+              target="_self"
+              type="button"
+              variant="primary"
+            >
+              Button
+            </b-btn-stub>
+             
+            <b-tooltip-stub
+              boundary="scrollParent"
+              boundarypadding="5"
+              delay="0"
+              fallbackplacement="flip"
+              offset="0"
+              placement="top"
+              show="true"
+              target="tooltipButton-2"
+              title=""
+              triggers="hover focus"
+            >
+              
+              I start open
+            
+            </b-tooltip-stub>
+          </div>
+        </b-col-stub>
+      </b-row-stub>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Tooltips 
+        </strong>
+        <small>
+          <code>
+            b-tooltip
+          </code>
+           component
+        </small>
+      </div>
+       
+      <b-row-stub
+        tag="div"
+      >
+        <b-col-stub
+          class="py-4 text-center"
+          md="6"
+          tag="div"
+        >
+          <b-btn-stub
+            event="click"
+            id="exButton1"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="outline-success"
+          >
+            Live chat
+          </b-btn-stub>
+        </b-col-stub>
+         
+        <b-col-stub
+          class="py-4 text-center"
+          md="6"
+          tag="div"
+        >
+          <b-btn-stub
+            event="click"
+            id="exButton2"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="outline-success"
+          >
+            Html chat
+          </b-btn-stub>
+        </b-col-stub>
+      </b-row-stub>
+       
+      <b-tooltip-stub
+        boundary="scrollParent"
+        boundarypadding="5"
+        delay="0"
+        fallbackplacement="flip"
+        offset="0"
+        placement="top"
+        target="exButton1"
+        title="Online!"
+        triggers="hover focus"
+      />
+       
+      <b-tooltip-stub
+        boundary="scrollParent"
+        boundarypadding="5"
+        delay="0"
+        fallbackplacement="flip"
+        offset="0"
+        placement="bottom"
+        target="exButton2"
+        title=""
+        triggers="hover focus"
+      >
+        
+        Hello 
+        <strong>
+          World!
+        </strong>
+      </b-tooltip-stub>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Tooltips 
+        </strong>
+        <small>
+          <code>
+            show
+          </code>
+           prop
+        </small>
+      </div>
+       
+      <div
+        class="text-center"
+      >
+        <b-btn-stub
+          event="click"
+          id="tooltipButton-1"
+          routertag="a"
+          tag="button"
+          target="_self"
+          type="button"
+          variant="primary"
+        >
+          I have a tooltip
+        </b-btn-stub>
+         
+        <br />
+        <br />
+         
+        <b-btn-stub
+          event="click"
+          routertag="a"
+          tag="button"
+          target="_self"
+          type="button"
+          variant="secondary"
+        >
+          Toggle Tooltip
+        </b-btn-stub>
+         
+        <b-tooltip-stub
+          boundary="scrollParent"
+          boundarypadding="5"
+          delay="0"
+          fallbackplacement="flip"
+          offset="0"
+          placement="top"
+          show="true"
+          target="tooltipButton-1"
+          title=""
+          triggers="hover focus"
+        >
+          
+          Hello 
+          <strong>
+            World!
+          </strong>
+        </b-tooltip-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Tooltips 
+        </strong>
+        <small>
+          <code>
+            open close
+          </code>
+           events
+        </small>
+      </div>
+       
+      <div
+        class="d-flex flex-column text-md-center"
+      >
+        <div
+          class="p-2"
+        >
+          <b-btn-stub
+            event="click"
+            id="tooltipButton-showEvent"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="primary"
+          >
+            I have a tooltip
+          </b-btn-stub>
+        </div>
+         
+        <div
+          class="p-2"
+        >
+          <b-btn-stub
+            class="px-1 mr-1"
+            event="click"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="secondary"
+          >
+            Open
+          </b-btn-stub>
+           
+          <b-btn-stub
+            class="px-1"
+            event="click"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="secondary"
+          >
+            Close
+          </b-btn-stub>
+        </div>
+         
+        <b-tooltip-stub
+          boundary="scrollParent"
+          boundarypadding="5"
+          delay="0"
+          fallbackplacement="flip"
+          offset="0"
+          placement="top"
+          target="tooltipButton-showEvent"
+          title=""
+          triggers="hover focus"
+        >
+          
+          Hello 
+          <strong>
+            World!
+          </strong>
+        </b-tooltip-stub>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Tooltips 
+        </strong>
+        <small>
+          <code>
+            enable disable
+          </code>
+           events
+        </small>
+      </div>
+       
+      <div
+        class="d-flex flex-column text-md-center"
+      >
+        <div
+          class="p-2"
+        >
+          <b-btn-stub
+            event="click"
+            id="tooltipButton-disable"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="primary"
+          >
+            I have a tooltip
+          </b-btn-stub>
+        </div>
+         
+        <div
+          class="p-2"
+        >
+          <b-btn-stub
+            class="mr-1"
+            event="click"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="secondary"
+          >
+            
+            Disable Tooltip by prop
+          
+          </b-btn-stub>
+           
+          <b-btn-stub
+            event="click"
+            routertag="a"
+            tag="button"
+            target="_self"
+            type="button"
+            variant="secondary"
+          >
+            
+            Disable Tooltip by $ref event
+          
+          </b-btn-stub>
+           
+          <b-tooltip-stub
+            boundary="scrollParent"
+            boundarypadding="5"
+            delay="0"
+            fallbackplacement="flip"
+            offset="0"
+            placement="top"
+            target="tooltipButton-disable"
+            title=""
+            triggers="hover focus"
+          >
+            
+            Hello 
+            <strong>
+              World!
+            </strong>
+          </b-tooltip-stub>
+        </div>
+      </div>
+    </b-card-stub>
+  </div>
+</div>
+`;

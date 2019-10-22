@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paginations.vue renders correctly 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="animated fadeIn"
+  >
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Bootstrap Pagination
+        </strong>
+         
+        <div
+          class="card-header-actions"
+        >
+          <a
+            class="card-header-action"
+            href="https://bootstrap-vue.js.org/docs/components/pagination"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <small
+              class="text-muted"
+            >
+              docs
+            </small>
+          </a>
+        </div>
+      </div>
+       
+      <div>
+        <h6>
+          Default
+        </h6>
+         
+        <b-pagination-stub
+          align="left"
+          arialabel="Pagination"
+          ellipsistext="…"
+          firsttext="«"
+          labelfirstpage="Go to first page"
+          labellastpage="Go to last page"
+          labelnextpage="Go to next page"
+          labelpage="Go to page"
+          labelprevpage="Go to previous page"
+          lasttext="»"
+          limit="5"
+          nexttext="›"
+          perpage="10"
+          prevtext="‹"
+          size="md"
+          totalrows="100"
+          value="3"
+        />
+         
+        <br />
+         
+        <h6>
+          Small
+        </h6>
+         
+        <b-pagination-stub
+          align="left"
+          arialabel="Pagination"
+          ellipsistext="…"
+          firsttext="«"
+          labelfirstpage="Go to first page"
+          labellastpage="Go to last page"
+          labelnextpage="Go to next page"
+          labelpage="Go to page"
+          labelprevpage="Go to previous page"
+          lasttext="»"
+          limit="5"
+          nexttext="›"
+          perpage="10"
+          prevtext="‹"
+          size="sm"
+          totalrows="100"
+          value="3"
+        />
+         
+        <br />
+         
+        <div
+          class="d-sm-down-none"
+        >
+          <h6>
+            Large
+          </h6>
+           
+          <b-pagination-stub
+            align="left"
+            arialabel="Pagination"
+            ellipsistext="…"
+            firsttext="«"
+            labelfirstpage="Go to first page"
+            labellastpage="Go to last page"
+            labelnextpage="Go to next page"
+            labelpage="Go to page"
+            labelprevpage="Go to previous page"
+            lasttext="»"
+            limit="5"
+            nexttext="›"
+            perpage="10"
+            prevtext="‹"
+            size="lg"
+            totalrows="100"
+            value="3"
+          />
+           
+          <br />
+        </div>
+         
+        <div>
+          currentPage: 3
+        </div>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Pagination 
+        </strong>
+         
+        <small>
+          alignment
+        </small>
+      </div>
+       
+      <div>
+        <h6>
+          Left alignment (default)
+        </h6>
+         
+        <b-pagination-stub
+          align="left"
+          arialabel="Pagination"
+          ellipsistext="…"
+          firsttext="«"
+          labelfirstpage="Go to first page"
+          labellastpage="Go to last page"
+          labelnextpage="Go to next page"
+          labelpage="Go to page"
+          labelprevpage="Go to previous page"
+          lasttext="»"
+          limit="5"
+          nexttext="›"
+          perpage="10"
+          prevtext="‹"
+          size="md"
+          totalrows="100"
+          value="3"
+        />
+         
+        <br />
+         
+        <h6>
+          Center alignment
+        </h6>
+         
+        <b-pagination-stub
+          align="center"
+          arialabel="Pagination"
+          ellipsistext="…"
+          firsttext="«"
+          labelfirstpage="Go to first page"
+          labellastpage="Go to last page"
+          labelnextpage="Go to next page"
+          labelpage="Go to page"
+          labelprevpage="Go to previous page"
+          lasttext="»"
+          limit="5"
+          nexttext="›"
+          perpage="10"
+          prevtext="‹"
+          size="md"
+          totalrows="100"
+          value="3"
+        />
+         
+        <br />
+         
+        <h6>
+          Right (end) alignment
+        </h6>
+         
+        <b-pagination-stub
+          align="right"
+          arialabel="Pagination"
+          ellipsistext="…"
+          firsttext="«"
+          labelfirstpage="Go to first page"
+          labellastpage="Go to last page"
+          labelnextpage="Go to next page"
+          labelpage="Go to page"
+          labelprevpage="Go to previous page"
+          lasttext="»"
+          limit="5"
+          nexttext="›"
+          perpage="10"
+          prevtext="‹"
+          size="md"
+          totalrows="100"
+          value="3"
+        />
+         
+        <br />
+         
+        <div>
+          currentPage: 3
+        </div>
+      </div>
+    </b-card-stub>
+     
+    <b-card-stub
+      bodytag="div"
+      footertag="footer"
+      headertag="header"
+      subtitle=""
+      subtitletag="h6"
+      subtitletextvariant="muted"
+      tag="div"
+      title=""
+      titletag="h4"
+    >
+      <div
+        slot="header"
+      >
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Pagination 
+        </strong>
+         
+        <small>
+          navigation
+        </small>
+      </div>
+       
+      <div>
+        <h6>
+          Default
+        </h6>
+         
+        <b-pagination-nav-stub
+          align="left"
+          arialabel="Pagination"
+          baseurl="#"
+          ellipsistext="…"
+          firsttext="«"
+          labelfirstpage="Go to first page"
+          labellastpage="Go to last page"
+          labelnextpage="Go to next page"
+          labelpage="Go to page"
+          labelprevpage="Go to previous page"
+          lasttext="»"
+          limit="5"
+          nexttext="›"
+          numberofpages="10"
+          prevtext="‹"
+          size="md"
+          value="3"
+        />
+         
+        <h6
+          class="mt-4"
+        >
+          With link generator function
+        </h6>
+         
+        <b-pagination-nav-stub
+          align="left"
+          arialabel="Pagination"
+          baseurl="/"
+          ellipsistext="…"
+          firsttext="«"
+          labelfirstpage="Go to first page"
+          labellastpage="Go to last page"
+          labelnextpage="Go to next page"
+          labelpage="Go to page"
+          labelprevpage="Go to previous page"
+          lasttext="»"
+          limit="5"
+          linkgen="function () { [native code] }"
+          nexttext="›"
+          numberofpages="10"
+          prevtext="‹"
+          size="md"
+          value="3"
+        />
+         
+        <br />
+         
+        <div
+          class="mt-4"
+        >
+          currentPage: 3
+        </div>
+      </div>
+    </b-card-stub>
+  </div>
+</div>
+`;

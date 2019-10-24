@@ -18,7 +18,32 @@ class AuthController extends Controller
     {
         $this->middleware('auth:api', ['except' => ['login', 'register']]);
     }
-    
+  
+    /**
+     * Register new user.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function register(Request $request){
+        $validate = Validator::make($request->all(), [
+            'name'      => 'required',
+            'email'     => 'required|email|unique:users',
+            'password'  => 'required|min:4|confirmed',
+        ]);        
+        if ($validate->fails()){
+            return response()->json([
+                'status' => 'error',
+                'errors' => $validate->errors()
+            ], 422);
+        }        
+        $user = new User;
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+        $user->status = 1;
+        $user->save();       
+        return response()->json(['status' => 'success'], 200);
+    } 
 
     /**
      * Get a JWT via given credentials.

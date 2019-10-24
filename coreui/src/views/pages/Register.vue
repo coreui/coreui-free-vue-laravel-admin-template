@@ -95,8 +95,7 @@
             self.password_confirmation = '';
 
             console.log(response);
-
-            //self.$router.push('Login');
+            self.$router.push('Login');
           })
           .catch(function (error) {
             console.log(error);

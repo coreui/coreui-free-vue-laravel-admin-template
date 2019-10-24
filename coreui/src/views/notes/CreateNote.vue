@@ -62,7 +62,7 @@ export default {
           title: '',
           content: '',
           applies_to_date: '',
-          status_id: '',
+          status_id: null,
           note_type: '',
         },
         statuses: [],
@@ -83,6 +83,13 @@ export default {
           self.note
         )
         .then(function (response) {
+            self.note = {
+              title: '',
+              content: '',
+              applies_to_date: '',
+              status_id: null,
+              note_type: '',
+            };
             self.message = 'Successfully created note.';
             self.showAlert();
         }).catch(function (error) {

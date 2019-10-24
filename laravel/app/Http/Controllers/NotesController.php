@@ -28,7 +28,7 @@ class NotesController extends Controller
     {
         $notes = DB::table('notes')
         ->join('users', 'users.id', '=', 'notes.users_id')
-        ->join('status', 'status.id', '=', 'notes.users_id')
+        ->join('status', 'status.id', '=', 'notes.status_id')
         ->select('notes.*', 'users.name as author', 'status.name as status', 'status.class as status_class')
         ->get();
         return response()->json( $notes );
@@ -60,13 +60,14 @@ class NotesController extends Controller
             'applies_to_date'   => 'required|date_format:Y-m-d',
             'note_type'         => 'required|max:64'
         ]);
+        $user = auth()->userOrFail();
         $note = new Notes();
         $note->title     = $request->input('title');
         $note->content   = $request->input('content');
         $note->status_id = $request->input('status_id');
         $note->note_type = $request->input('note_type');
         $note->applies_to_date = $request->input('applies_to_date');
-        $note->users_id = $request->get('user_id') ? $request->get('user_id') : $request->input('user_id');
+        $note->users_id = $user->id;
         $note->save();
         return response()->json( ['status' => 'success'] );
     }
@@ -81,7 +82,7 @@ class NotesController extends Controller
     {
         $note = DB::table('notes')
         ->join('users', 'users.id', '=', 'notes.users_id')
-        ->join('status', 'status.id', '=', 'notes.users_id')
+        ->join('status', 'status.id', '=', 'notes.status_id')
         ->select('notes.*', 'users.name as author', 'status.name as status', 'status.class as status_class')
         ->where('notes.id', '=', $id)
         ->first();

@@ -11,7 +11,7 @@
             @dismiss-count-down="countDownChanged">
             ({{dismissCountDown}}) {{ message }}
           </b-alert>
-          <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="sm" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage">
+          <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="md" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage">
             <template slot="id" slot-scope="data">
               <strong>{{data.item.id}}</strong>
             </template>
@@ -21,9 +21,13 @@
             <template slot="status" slot-scope="data">
               <b-badge :variant="getBadge(data.item.status)">{{data.item.status}}</b-badge>
             </template>
-            <template slot="functions" slot-scope="data">
+            <template slot="show" slot-scope="data">
               <b-button variant="primary" @click="showUser( data.item.id )">Show</b-button>
+            </template>
+            <template slot="edit" slot-scope="data">
               <b-button variant="primary" @click="editUser( data.item.id )">Edit</b-button>
+            </template>
+            <template slot="delete" slot-scope="data">
               <b-button v-if="you!=data.item.id" variant="danger" @click="deleteUser( data.item.id )">Delete</b-button>
             </template>
           </b-table>
@@ -76,7 +80,9 @@ export default {
         {key: 'registered'},
         {key: 'roles'},
         {key: 'status'},
-        {key: 'functions'}
+        {key: 'show'},
+        {key: 'edit'},
+        {key: 'delete'}
       ],
       currentPage: 1,
       perPage: 5,

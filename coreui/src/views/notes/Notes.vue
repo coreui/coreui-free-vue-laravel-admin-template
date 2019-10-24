@@ -12,7 +12,7 @@
             @dismiss-count-down="countDownChanged">
             ({{dismissCountDown}}) {{ message }}
           </b-alert>
-          <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="sm" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage">
+          <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="lg" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage">
             <template slot="author" slot-scope="data">
               <strong>{{data.item.author}}</strong>
             </template>
@@ -32,11 +32,16 @@
               <strong>{{data.item.note_type}}</strong>
             </template>
  
-            <template slot="functions" slot-scope="data">
+            <template slot="Show" slot-scope="data">
               <b-button variant="primary" @click="showNote( data.item.id )">Show</b-button>
+            </template>
+            <template slot="Edit" slot-scope="data">
               <b-button variant="primary" @click="editNote( data.item.id )">Edit</b-button>
+            </template>
+            <template slot="Delete" slot-scope="data">
               <b-button v-if="you!=data.item.id" variant="danger" @click="deleteNote( data.item.id )">Delete</b-button>
             </template>
+
           </b-table>
         <nav>
           <b-pagination size="sm" :total-rows="getRowCount(items)" :per-page="perPage" v-model="currentPage" prev-text="Prev" next-text="Next" hide-goto-end-buttons/>
@@ -88,7 +93,9 @@ export default {
         {key: 'applies_to_date'},
         {key: 'status'},
         {key: 'note_type'},
-        {key: 'functions'}
+        {key: 'Show'},
+        {key: 'Edit'},
+        {key: 'Delete'}
       ],
       currentPage: 1,
       perPage: 5,

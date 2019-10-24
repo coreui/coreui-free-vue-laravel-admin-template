@@ -57,11 +57,11 @@ export default {
     },
     update() {
         let self = this;
-        axios.post('/api/users/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token")),
+        axios.post('/api/users/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
         {
             _method: 'PUT',
             name: self.name,
-            email: self.email
+            email: self.email,
         })
         .then(function (response) {
             self.message = 'Successfully updated user.';
@@ -91,12 +91,5 @@ export default {
   }
 }
 
-/*
-      items: (id) => {
-        const user = usersData.find( user => user.id.toString() === id)
-        const userDetails = user ? Object.entries(user) : [['id', 'Not found']]
-        return userDetails.map(([key, value]) => {return {key: key, value: value}})
-      },
-*/
 
 </script>

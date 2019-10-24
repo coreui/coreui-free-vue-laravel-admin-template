@@ -1,11 +1,12 @@
 /composer.phar
 
+/laravel/public/*
 !/laravel/public/index.php
 !/laravel/public/.htaccess
 !/laravel/public/web.config
 !/laravel/public/robots
 !/laravel/public/mix-manifest.json
-/laravel/public/*
+
 /laravel/node_modules
 /laravel/public/hot
 /laravel/public/storage

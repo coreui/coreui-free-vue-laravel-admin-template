@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Typography.vue renders correctly 1`] = `
-<div
-  class="animated fadeIn"
->
+<div>
   <div
     class="card"
   >
@@ -19,7 +17,8 @@ exports[`Typography.vue renders correctly 1`] = `
       class="card-body"
     >
       <p>
-        Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+        Documentation and examples for Bootstrap typography,
+        including global settings, headings, body text, lists, and more.
       </p>
        
       <table
@@ -44,7 +43,9 @@ exports[`Typography.vue renders correctly 1`] = `
                 <code
                   class="highlighter-rouge"
                 >
+                  
                   &lt;h1&gt;&lt;/h1&gt;
+                
                 </code>
               </p>
             </td>
@@ -64,7 +65,9 @@ exports[`Typography.vue renders correctly 1`] = `
                 <code
                   class="highlighter-rouge"
                 >
+                  
                   &lt;h2&gt;&lt;/h2&gt;
+                
                 </code>
               </p>
             </td>
@@ -84,7 +87,9 @@ exports[`Typography.vue renders correctly 1`] = `
                 <code
                   class="highlighter-rouge"
                 >
+                  
                   &lt;h3&gt;&lt;/h3&gt;
+                
                 </code>
               </p>
             </td>
@@ -104,7 +109,9 @@ exports[`Typography.vue renders correctly 1`] = `
                 <code
                   class="highlighter-rouge"
                 >
+                  
                   &lt;h4&gt;&lt;/h4&gt;
+                
                 </code>
               </p>
             </td>
@@ -124,7 +131,9 @@ exports[`Typography.vue renders correctly 1`] = `
                 <code
                   class="highlighter-rouge"
                 >
+                  
                   &lt;h5&gt;&lt;/h5&gt;
+                
                 </code>
               </p>
             </td>
@@ -144,7 +153,9 @@ exports[`Typography.vue renders correctly 1`] = `
                 <code
                   class="highlighter-rouge"
                 >
+                  
                   &lt;h6&gt;&lt;/h6&gt;
+                
                 </code>
               </p>
             </td>
@@ -182,13 +193,17 @@ exports[`Typography.vue renders correctly 1`] = `
         >
           .h1
         </code>
-         through 
+         through
+        
         <code
           class="highlighter-rouge"
         >
           .h6
         </code>
-         classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
+        
+        classes are also available, for when you want to match the font
+        styling of a heading but cannot use the associated HTML element.
+      
       </p>
        
       <div
@@ -248,11 +263,16 @@ exports[`Typography.vue renders correctly 1`] = `
       class="card-body"
     >
       <p>
-        Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a 
+        
+        Traditional heading elements are designed to work best in the meat
+        of your page content. When you need a heading to stand out,
+        consider using a 
         <strong>
           display heading
         </strong>
-        —a larger, slightly more opinionated heading style.
+        —a larger,
+         slightly more opinionated heading style.
+      
       </p>
        
       <div
@@ -322,11 +342,16 @@ exports[`Typography.vue renders correctly 1`] = `
       class="card-body"
     >
       <p>
-        Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a 
+        
+        Traditional heading elements are designed to work best in the meat
+        of your page content. When you need a heading to stand out,
+        consider using a 
         <strong>
           display heading
         </strong>
-        —a larger, slightly more opinionated heading style.
+        —a larger,
+        slightly more opinionated heading style.
+      
       </p>
        
       <div
@@ -342,19 +367,25 @@ exports[`Typography.vue renders correctly 1`] = `
          
         <p>
           <del>
-            This line of text is meant to be treated as deleted text.
+            
+          This line of text is meant to be treated as deleted text.
+        
           </del>
         </p>
          
         <p>
           <s>
-            This line of text is meant to be treated as no longer accurate.
+            
+          This line of text is meant to be treated as no longer accurate.
+        
           </s>
         </p>
          
         <p>
           <ins>
-            This line of text is meant to be treated as an addition to the document.
+            
+          This line of text is meant to be treated as an addition to the document.
+        
           </ins>
         </p>
          
@@ -366,7 +397,9 @@ exports[`Typography.vue renders correctly 1`] = `
          
         <p>
           <small>
-            This line of text is meant to be treated as fine print.
+            
+          This line of text is meant to be treated as fine print.
+        
           </small>
         </p>
          
@@ -400,13 +433,18 @@ exports[`Typography.vue renders correctly 1`] = `
       class="card-body"
     >
       <p>
-        Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a 
+        
+        Align terms and descriptions horizontally by using our grid system’s
+        predefined classes (or semantic mixins). For longer terms, you can
+        optionally add a 
         <code
           class="highlighter-rouge"
         >
           .text-truncate
         </code>
-         class to truncate the text with an ellipsis.
+        
+        class to truncate the text with an ellipsis.
+      
       </p>
        
       <div
@@ -424,7 +462,9 @@ exports[`Typography.vue renders correctly 1`] = `
           <dd
             class="col-sm-9"
           >
+            
             A description list is perfect for defining terms.
+          
           </dd>
            
           <dt
@@ -454,7 +494,9 @@ exports[`Typography.vue renders correctly 1`] = `
           <dd
             class="col-sm-9"
           >
+            
             Etiam porta sem malesuada magna mollis euismod.
+          
           </dd>
            
           <dt
@@ -466,7 +508,10 @@ exports[`Typography.vue renders correctly 1`] = `
           <dd
             class="col-sm-9"
           >
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus.
+          
           </dd>
            
           <dt
@@ -490,7 +535,9 @@ exports[`Typography.vue renders correctly 1`] = `
               <dd
                 class="col-sm-8"
               >
-                Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
+                
+                Aenean posuere, tortor sed cursus feugiat, nunc augue nunc.
+              
               </dd>
             </dl>
           </dd>

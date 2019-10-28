@@ -1,32 +1,36 @@
 <template>
-  <b-row>
-    <b-col cols="12" lg="6">
-      <b-card no-header>
-        <template slot="header">
-          Edit User id:  {{ $route.params.id }}
-        </template>
-          <b-alert :show="dismissCountDown"
-            dismissible
-            variant="primary"
-            @dismissed="dismissCountdown=0"
-            @dismiss-count-down="countDownChanged">
-            ({{dismissCountDown}}) {{ message }}
-          </b-alert>
-          <b-form-group>
-            <label for="name">Name</label>
-            <b-form-input type="text" id="company" placeholder="Name" v-model="name"></b-form-input>
-          </b-form-group>
-          <b-form-group>
-            <label for="email">Email</label>
-            <b-form-input type="text" id="email" placeholder="Email" v-model="email"></b-form-input>
-          </b-form-group>
-        <template slot="footer">
-          <b-button @click="update()">Edit</b-button>
-          <b-button @click="goBack">Back</b-button>
-        </template>
-      </b-card>
-    </b-col>
-  </b-row>
+  <CRow>
+    <CCol cols="12" lg="6">
+      <CCard no-header>
+        <CCardBody>
+          <CForm>
+            <template slot="header">
+              Edit User id:  {{ $route.params.id }}
+            </template>
+            <CAlert
+              :show.sync="dismissCountDown"
+              color="primary"
+              fade
+            >
+              ({{dismissCountDown}}) {{ message }}
+            </CAlert>
+            <b-form-group>
+              <label for="name">Name</label>
+              <CInput type="text" id="company" placeholder="Name" v-model="name"></CInput>
+            </b-form-group>
+            <b-form-group>
+              <label for="email">Email</label>
+              <CInput type="text" id="email" placeholder="Email" v-model="email"></CInput>
+            </b-form-group>
+          
+            <CButton color="primary" @click="update()">Edit</CButton>
+            <CButton color="primary" @click="goBack">Back</CButton>
+          
+          </CForm>
+        </CCardBody>
+      </CCard>
+    </CCol>
+  </CRow>
 </template>
 
 <script>

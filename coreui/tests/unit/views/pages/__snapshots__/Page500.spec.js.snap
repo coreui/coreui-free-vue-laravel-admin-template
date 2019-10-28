@@ -1,82 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Page500.vue renders correctly 1`] = `
-<div
-  class="app flex-row align-items-center"
+<ccontainer-stub
+  class="d-flex align-items-center min-vh-100"
 >
-  <div
-    class="container"
+  <crow-stub
+    class="w-100 justify-content-center"
+    gutters="true"
   >
-    <b-row-stub
-      class="justify-content-center"
+    <ccol-stub
+      md="6"
       tag="div"
     >
-      <b-col-stub
-        md="6"
-        tag="div"
+      <div
+        class="clearfix"
       >
-        <div
-          class="clearfix"
+        <h1
+          class="float-left display-3 mr-4"
         >
-          <h1
-            class="float-left display-3 mr-4"
-          >
-            500
-          </h1>
-           
-          <h4
-            class="pt-3"
-          >
-            Houston, we have a problem!
-          </h4>
-           
-          <p
-            class="text-muted"
-          >
-            The page you are looking for is temporarily unavailable.
-          </p>
-        </div>
+          500
+        </h1>
          
-        <b-input-group-stub
-          tag="div"
+        <h4
+          class="pt-3"
         >
-          <b-input-group-prepend-stub
-            tag="div"
-          >
-            <b-input-group-text-stub
-              tag="div"
-            >
-              <i
-                class="fa fa-search"
-              />
-            </b-input-group-text-stub>
-          </b-input-group-prepend-stub>
-           
-          <input
-            class="form-control"
-            id="prependedInput"
-            placeholder="What are you looking for?"
-            size="16"
-            type="text"
-          />
-           
-          <b-input-group-append-stub
-            tag="div"
-          >
-            <b-button-stub
-              event="click"
-              routertag="a"
-              tag="button"
-              target="_self"
-              type="button"
-              variant="info"
-            >
-              Search
-            </b-button-stub>
-          </b-input-group-append-stub>
-        </b-input-group-stub>
-      </b-col-stub>
-    </b-row-stub>
-  </div>
-</div>
+          Houston, we have a problem!
+        </h4>
+         
+        <p
+          class="text-muted"
+        >
+          The page you are looking for is temporarily unavailable.
+        </p>
+      </div>
+       
+      <cinput-stub
+        class="mb-3"
+        lazy="400"
+        placeholder="What are you looking for?"
+        prependhtml=<i class='cui-magnifying-glass'></i>
+        type="text"
+      />
+    </ccol-stub>
+  </crow-stub>
+</ccontainer-stub>
 `;

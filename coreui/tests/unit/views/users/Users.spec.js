@@ -1,5 +1,5 @@
-import { createLocalVue, shallowMount, mount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import { createLocalVue, shallowMount } from '@vue/test-utils'
+import CoreuiVue from '@coreui/vue'
 import Users from '@/views/users/Users'
 import VueRouter from 'vue-router';
 
@@ -7,19 +7,14 @@ const localVue = createLocalVue()
 localVue.use(VueRouter)
 const router = new VueRouter()
 
-localVue.use(BootstrapVue)
+localVue.use(CoreuiVue)
 
 describe('Users.vue', () => {
   it('has a name', () => {
-    expect(Users.name).toMatch('Users')
+    expect(Users.name).toBe('Users')
   })
   it('has a created hook', () => {
     expect(typeof Users.data).toMatch('function')
-  })
-  it('sets the correct default data', () => {
-    expect(typeof Users.data).toMatch('function')
-    const defaultData = Users.data()
-    expect(defaultData.currentPage).toBe(1)
   })
   it('is Vue instance', () => {
     const wrapper = shallowMount(Users,{
@@ -34,15 +29,6 @@ describe('Users.vue', () => {
       router
     })
     expect(wrapper.is(Users)).toBe(true)
-  })
-  it('renders props.caption when passed', () => {
-    const caption = 'Users List'
-    const wrapper = mount(Users, {
-      propsData: { caption },
-      localVue,
-      router
-    })
-    expect(wrapper.find('div.card-header > div').text()).toMatch(caption)
   })
   test('renders correctly', () => {
     const wrapper = shallowMount(Users, {

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // Containers
-const DefaultContainer = () => import('@/containers/DefaultContainer')
+const TheContainer = () => import('@/containers/TheContainer')
 
 // Views
 const Dashboard = () => import('@/views/Dashboard')
@@ -10,8 +10,8 @@ const Dashboard = () => import('@/views/Dashboard')
 const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
 
-const Charts = () => import('@/views/Charts')
-const Widgets = () => import('@/views/Widgets')
+const Charts = () => import('@/views/charts/Charts')
+const Widgets = () => import('@/views/widgets/Widgets')
 
 // Views - Components
 const Cards = () => import('@/views/base/Cards')
@@ -38,10 +38,9 @@ const Dropdowns = () => import('@/views/buttons/Dropdowns')
 const BrandButtons = () => import('@/views/buttons/BrandButtons')
 
 // Views - Icons
-const Flags = () => import('@/views/icons/Flags')
-const FontAwesome = () => import('@/views/icons/FontAwesome')
-const SimpleLineIcons = () => import('@/views/icons/SimpleLineIcons')
 const CoreUIIcons = () => import('@/views/icons/CoreUIIcons')
+const Brands = () => import('@/views/icons/Brands')
+const Flags = () => import('@/views/icons/Flags')
 
 // Views - Notifications
 const Alerts = () => import('@/views/notifications/Alerts')
@@ -67,13 +66,20 @@ const CreateNote = () => import('@/views/notes/CreateNote')
 
 Vue.use(Router)
 
-function configRoutes() {
+export default new Router({
+  mode: 'hash', // https://router.vuejs.org/api/#mode
+  linkActiveClass: 'active',
+  scrollBehavior: () => ({ y: 0 }),
+  routes: configRoutes()
+})
+
+function configRoutes () {
   return [
     {
       path: '/',
       redirect: '/dashboard',
       name: 'Home',
-      component: DefaultContainer,
+      component: TheContainer,
       children: [
         {
           path: 'dashboard',
@@ -288,31 +294,26 @@ function configRoutes() {
         },
         {
           path: 'icons',
-          redirect: '/icons/font-awesome',
-          name: 'Icons',
+          redirect: '/icons/coreui-icons',
+          name: 'CoreUI Icons',
           component: {
             render (c) { return c('router-view') }
           },
           children: [
             {
               path: 'coreui-icons',
-              name: 'CoreUI Icons',
+              name: 'Icons library',
               component: CoreUIIcons
+            },
+            {
+              path: 'brands',
+              name: 'Brands',
+              component: Brands
             },
             {
               path: 'flags',
               name: 'Flags',
               component: Flags
-            },
-            {
-              path: 'font-awesome',
-              name: 'Font Awesome',
-              component: FontAwesome
-            },
-            {
-              path: 'simple-line-icons',
-              name: 'Simple Line Icons',
-              component: SimpleLineIcons
             }
           ]
         },
@@ -386,11 +387,3 @@ function configRoutes() {
   ]
 }
 
-export default new Router({
-  //mode: 'hash', // https://router.vuejs.org/api/#mode
-  mode: 'history',
-  base: '/',
-  linkActiveClass: 'open active',
-  scrollBehavior: () => ({ y: 0 }),
-  routes: configRoutes()
-})

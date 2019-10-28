@@ -1,43 +1,51 @@
 <template>
-  <b-row>
-    <b-col cols="12" xl="8">
+  <CRow>
+    <CCol cols="12" xl="8">
       <transition name="slide">
-      <b-card>
-        <div slot="header" v-html="caption"></div>
-          <b-alert :show="dismissCountDown"
-            dismissible
-            variant="primary"
-            @dismissed="dismissCountdown=0"
-            @dismiss-count-down="countDownChanged">
+      <CCard>
+        <CCardBody>
+          <CAlert
+            :show.sync="dismissCountDown"
+            color="primary"
+            fade
+          >
             ({{dismissCountDown}}) {{ message }}
-          </b-alert>
-          <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="md" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage">
-            <template slot="id" slot-scope="data">
-              <strong>{{data.item.id}}</strong>
-            </template>
-            <template slot="name" slot-scope="data">
-              <strong>{{data.item.name}}</strong>
-            </template>
-            <template slot="status" slot-scope="data">
-              <b-badge :variant="getBadge(data.item.status)">{{data.item.status}}</b-badge>
-            </template>
-            <template slot="show" slot-scope="data">
-              <b-button variant="primary" @click="showUser( data.item.id )">Show</b-button>
-            </template>
-            <template slot="edit" slot-scope="data">
-              <b-button variant="primary" @click="editUser( data.item.id )">Edit</b-button>
-            </template>
-            <template slot="delete" slot-scope="data">
-              <b-button v-if="you!=data.item.id" variant="danger" @click="deleteUser( data.item.id )">Delete</b-button>
-            </template>
-          </b-table>
-        <nav>
-          <b-pagination size="sm" :total-rows="getRowCount(items)" :per-page="perPage" v-model="currentPage" prev-text="Prev" next-text="Next" hide-goto-end-buttons/>
-        </nav>
-      </b-card>
+          </CAlert>
+          <CTable
+            :hover="hover"
+            :striped="striped"
+            :bordered="bordered"
+            :items="items"
+            :fields="fields"
+            :items-per-page="10"
+            pagination
+          >
+          <template #status="{item}">
+            <td>
+              <CBadge :color="getBadge(item.status)">{{ item.status }}</CBadge>
+            </td>
+          </template>
+          <template #show="{item}">
+            <td>
+              <CButton color="primary" @click="showUser( item.id )">Show</CButton>
+            </td>
+          </template>
+          <template #edit="{item}">
+            <td>
+              <CButton color="primary" @click="editUser( item.id )">Edit</CButton>
+            </td>
+          </template>
+          <template #delete="{item}">
+            <td>
+              <CButton v-if="you!=item.id" color="danger" @click="deleteUser( item.id )">Delete</CButton>
+            </td>
+          </template>
+        </CTable>
+        </CCardBody>
+      </CCard>
       </transition>
-    </b-col>
-  </b-row>
+    </CCol>
+  </CRow>
 </template>
 
 <script>
@@ -45,45 +53,10 @@ import axios from 'axios'
 
 export default {
   name: 'Users',
-  props: {
-    caption: {
-      type: String,
-      default: 'Users'
-    },
-    hover: {
-      type: Boolean,
-      default: true
-    },
-    striped: {
-      type: Boolean,
-      default: true
-    },
-    bordered: {
-      type: Boolean,
-      default: false
-    },
-    small: {
-      type: Boolean,
-      default: false
-    },
-    fixed: {
-      type: Boolean,
-      default: false
-    }
-  },
   data: () => {
     return {
       items: [],
-      fields: [
-        {key: 'id'},
-        {key: 'name'},
-        {key: 'registered'},
-        {key: 'roles'},
-        {key: 'status'},
-        {key: 'show'},
-        {key: 'edit'},
-        {key: 'delete'}
-      ],
+      fields: ['id', 'name', 'registered', 'roles', 'status', 'show', 'edit', 'delete'],
       currentPage: 1,
       perPage: 5,
       totalRows: 0,

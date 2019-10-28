@@ -1,49 +1,43 @@
 <template>
-  <b-row>
-    <b-col cols="12" lg="6">
-      <b-card no-header>
-        <template slot="header">
-          Edit User id:  {{ $route.params.id }}
-        </template>
-          <b-alert :show="dismissCountDown"
-            dismissible
-            variant="primary"
-            @dismissed="dismissCountdown=0"
-            @dismiss-count-down="countDownChanged">
+  <CRow>
+    <CCol cols="12" lg="6">
+      <CCard>
+        <CCardBody>
+          <h3>
+            Edit Note id:  {{ $route.params.id }}
+          </h3>
+          <CAlert
+            :show.sync="dismissCountDown"
+            color="primary"
+            fade
+          >
             ({{dismissCountDown}}) {{ message }}
-          </b-alert>
-          <b-form-group>
-            <label for="title">Title</label>
-            <b-form-input type="text" id="title" placeholder="Title" v-model="note.title"></b-form-input>
-          </b-form-group>
-          <b-form-group>
-            <label for="content">Content</label>
-            <b-form-textarea id="content" :rows="9" placeholder="Content.." v-model="note.content"></b-form-textarea>
-          </b-form-group>
-          <b-form-group>
-            <label for="applies_to_date">Applies to date</label>
-            <b-form-input type="date" id="applies_to_date" v-model="note.applies_to_date"></b-form-input>
-          </b-form-group>
-          <b-form-group>
-            <label for="status_id">Status</label>
-            <b-form-select id="status_id" 
+          </CAlert>
+            <CInput label="Title" type="text" id="title" placeholder="Title" v-model="note.title"/>
+            <CInput
+              label="Content"
+              placeholder="Content.."
+              
+              textarea="true"
+              rows="9"
+              v-model="note.content"
+            />
+            <CInput label="Applies to date" type="date" id="applies_to_date" v-model="note.applies_to_date"/>
+            <CSelect id="status_id" 
+              :value.sync="note.status_id"
               v-model="note.status_id"
-              :plain="true"
               :options="statuses"
+              label="Status"
             >
-            </b-form-select>
-          </b-form-group>
-          <b-form-group>
-            <label for="note_type">Note type</label>
-            <b-form-input type="text" id="note_type" v-model="note.note_type"></b-form-input>
-          </b-form-group>
-        <template slot="footer">
-          <b-button @click="update()">Edit</b-button>
-          <b-button @click="goBack">Back</b-button>
-        </template>
-      </b-card>
-    </b-col>
-  </b-row>
+            </CSelect>
+            <CInput label="Note type" type="text" id="note_type" v-model="note.note_type"></CInput>
+       
+          <CButton color="primary" @click="update()">Edit</CButton>
+          <CButton color="primary" @click="goBack">Back</CButton>
+        </CCardBody>
+      </CCard>
+    </CCol>
+  </CRow>
 </template>
 
 <script>

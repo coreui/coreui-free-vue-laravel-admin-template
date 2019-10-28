@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import { shallowMount, mount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import { shallowMount } from '@vue/test-utils'
+import CoreuiVue from '@coreui/vue'
 import StandardButtons from '@/views/buttons/StandardButtons'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('StandardButtons.vue', () => {
   it('has a name', () => {
-    expect(StandardButtons.name).toMatch('standard-buttons')
+    expect(StandardButtons.name).toBe('StandardButtons')
   })
   it('has a created hook', () => {
     expect(typeof StandardButtons.data).toMatch('function')
@@ -24,11 +24,6 @@ describe('StandardButtons.vue', () => {
   it('is StandardButtons', () => {
     const wrapper = shallowMount(StandardButtons)
     expect(wrapper.is(StandardButtons)).toBe(true)
-  })
-  it('should render correct content', () => {
-    const wrapper = mount(StandardButtons)
-    expect(wrapper.find('div.card-header > strong').text()).toMatch('Standard buttons')
-    expect(wrapper.find('div.card-header > div > strong').text()).toMatch('Toggle pressed state')
   })
   test('renders correctly', () => {
     const wrapper = shallowMount(StandardButtons)

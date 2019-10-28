@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import { shallowMount, mount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import CoreuiVue from '@coreui/vue'
 import Dropdowns from '@/views/buttons/Dropdowns'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('Dropdowns.vue', () => {
   it('has a name', () => {
-    expect(Dropdowns.name).toMatch('dropdowns')
+    expect(Dropdowns.name).toBe('Dropdowns')
   })
   it('is Vue instance', () => {
     const wrapper = shallowMount(Dropdowns)
@@ -16,10 +16,6 @@ describe('Dropdowns.vue', () => {
   it('is Dropdowns', () => {
     const wrapper = shallowMount(Dropdowns)
     expect(wrapper.is(Dropdowns)).toBe(true)
-  })
-  it('should render correct content', () => {
-    const wrapper = mount(Dropdowns)
-    expect(wrapper.find('header.card-header > div > strong').text()).toMatch('Bootstrap Dropdown')
   })
   test('renders correctly', () => {
     const wrapper = mount(Dropdowns)

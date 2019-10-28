@@ -41,7 +41,7 @@ class NotesController extends Controller
      */
     public function create()
     {
-        $statuses = DB::table('status')->select('status.name as text', 'status.id as value')->get();
+        $statuses = DB::table('status')->select('status.name as label', 'status.id as value')->get();
         return response()->json( $statuses );
     }
 
@@ -98,7 +98,7 @@ class NotesController extends Controller
     public function edit($id)
     {
         $note = DB::table('notes')->where('id', '=', $id)->first();
-        $statuses = DB::table('status')->select('status.name as text', 'status.id as value')->get();
+        $statuses = DB::table('status')->select('status.name as label', 'status.id as value')->get();
         return response()->json( [ 'statuses' => $statuses, 'note' => $note ] );
     }
 

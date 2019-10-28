@@ -1,55 +1,75 @@
 <template>
-  <b-row>
-    <b-col cols="12" xl="12">
+  <CRow>
+    <CCol cols="12" xl="12">
       <transition name="slide">
-      <b-card>
-        <div slot="header" v-html="caption"></div>
-          <b-button variant="primary" @click="createNote()">Create Note</b-button>
-          <b-alert :show="dismissCountDown"
-            dismissible
-            variant="primary"
-            @dismissed="dismissCountdown=0"
-            @dismiss-count-down="countDownChanged">
-            ({{dismissCountDown}}) {{ message }}
-          </b-alert>
-          <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="lg" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage">
-            <template slot="author" slot-scope="data">
-              <strong>{{data.item.author}}</strong>
-            </template>
-            <template slot="title" slot-scope="data">
-              <strong>{{data.item.title}}</strong>
-            </template>
-            <template slot="content" slot-scope="data">
-              {{data.item.content}}
-            </template>
-            <template slot="applies_to_date" slot-scope="data">
-              {{data.item.applies_to_date}}
-            </template>
-            <template slot="status" slot-scope="data">
-              <b-badge :variant="data.item.status_class">{{data.item.status}}</b-badge>
-            </template>
-            <template slot="note_type" slot-scope="data">
-              <strong>{{data.item.note_type}}</strong>
-            </template>
- 
-            <template slot="Show" slot-scope="data">
-              <b-button variant="primary" @click="showNote( data.item.id )">Show</b-button>
-            </template>
-            <template slot="Edit" slot-scope="data">
-              <b-button variant="primary" @click="editNote( data.item.id )">Edit</b-button>
-            </template>
-            <template slot="Delete" slot-scope="data">
-              <b-button v-if="you!=data.item.id" variant="danger" @click="deleteNote( data.item.id )">Delete</b-button>
-            </template>
-
-          </b-table>
-        <nav>
-          <b-pagination size="sm" :total-rows="getRowCount(items)" :per-page="perPage" v-model="currentPage" prev-text="Prev" next-text="Next" hide-goto-end-buttons/>
-        </nav>
-      </b-card>
+      <CCard>
+        <CCardBody>
+            <CButton color="primary" @click="createNote()">Create Note</CButton>
+            <CAlert
+              :show.sync="dismissCountDown"
+              color="primary"
+              fade
+            >
+              ({{dismissCountDown}}) {{ message }}
+            </CAlert>
+            <CTable
+              hover
+              :items="items"
+              :fields="fields"
+              :items-per-page="10"
+              pagination
+            >
+              <template #author="{item}">
+                <td>
+                  <strong>{{item.author}}</strong>
+                </td>
+              </template>
+              <template #title="{item}">
+                <td>
+                  <strong>{{item.title}}</strong>
+                </td>
+              </template>
+              <template #content="{item}">
+                <td>
+                  {{item.content}}
+                </td>  
+              </template>
+              <template #applies_to_date="{item}">
+                <td>
+                  {{item.applies_to_date}}
+                </td>
+              </template>
+              <template #status="{item}">
+                <td>
+                  <CBadge :color="item.status_class">{{item.status}}</CBadge>
+                </td>
+              </template>
+              <template #note_type="{item}">
+                <td>
+                  <strong>{{item.note_type}}</strong>
+                </td>
+              </template>
+              <template #show="{item}">
+                <td>
+                  <CButton color="primary" @click="showNote( item.id )">Show</CButton>
+                </td>
+              </template>
+              <template #edit="{item}">
+                <td>
+                  <CButton color="primary" @click="editNote( item.id )">Edit</CButton>
+                </td>
+              </template>
+              <template #delete="{item}">
+                <td>
+                  <CButton v-if="you!=item.id" color="danger" @click="deleteNote( item.id )">Delete</CButton>
+                </td>
+              </template>
+            </CTable>
+        </CCardBody>  
+      </CCard>
       </transition>
-    </b-col>
-  </b-row>
+    </CCol>
+  </CRow>
 </template>
 
 <script>
@@ -57,35 +77,10 @@ import axios from 'axios'
 
 export default {
   name: 'Notes',
-  props: {
-    caption: {
-      type: String,
-      default: 'Notes'
-    },
-    hover: {
-      type: Boolean,
-      default: true
-    },
-    striped: {
-      type: Boolean,
-      default: true
-    },
-    bordered: {
-      type: Boolean,
-      default: false
-    },
-    small: {
-      type: Boolean,
-      default: false
-    },
-    fixed: {
-      type: Boolean,
-      default: false
-    }
-  },
   data: () => {
     return {
       items: [],
+      /*
       fields: [
         {key: 'author'},
         {key: 'title'},
@@ -93,10 +88,12 @@ export default {
         {key: 'applies_to_date'},
         {key: 'status'},
         {key: 'note_type'},
-        {key: 'Show'},
-        {key: 'Edit'},
-        {key: 'Delete'}
+        {key: 'show'},
+        {key: 'edit'},
+        {key: 'delete'}
       ],
+      */
+      fields: ['author', 'title', 'content', 'applies_to_date', 'status', 'note_type', 'show', 'edit', 'delete'],
       currentPage: 1,
       perPage: 5,
       totalRows: 0,

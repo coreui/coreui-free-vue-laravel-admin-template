@@ -1,13 +1,17 @@
 import Vue from 'vue'
 import { shallowMount, mount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import CoreuiVue from '@coreui/vue'
 import BrandButtons from '@/views/buttons/BrandButtons'
+import { CIconPlugin } from '@coreui/icons/vue'
+import { iconsSet } from '@/assets/icons/icons.js'
 
-Vue.use(BootstrapVue)
+
+Vue.use(CIconPlugin, iconsSet)
+Vue.use(CoreuiVue)
 
 describe('BrandButtons.vue', () => {
   it('has a name', () => {
-    expect(BrandButtons.name).toMatch('brand-buttons')
+    expect(BrandButtons.name).toBe('BrandButtons')
   })
   it('is Vue instance', () => {
     const wrapper = shallowMount(BrandButtons)
@@ -16,10 +20,6 @@ describe('BrandButtons.vue', () => {
   it('is BrandButtons', () => {
     const wrapper = shallowMount(BrandButtons)
     expect(wrapper.is(BrandButtons)).toBe(true)
-  })
-  it('should render correct content', () => {
-    const wrapper = mount(BrandButtons)
-    expect(wrapper.find('div.card-header > div > strong').text()).toMatch('Brand Button')
   })
   test('renders correctly', () => {
     const wrapper = mount(BrandButtons)

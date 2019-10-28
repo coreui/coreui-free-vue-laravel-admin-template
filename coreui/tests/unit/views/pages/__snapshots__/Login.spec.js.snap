@@ -1,195 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Login.vue renders correctly 1`] = `
-<div
-  class="app flex-row align-items-center"
+<ccontainer-stub
+  class="d-flex align-items-center min-vh-100"
 >
-  <div
-    class="container"
+  <crow-stub
+    class="justify-content-center"
+    gutters="true"
   >
-    <b-row-stub
-      class="justify-content-center"
+    <ccol-stub
+      md="8"
       tag="div"
     >
-      <b-col-stub
-        md="8"
-        tag="div"
-      >
-        <b-card-group-stub
-          tag="div"
+      <ccardgroup-stub>
+        <ccard-stub
+          class="p-4"
         >
-          <b-card-stub
-            bodytag="div"
-            class="p-4"
-            footertag="div"
-            headertag="div"
-            nobody="true"
-            subtitle=""
-            subtitletag="h6"
-            subtitletextvariant="muted"
-            tag="div"
-            title=""
-            titletag="h4"
-          >
-            <b-card-body-stub
-              bodytag="div"
-              subtitle=""
-              subtitletag="h6"
-              subtitletextvariant="muted"
-              title=""
-              titletag="h4"
-            >
-              <b-form-stub>
-                <h1>
-                  Login
-                </h1>
-                 
-                <p
-                  class="text-muted"
-                >
-                  Sign In to your account
-                </p>
-                 
-                <b-input-group-stub
-                  class="mb-3"
+          <ccardbody-stub>
+            <cform-stub>
+              <h1>
+                Login
+              </h1>
+               
+              <p
+                class="text-muted"
+              >
+                Sign In to your account
+              </p>
+               
+              <cinput-stub
+                autocomplete="username email"
+                lazy="400"
+                placeholder="Username"
+                prependhtml=<i class='cui-user'></i>
+                type="text"
+              />
+               
+              <cinput-stub
+                autocomplete="curent-password"
+                lazy="400"
+                placeholder="Password"
+                prependhtml=<i class='cui-lock-locked'></i>
+                type="password"
+              />
+               
+              <crow-stub
+                gutters="true"
+              >
+                <ccol-stub
+                  col="6"
                   tag="div"
                 >
-                  <b-input-group-prepend-stub
-                    tag="div"
+                  <cbutton-stub
+                    activeclass="active"
+                    class="px-4"
+                    color="primary"
+                    event="click"
+                    exactactiveclass="active"
+                    routertag="a"
+                    target="_self"
+                    type="button"
                   >
-                    <b-input-group-text-stub
-                      tag="div"
-                    >
-                      <i
-                        class="icon-user"
-                      />
-                    </b-input-group-text-stub>
-                  </b-input-group-prepend-stub>
-                   
-                  <b-form-input-stub
-                    autocomplete="username email"
-                    class="form-control"
-                    placeholder="Username"
-                    type="text"
-                    value=""
-                  />
-                </b-input-group-stub>
+                    Login
+                  </cbutton-stub>
+                </ccol-stub>
                  
-                <b-input-group-stub
-                  class="mb-4"
+                <ccol-stub
+                  class="text-right"
+                  col="6"
                   tag="div"
                 >
-                  <b-input-group-prepend-stub
-                    tag="div"
+                  <cbutton-stub
+                    activeclass="active"
+                    class="px-0"
+                    color="link"
+                    event="click"
+                    exactactiveclass="active"
+                    routertag="a"
+                    target="_self"
+                    type="button"
                   >
-                    <b-input-group-text-stub
-                      tag="div"
-                    >
-                      <i
-                        class="icon-lock"
-                      />
-                    </b-input-group-text-stub>
-                  </b-input-group-prepend-stub>
-                   
-                  <b-form-input-stub
-                    autocomplete="current-password"
-                    class="form-control"
-                    placeholder="Password"
-                    type="password"
-                    value=""
-                  />
-                </b-input-group-stub>
-                 
-                <b-row-stub
-                  tag="div"
-                >
-                  <b-col-stub
-                    cols="6"
-                    tag="div"
-                  >
-                    <b-button-stub
-                      class="px-4"
-                      event="click"
-                      routertag="a"
-                      tag="button"
-                      target="_self"
-                      type="button"
-                      variant="primary"
-                    >
-                      Login
-                    </b-button-stub>
-                  </b-col-stub>
-                   
-                  <b-col-stub
-                    class="text-right"
-                    cols="6"
-                    tag="div"
-                  >
-                    <b-button-stub
-                      class="px-0"
-                      event="click"
-                      routertag="a"
-                      tag="button"
-                      target="_self"
-                      type="button"
-                      variant="link"
-                    >
-                      Forgot password?
-                    </b-button-stub>
-                  </b-col-stub>
-                </b-row-stub>
-              </b-form-stub>
-            </b-card-body-stub>
-          </b-card-stub>
+                    Forgot password?
+                  </cbutton-stub>
+                </ccol-stub>
+              </crow-stub>
+            </cform-stub>
+          </ccardbody-stub>
+        </ccard-stub>
+         
+        <ccard-stub
+          bodywrapper="true"
+          class="text-white text-center bg-primary py-5 d-md-down-none"
+        >
+          <h2>
+            Sign up
+          </h2>
            
-          <b-card-stub
-            bodytag="div"
-            class="text-white bg-primary py-5 d-md-down-none"
-            footertag="div"
-            headertag="div"
-            nobody="true"
-            subtitle=""
-            subtitletag="h6"
-            subtitletextvariant="muted"
-            tag="div"
-            title=""
-            titletag="h4"
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+           
+          <cbutton-stub
+            activeclass="active"
+            class="active mt-3"
+            color="primary"
+            event="click"
+            exactactiveclass="active"
+            routertag="a"
+            target="_self"
+            type="button"
           >
-            <b-card-body-stub
-              bodytag="div"
-              class="text-center"
-              subtitle=""
-              subtitletag="h6"
-              subtitletextvariant="muted"
-              title=""
-              titletag="h4"
-            >
-              <div>
-                <h2>
-                  Sign up
-                </h2>
-                 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                 
-                <b-button-stub
-                  class="active mt-3"
-                  event="click"
-                  routertag="a"
-                  tag="button"
-                  target="_self"
-                  type="button"
-                  variant="primary"
-                >
-                  Register Now!
-                </b-button-stub>
-              </div>
-            </b-card-body-stub>
-          </b-card-stub>
-        </b-card-group-stub>
-      </b-col-stub>
-    </b-row-stub>
-  </div>
-</div>
+            
+            Register Now!
+          
+          </cbutton-stub>
+        </ccard-stub>
+      </ccardgroup-stub>
+    </ccol-stub>
+  </crow-stub>
+</ccontainer-stub>
 `;

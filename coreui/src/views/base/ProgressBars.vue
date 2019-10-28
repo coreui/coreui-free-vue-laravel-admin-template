@@ -1,177 +1,227 @@
 <template>
-  <div class="wrapper">
-    <div class="animated fadeIn">
-      <b-card
-        header-tag="header"
-        footer-tag="footer">
-        <div slot="header">
-          <i class="fa fa-align-justify"></i><strong> Bootstrap Progress</strong>
-          <div class="card-header-actions">
-            <a href="https://bootstrap-vue.js.org/docs/components/progress" class="card-header-action" rel="noreferrer noopener" target="_blank">
-              <small class="text-muted">docs</small>
-            </a>
+  <div>
+    <CCard>
+      <CCardHeader>
+        <i class="fa fa-align-justify"></i>
+        <strong> Bootstrap Progress</strong>
+        <div class="card-header-actions">
+          <a 
+            href="https://coreui.io/vue/docs/3.0/components/Progress" 
+            class="card-header-action" 
+            rel="noreferrer noopener" 
+            target="_blank"
+          >
+            <small class="text-muted">docs</small>
+          </a>
+        </div>
+      </CCardHeader>
+      <CCardBody>
+        <CProgress :value="counter" :max="max" show-percentage animated></CProgress>
+        <CProgress class="mt-1" :max="max" show-value>
+          <CProgressBar :value="counter*(6/10)" color="success"/>
+          <CProgressBar :value="counter*(2.5/10)" color="warning"/>
+          <CProgressBar :value="counter*(1.5/10)" color="danger"/>
+        </CProgress>
+        <CButton 
+          @click="clicked"
+          color="secondary"
+          class="mt-4" 
+        >
+          Click me to animate progress bars
+        </CButton>
+      </CCardBody>
+    </CCard>
+    <CCard>
+      <CCardHeader>
+        <i class="fa fa-align-justify"></i> <strong> Progress </strong><small>labels</small>
+      </CCardHeader>
+      <CCardBody>
+        <h6>No label</h6>
+        <CProgress :value="value" :max="max2" class="mb-3"/>
+        <h6>Value label</h6>
+        <CProgress :value="value" :max="max2" show-value class="mb-3"/>
+        <h6>Progress label</h6>
+        <CProgress :value="value" :max="max2" show-percentage class="mb-3"/>
+        <h6>Value label with precision</h6>
+        <CProgress :value="value" :max="max2" :precision="2" show-value class="mb-3"/>
+        <h6>Progress label with precision</h6>
+        <CProgress :value="value" :max="max2" :precision="2" show-percentage class="mb-3"/>
+      </CCardBody>
+    </CCard>
+    <CCard>
+      <CCardHeader>
+        <i class="fa fa-align-justify"></i>
+        <strong> Progress </strong>
+        <small>width</small>
+      </CCardHeader>
+      <CCardBody>
+        <h6>Default width</h6>
+        <CProgress :value="value3" class="mb-3"/>
+        <h6>Custom widths</h6>
+        <CProgress :value="value3" class="w-75 mb-2"/>
+        <CProgress :value="value3" class="w-50 mb-2"/>
+        <CProgress :value="value3" class="w-25"/>
+      </CCardBody>
+    </CCard>
+    <CCard>
+      <CCardHeader>
+        <i class="fa fa-align-justify"></i>
+        <strong> Progress </strong>
+        <small>height</small>
+      </CCardHeader>
+      <CCardBody>
+        <h6>Default height</h6>
+        <CProgress :value="value3" show-percentage class="mb-3"/>
+        <h6>Custom heights</h6>
+        <CProgress height="2rem" :value="value3" show-percentage class="mb-2"/>
+        <CProgress height="20px" :value="value3" show-percentage class="mb-2"/>
+        <CProgress height="2px" :value="value3"/>
+      </CCardBody>
+    </CCard>
+    <CCard>
+      <CCardHeader>
+        <i class="fa fa-align-justify"></i>
+        <strong> Progress </strong>
+        <small>colors</small>
+      </CCardHeader>
+      <CCardBody>
+        <div :key="index" v-for="(bar, index) in bars" class="row mb-1">
+          <div class="col-sm-2">{{ bar.color }}:</div>
+          <div class="col-sm-10 pt-1">
+            <CProgress
+              :value="bar.value"
+              :color="bar.color"
+              :key="bar.color"
+            />
           </div>
         </div>
-        <div>
-          <b-progress :value="counter" :max="max" show-progress animated></b-progress>
-          <b-progress class="mt-1" :max="max" show-value>
-            <b-progress-bar :value="counter*(6/10)" variant="success"></b-progress-bar>
-            <b-progress-bar :value="counter*(2.5/10)" variant="warning"></b-progress-bar>
-            <b-progress-bar :value="counter*(1.5/10)" variant="danger"></b-progress-bar>
-          </b-progress>
-          <b-btn class="mt-4" @click="clicked">Click me</b-btn>
-        </div>
-      </b-card>
-      <b-card
-        header-tag="header"
-        footer-tag="footer">
-        <div slot="header">
-          <i class="fa fa-align-justify"></i> <strong> Progress </strong><small>labels</small>
-        </div>
-        <div>
-          <h6>No label</h6>
-          <b-progress :value="value" :max="max2" class="mb-3"></b-progress>
-          <h6>Value label</h6>
-          <b-progress :value="value" :max="max2" show-value class="mb-3"></b-progress>
-          <h6>Progress label</h6>
-          <b-progress :value="value" :max="max2" show-progress class="mb-3"></b-progress>
-          <h6>Value label with precision</h6>
-          <b-progress :value="value" :max="max2" :precision="2" show-value class="mb-3"></b-progress>
-          <h6>Progress label with precision</h6>
-          <b-progress :value="value" :max="max2" :precision="2" show-progress class="mb-3"></b-progress>
-        </div>
-      </b-card>
-      <b-card
-        header-tag="header"
-        footer-tag="footer">
-        <div slot="header">
-          <i class="fa fa-align-justify"></i><strong> Progress </strong><small>width</small>
-        </div>
-        <div>
-          <h6>Default width</h6>
-          <b-progress :value="value3" class="mb-3"></b-progress>
-          <h6>Custom widths</h6>
-          <b-progress :value="value3" class="w-75 mb-2"></b-progress>
-          <b-progress :value="value3" class="w-50 mb-2"></b-progress>
-          <b-progress :value="value3" class="w-25"></b-progress>
-        </div>
-      </b-card>
-      <b-card
-        header-tag="header"
-        footer-tag="footer">
-        <div slot="header">
-          <i class="fa fa-align-justify"></i><strong> Progress </strong><small>height</small>
-        </div>
-        <div>
-          <h6>Default height</h6>
-          <b-progress :value="value3" show-progress class="mb-3"></b-progress>
-          <h6>Custom heights</h6>
-          <b-progress height="2rem" :value="value3" show-progress class="mb-2"></b-progress>
-          <b-progress height="20px" :value="value3" show-progress class="mb-2"></b-progress>
-          <b-progress height="2px" :value="value3"></b-progress>
-        </div>
-      </b-card>
-      <b-card
-        header-tag="header"
-        footer-tag="footer">
-        <div slot="header">
-          <i class="fa fa-align-justify"></i><strong> Progress </strong><small>variants</small>
-        </div>
-        <div>
-          <div :key="index" v-for="(bar, index) in bars" class="row mb-1">
-            <div class="col-sm-2">{{ bar.variant }}:</div>
-            <div class="col-sm-10 pt-1">
-              <b-progress :value="bar.value"
-                          :variant="bar.variant"
-                          :key="bar.variant"
-              ></b-progress>
-            </div>
-          </div>
-        </div>
-      </b-card>
-      <b-card
-        header-tag="header"
-        footer-tag="footer">
-        <div slot="header">
-          <i class="fa fa-align-justify"></i><strong> Progress </strong><small>striped</small>
-        </div>
-        <div>
-          <b-progress :value="25" variant="success" :striped="striped" class="mb-2"></b-progress>
-          <b-progress :value="50" variant="info" :striped="striped" class="mb-2"></b-progress>
-          <b-progress :value="75" variant="warning" :striped="striped" class="mb-2"></b-progress>
-          <b-progress :value="100" variant="danger" :striped="striped" class="mb-2"></b-progress>
-          <b-button variant="secondary" @click="striped = !striped">
-            {{ striped ? 'Remove' : 'Add'}} Striped
-          </b-button>
-        </div>
-      </b-card>
-      <b-card
-        header-tag="header"
-        footer-tag="footer">
-        <div slot="header">
-          <i class="fa fa-align-justify"></i><strong> Progress </strong><small>animated</small>
-        </div>
-        <div>
-          <b-progress :value="25" variant="success" striped :animated="animate" class="mb-2"></b-progress>
-          <b-progress :value="50" variant="info" striped :animated="animate" class="mb-2"></b-progress>
-          <b-progress :value="75" variant="warning" striped :animated="animate" class="mb-2"></b-progress>
-          <b-progress :value="100" variant="danger" :animated="animate" class="mb-3"></b-progress>
-          <b-button variant="secondary" @click="animate = !animate">
-            {{ animate ? 'Stop' : 'Start'}} Animation
-          </b-button>
-        </div>
-      </b-card>
-      <b-card
-        header-tag="header"
-        footer-tag="footer">
-        <div slot="header">
-          <i class="fa fa-align-justify"></i><strong> Progress </strong><small>multiple bars</small>
-        </div>
-        <div>
-          <b-progress :max="max3" class="mb-3">
-            <b-progress-bar variant="primary" :value="values[0]"></b-progress-bar>
-            <b-progress-bar variant="success" :value="values[1]"></b-progress-bar>
-            <b-progress-bar variant="info" :value="values[2]"></b-progress-bar>
-          </b-progress>
-          <b-progress show-progress :max="max3" class="mb-3">
-            <b-progress-bar variant="primary" :value="values[0]"></b-progress-bar>
-            <b-progress-bar variant="success" :value="values[1]"></b-progress-bar>
-            <b-progress-bar variant="info" :value="values[2]"></b-progress-bar>
-          </b-progress>
-          <b-progress show-value striped :max="max3" class="mb-3">
-            <b-progress-bar variant="primary" :value="values[0]"></b-progress-bar>
-            <b-progress-bar variant="success" :value="values[1]"></b-progress-bar>
-            <b-progress-bar variant="info" :value="values[2]"></b-progress-bar>
-          </b-progress>
-          <b-progress :max="max3" class="mb-3">
-            <b-progress-bar variant="primary" :value="values[0]" show-progress></b-progress-bar>
-            <b-progress-bar variant="success" :value="values[1]" animated show-progress></b-progress-bar>
-            <b-progress-bar variant="info" :value="values[2]" striped show-progress></b-progress-bar>
-          </b-progress>
-        </div>
-      </b-card>
-    </div>
+      </CCardBody>
+    </CCard>
+    <CCard>
+      <CCardHeader>
+        <i class="fa fa-align-justify"></i>
+        <strong> Progress </strong>
+        <small>striped</small>
+      </CCardHeader>
+      <CCardBody>
+        <CProgress
+          :value="25"
+          color="success"
+          :striped="striped"
+          class="mb-2"
+        />
+        <CProgress
+          :value="50"
+          color="info"
+          :striped="striped"
+          class="mb-2"
+        />
+        <CProgress
+          :value="75"
+          color="warning"
+          :striped="striped"
+          class="mb-2"
+        />
+        <CProgress
+          :value="100"
+          color="danger"
+          :striped="striped"
+          class="mb-2"
+        />
+        <CButton color="secondary" @click="striped = !striped">
+          {{ striped ? 'Remove' : 'Add'}} Striped
+        </CButton>
+      </CCardBody>
+    </CCard>
+    <CCard>
+      <CCardHeader>
+        <i class="fa fa-align-justify"></i>
+        <strong> Progress </strong>
+        <small>animated</small>
+      </CCardHeader>
+      <CCardBody>
+        <CProgress
+          :value="25"
+          color="success"
+          striped
+          :animated="animate"
+          class="mb-2"
+        />
+        <CProgress
+          :value="50"
+          color="info"
+          striped
+          :animated="animate"
+          class="mb-2"
+        />
+        <CProgress
+          :value="75"
+          color="warning"
+          striped
+          :animated="animate"
+          class="mb-2"
+        />
+        <CProgress
+          :value="100"
+          color="danger"
+          :animated="animate"
+          class="mb-3"
+        />
+        <CButton color="secondary" @click="animate = !animate">
+          {{ animate ? 'Stop' : 'Start'}} Animation
+        </CButton>
+      </CCardBody>
+    </CCard>
+    <CCard>
+      <CCardHeader>
+        <i class="fa fa-align-justify"></i>
+        <strong> Progress </strong>
+        <small>multiple bars</small>
+      </CCardHeader>
+      <CCardBody>
+        <CProgress :max="max3" class="mb-3">
+          <CProgressBar color="primary" :value="values[0]"/>
+          <CProgressBar color="success" :value="values[1]"/>
+          <CProgressBar color="info" :value="values[2]"/>
+        </CProgress>
+        <CProgress show-percentage :max="max3" class="mb-3">
+          <CProgressBar color="primary" :value="values[0]"/>
+          <CProgressBar color="success" :value="values[1]"/>
+          <CProgressBar color="info" :value="values[2]"/>
+        </CProgress>
+        <CProgress show-value striped :max="max3" class="mb-3">
+          <CProgressBar color="primary" :value="values[0]"/>
+          <CProgressBar color="success" :value="values[1]"/>
+          <CProgressBar color="info" :value="values[2]"/>
+        </CProgress>
+        <CProgress :max="max3" class="mb-3">
+          <CProgressBar color="primary" :value="values[0]" show-percentage/>
+          <CProgressBar color="success" :value="values[1]" animated show-percentage/>
+          <CProgressBar color="info" :value="values[2]" striped show-percentage/>
+        </CProgress>
+      </CCardBody>
+    </CCard>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'progress-bars',
+  name: 'ProgressBars',
   data () {
     return {
-      counter: 45,
+      counter: 73,
       max: 100,
       max2: 50,
       value: 33.333333333,
       value3: 75,
       bars: [
-        {variant: 'success', value: 75},
-        {variant: 'info', value: 75},
-        {variant: 'warning', value: 75},
-        {variant: 'danger', value: 75},
-        {variant: 'primary', value: 75},
-        {variant: 'secondary', value: 75},
-        {variant: 'dark', value: 75}
+        {color: 'success', value: 75},
+        {color: 'info', value: 75},
+        {color: 'warning', value: 75},
+        {color: 'danger', value: 75},
+        {color: 'primary', value: 75},
+        {color: 'secondary', value: 75},
+        {color: 'dark', value: 75}
       ],
       timer: null,
       striped: true,
@@ -183,19 +233,14 @@ export default {
   methods: {
     clicked () {
       this.counter = Math.random() * this.max
-      console.log('Change progress to ' +
-          Math.round(this.counter * 100) / 100)
-    },
-    setClock() {
-      this.timer = setInterval(() => {
-        this.bars.forEach(bar => {
-          bar.value = 25 + (Math.random() * 75)
-        })
-      }, 2000)
     }
   },
   mounted () {
-    this.setClock()
+    this.timer = setInterval(() => {
+      this.bars.forEach(bar => {
+        bar.value = 25 + (Math.random() * 75)
+      })
+    }, 2000)
   },
   beforeDestroy () {
     clearInterval(this.timer)
@@ -203,4 +248,3 @@ export default {
   }
 }
 </script>
-

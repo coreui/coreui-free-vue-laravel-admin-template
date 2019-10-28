@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import { shallowMount, mount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import CoreuiVue from '@coreui/vue'
 import Breadcrumbs from '@/views/base/Breadcrumbs'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('Breadcrumbs.vue', () => {
   it('has a name', () => {
-    expect(Breadcrumbs.name).toMatch('breadcrumbs')
+    expect(Breadcrumbs.name).toBe('Breadcrumbs')
   })
   it('has a created hook', () => {
     expect(typeof Breadcrumbs.data).toMatch('function')
@@ -24,10 +24,6 @@ describe('Breadcrumbs.vue', () => {
   it('is Breadcrumbs', () => {
     const wrapper = shallowMount(Breadcrumbs)
     expect(wrapper.is(Breadcrumbs)).toBe(true)
-  })
-  it('should render correct content', () => {
-    const wrapper = mount(Breadcrumbs)
-    expect(wrapper.find('header.card-header > div > strong').text()).toMatch('Bootstrap Breadcrumb')
   })
   test('renders correctly', () => {
     const wrapper = mount(Breadcrumbs)

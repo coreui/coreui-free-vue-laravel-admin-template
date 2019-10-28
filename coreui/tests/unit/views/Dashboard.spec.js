@@ -1,13 +1,17 @@
 import Vue from 'vue'
 import { shallowMount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import CoreuiVue from '@coreui/vue'
+import { CIconPlugin } from '@coreui/icons/vue'
 import Dashboard from '@/views/Dashboard'
+import { iconsSet } from '@/assets/icons/icons.js'
 
-Vue.use(BootstrapVue)
+
+Vue.use(CoreuiVue)
+Vue.use(CIconPlugin, iconsSet)
 
 describe('Dashboard.vue', () => {
   it('has a name', () => {
-    expect(Dashboard.name).toMatch('dashboard')
+    expect(Dashboard.name).toBe('Dashboard')
   })
   it('has a created hook', () => {
     expect(typeof Dashboard.data).toMatch('function')
@@ -32,14 +36,5 @@ describe('Dashboard.vue', () => {
   test('renders correctly', () => {
     const wrapper = shallowMount(Dashboard)
     expect(wrapper.element).toMatchSnapshot()
-  })
-  it('should have methods', () => {
-    expect(typeof Dashboard.methods.variant  ).toEqual('function')
-    expect(Dashboard.methods.variant(25)).toBe('info')
-    expect(Dashboard.methods.variant(50)).toBe('success')
-    expect(Dashboard.methods.variant(75)).toBe('warning')
-    expect(Dashboard.methods.variant(100)).toBe('danger')
-    expect(typeof Dashboard.methods.flag ).toEqual('function')
-    expect(Dashboard.methods.flag('us')).toBe('flag-icon flag-icon-us')
   })
 })

@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import { shallowMount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import CoreuiVue from '@coreui/vue'
 import Register from '@/views/pages/Register'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('Register.vue', () => {
   it('has a name', () => {
-    expect(Register.name).toMatch('Register')
+    expect(Register.name).toBe('Register')
   })
   it('is Vue instance', () => {
     const wrapper = shallowMount(Register)

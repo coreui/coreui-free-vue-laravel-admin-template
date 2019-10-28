@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import { shallowMount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import CoreuiVue from '@coreui/vue'
 import Login from '@/views/pages/Login'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('Login.vue', () => {
   it('has a name', () => {
-    expect(Login.name).toMatch('Login')
+    expect(Login.name).toBe('Login')
   })
   it('is Vue instance', () => {
     const wrapper = shallowMount(Login)

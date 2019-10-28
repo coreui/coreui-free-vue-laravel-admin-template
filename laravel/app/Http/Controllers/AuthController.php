@@ -40,7 +40,7 @@ class AuthController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
-        $user->status = 1;
+        $user->status = 'Active';
         $user->save();       
         return response()->json(['status' => 'success'], 200);
     } 

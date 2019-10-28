@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import { shallowMount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import CoreuiVue from '@coreui/vue'
 import Page500 from '@/views/pages/Page500'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('Page500.vue', () => {
   it('has a name', () => {
-    expect(Page500.name).toMatch('Page500')
+    expect(Page500.name).toBe('Page500')
   })
   it('is Vue instance', () => {
     const wrapper = shallowMount(Page500)

@@ -1,26 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CoreUIIcons.vue renders correctly 1`] = `
-<div
-  class="animated fadeIn"
->
-  <div
-    class="card"
-  >
-    <!---->
-    <!---->
-    <div
-      class="card-header"
-    >
+<div>
+  <ccard-stub>
+    <ccardheader-stub>
       <i
-        class="fa fa-picture-o"
+        class="cui-pencil"
       />
-      CoreUI Icons 
-      <span
-        class="badge badge-info"
+      CoreUI Icons
+      
+      <cbadge-stub
+        activeclass="active"
+        color="info"
+        event="click"
+        exactactiveclass="active"
+        routertag="a"
+        tag="span"
+        target="_self"
       >
         New
-      </span>
+      </cbadge-stub>
        
       <div
         class="card-header-actions"
@@ -38,18 +37,19 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           </small>
         </a>
       </div>
-    </div>
+    </ccardheader-stub>
      
-    <div
-      class="card-body"
-    >
-      <!---->
-      <!---->
-      <div
-        class="row text-center"
+    <ccardbody-stub>
+      <crow-stub
+        class="text-center "
+        gutters="true"
       >
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-account-logout icons font-2xl d-block mt-4"
@@ -58,10 +58,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             account-logout
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-action-redo icons font-2xl d-block mt-4"
@@ -70,10 +74,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             action-redo
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-action-undo icons font-2xl d-block mt-4"
@@ -82,10 +90,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             action-undo
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-align-center icons font-2xl d-block mt-4"
@@ -94,10 +106,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             align-center
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-align-left icons font-2xl d-block mt-4"
@@ -106,10 +122,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             align-left
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-align-right icons font-2xl d-block mt-4"
@@ -118,10 +138,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             align-right
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-arrow-bottom icons font-2xl d-block mt-4"
@@ -130,10 +154,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             arrow-bottom
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-arrow-left icons font-2xl d-block mt-4"
@@ -142,10 +170,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             arrow-left
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-arrow-right icons font-2xl d-block mt-4"
@@ -154,10 +186,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             arrow-right
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-arrow-top icons font-2xl d-block mt-4"
@@ -166,10 +202,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             arrow-top
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-ban icons font-2xl d-block mt-4"
@@ -178,10 +218,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             ban
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-basket-loaded icons font-2xl d-block mt-4"
@@ -190,10 +234,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             basket-loaded
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-bell icons font-2xl d-block mt-4"
@@ -202,10 +250,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             bell
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-bold icons font-2xl d-block mt-4"
@@ -214,10 +266,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             bold
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-bookmark icons font-2xl d-block mt-4"
@@ -226,10 +282,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             bookmark
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-briefcase icons font-2xl d-block mt-4"
@@ -238,10 +298,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             briefcase
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-british-pound icons font-2xl d-block mt-4"
@@ -250,10 +314,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             british-pound
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-brush icons font-2xl d-block mt-4"
@@ -262,10 +330,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             brush
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-calculator icons font-2xl d-block mt-4"
@@ -274,10 +346,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             calculator
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-calendar icons font-2xl d-block mt-4"
@@ -286,10 +362,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             calendar
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-cart icons font-2xl d-block mt-4"
@@ -298,10 +378,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             cart
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-chart icons font-2xl d-block mt-4"
@@ -310,10 +394,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             chart
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-check icons font-2xl d-block mt-4"
@@ -322,10 +410,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             check
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-chevron-bottom icons font-2xl d-block mt-4"
@@ -334,10 +426,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             chevron-bottom
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-chevron-left icons font-2xl d-block mt-4"
@@ -346,10 +442,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             chevron-left
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-chevron-right icons font-2xl d-block mt-4"
@@ -358,10 +458,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             chevron-right
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-chevron-top icons font-2xl d-block mt-4"
@@ -370,10 +474,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             chevron-top
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-circle-check icons font-2xl d-block mt-4"
@@ -382,10 +490,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             circle-check
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-circle-x icons font-2xl d-block mt-4"
@@ -394,10 +506,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             circle-x
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-cloud icons font-2xl d-block mt-4"
@@ -406,10 +522,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             cloud
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-cloud-download icons font-2xl d-block mt-4"
@@ -418,10 +538,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             cloud-download
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-cloud-upload icons font-2xl d-block mt-4"
@@ -430,10 +554,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             cloud-upload
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-code icons font-2xl d-block mt-4"
@@ -442,10 +570,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             code
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-cog icons font-2xl d-block mt-4"
@@ -454,10 +586,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             cog
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-comment-square icons font-2xl d-block mt-4"
@@ -466,10 +602,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             comment-square
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-credit-card icons font-2xl d-block mt-4"
@@ -478,10 +618,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             credit-card
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-cursor icons font-2xl d-block mt-4"
@@ -490,10 +634,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             cursor
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-dashboard icons font-2xl d-block mt-4"
@@ -502,10 +650,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             dashboard
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-delete icons font-2xl d-block mt-4"
@@ -514,10 +666,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             delete
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-dollar icons font-2xl d-block mt-4"
@@ -526,10 +682,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             dollar
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-drop icons font-2xl d-block mt-4"
@@ -538,10 +698,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             drop
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-envelope-closed icons font-2xl d-block mt-4"
@@ -550,10 +714,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             envelope-closed
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-envelope-letter icons font-2xl d-block mt-4"
@@ -562,10 +730,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             envelope-letter
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-envelope-open icons font-2xl d-block mt-4"
@@ -574,10 +746,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             envelope-open
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-euro icons font-2xl d-block mt-4"
@@ -586,10 +762,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             euro
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-file icons font-2xl d-block mt-4"
@@ -598,10 +778,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             file
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-globe icons font-2xl d-block mt-4"
@@ -610,10 +794,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             globe
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-graph icons font-2xl d-block mt-4"
@@ -622,10 +810,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             graph
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-home icons font-2xl d-block mt-4"
@@ -634,10 +826,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             home
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-inbox icons font-2xl d-block mt-4"
@@ -646,10 +842,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             inbox
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-info icons font-2xl d-block mt-4"
@@ -658,10 +858,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             info
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-italic icons font-2xl d-block mt-4"
@@ -670,10 +874,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             italic
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-justify-center icons font-2xl d-block mt-4"
@@ -682,10 +890,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             justify-center
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-justify-left icons font-2xl d-block mt-4"
@@ -694,10 +906,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             justify-left
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-justify-right icons font-2xl d-block mt-4"
@@ -706,10 +922,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             justify-right
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-laptop icons font-2xl d-block mt-4"
@@ -718,10 +938,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             laptop
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-layers icons font-2xl d-block mt-4"
@@ -730,10 +954,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             layers
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-lightbulb icons font-2xl d-block mt-4"
@@ -742,10 +970,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             lightbulb
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-list icons font-2xl d-block mt-4"
@@ -754,10 +986,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             list
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-location-pin icons font-2xl d-block mt-4"
@@ -766,10 +1002,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             location-pin
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-lock-locked icons font-2xl d-block mt-4"
@@ -778,10 +1018,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             lock-locked
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-lock-unlocked icons font-2xl d-block mt-4"
@@ -790,10 +1034,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             lock-unlocked
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-magnifying-glass icons font-2xl d-block mt-4"
@@ -802,10 +1050,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             magnifying-glass
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-map icons font-2xl d-block mt-4"
@@ -814,10 +1066,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             map
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-monitor icons font-2xl d-block mt-4"
@@ -826,10 +1082,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             monitor
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-moon icons font-2xl d-block mt-4"
@@ -838,10 +1098,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             moon
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-note icons font-2xl d-block mt-4"
@@ -850,10 +1114,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             note
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-options icons font-2xl d-block mt-4"
@@ -862,10 +1130,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             options
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-paperclip icons font-2xl d-block mt-4"
@@ -874,10 +1146,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             paperclip
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-pencil icons font-2xl d-block mt-4"
@@ -886,10 +1162,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             pencil
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-people icons font-2xl d-block mt-4"
@@ -898,10 +1178,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             people
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-phone icons font-2xl d-block mt-4"
@@ -910,10 +1194,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             phone
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-pie-chart icons font-2xl d-block mt-4"
@@ -922,10 +1210,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             pie-chart
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-print icons font-2xl d-block mt-4"
@@ -934,10 +1226,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             print
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-puzzle icons font-2xl d-block mt-4"
@@ -946,10 +1242,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             puzzle
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-rss icons font-2xl d-block mt-4"
@@ -958,10 +1258,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             rss
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-screen-desktop icons font-2xl d-block mt-4"
@@ -970,10 +1274,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             screen-desktop
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-screen-smartphone icons font-2xl d-block mt-4"
@@ -982,10 +1290,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             screen-smartphone
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-settings icons font-2xl d-block mt-4"
@@ -994,10 +1306,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             settings
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-share icons font-2xl d-block mt-4"
@@ -1006,10 +1322,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             share
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-shield icons font-2xl d-block mt-4"
@@ -1018,10 +1338,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             shield
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-sort-ascending icons font-2xl d-block mt-4"
@@ -1030,10 +1354,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             sort-ascending
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-sort-descending icons font-2xl d-block mt-4"
@@ -1042,10 +1370,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             sort-descending
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-speech icons font-2xl d-block mt-4"
@@ -1054,10 +1386,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             speech
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-speedometer icons font-2xl d-block mt-4"
@@ -1066,10 +1402,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             speedometer
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-star icons font-2xl d-block mt-4"
@@ -1078,10 +1418,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             star
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-sun icons font-2xl d-block mt-4"
@@ -1090,10 +1434,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             sun
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-tablet icons font-2xl d-block mt-4"
@@ -1102,10 +1450,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             tablet
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-tags icons font-2xl d-block mt-4"
@@ -1114,10 +1466,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             tags
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-task icons font-2xl d-block mt-4"
@@ -1126,10 +1482,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             task
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-thumb-down icons font-2xl d-block mt-4"
@@ -1138,10 +1498,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             thumb-down
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-thumb-up icons font-2xl d-block mt-4"
@@ -1150,10 +1514,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             thumb-up
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-trash icons font-2xl d-block mt-4"
@@ -1162,10 +1530,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             trash
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-underline icons font-2xl d-block mt-4"
@@ -1174,10 +1546,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             underline
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-user icons font-2xl d-block mt-4"
@@ -1186,10 +1562,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             user
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-user-female icons font-2xl d-block mt-4"
@@ -1198,10 +1578,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             user-female
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-user-follow icons font-2xl d-block mt-4"
@@ -1210,10 +1594,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             user-follow
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-user-unfollow icons font-2xl d-block mt-4"
@@ -1222,10 +1610,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             user-unfollow
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-wrench icons font-2xl d-block mt-4"
@@ -1234,10 +1626,14 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             wrench
           </div>
-        </div>
+        </ccol-stub>
          
-        <div
-          class="col-sm-4 col-md-3 col-xl-2 col-6"
+        <ccol-stub
+          col="6"
+          md="3"
+          sm="4"
+          tag="div"
+          xl="2"
         >
           <i
             class="cui-yen icons font-2xl d-block mt-4"
@@ -1246,11 +1642,9 @@ exports[`CoreUIIcons.vue renders correctly 1`] = `
           <div>
             yen
           </div>
-        </div>
-      </div>
-    </div>
-    <!---->
-    <!---->
-  </div>
+        </ccol-stub>
+      </crow-stub>
+    </ccardbody-stub>
+  </ccard-stub>
 </div>
 `;

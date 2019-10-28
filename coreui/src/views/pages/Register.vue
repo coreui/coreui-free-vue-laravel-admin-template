@@ -1,76 +1,64 @@
 <template>
-    <div class="app flex-row align-items-center">
-      <div class="container">
-        <b-row class="justify-content-center">
-          <b-col md="6" sm="8">
-            <b-card no-body class="mx-4">
-              <b-card-body class="p-4">
-                <b-form>
-                  <h1>Register</h1>
-                  <p class="text-muted">Create your account</p>
-  
-                    <form @submit.prevent="register" method="POST">
-  
-                        <b-input-group class="mb-3">
-                          <b-input-group-prepend>
-                            <b-input-group-text><i class="icon-user"></i></b-input-group-text>
-                          </b-input-group-prepend>
-                          <b-form-input type="text" class="form-control" placeholder="Username" autocomplete="username" v-model="name"/>
-                        </b-input-group>
-  
-                        <b-input-group class="mb-3">
-                          <b-input-group-prepend>
-                            <b-input-group-text>@</b-input-group-text>
-                          </b-input-group-prepend>
-                          <b-form-input type="text" class="form-control" placeholder="Email" autocomplete="email" v-model="email"/>
-                        </b-input-group>
-  
-                        <b-input-group class="mb-3">
-                          <b-input-group-prepend>
-                            <b-input-group-text><i class="icon-lock"></i></b-input-group-text>
-                          </b-input-group-prepend>
-                          <b-form-input type="password" class="form-control" placeholder="Password" autocomplete="new-password" v-model="password"/>
-                        </b-input-group>
-  
-                        <b-input-group class="mb-4">
-                          <b-input-group-prepend>
-                            <b-input-group-text><i class="icon-lock"></i></b-input-group-text>
-                          </b-input-group-prepend>
-                          <b-form-input type="password" class="form-control" placeholder="Repeat password" autocomplete="new-password" v-model="password_confirmation"/>
-                        </b-input-group>
-  
-                        <b-button variant="success" block type="submit">Create Account</b-button>
-                    </form>
-  
-                </b-form>
-              </b-card-body>
-              <b-card-footer class="p-4">
-                <b-row>
-                  <b-col cols="6">
-                    <b-button block class="btn btn-facebook"><span>facebook</span></b-button>
-                  </b-col>
-                  <b-col cols="6">
-                    <b-button block class="btn btn-twitter" type="button"><span>twitter</span></b-button>
-                  </b-col>
-                </b-row>
-              </b-card-footer>
-            </b-card>
-          </b-col>
-        </b-row>
-      </div>
-    </div>
-  </template>
-  
-  <script>
-  /* 
-  export default {
-    name: 'Register'
-  }
-  */
-  </script>
+  <CContainer class="min-vh-100 d-flex align-items-center">
+    <CRow class="w-100 justify-content-center">
+      <CCol md="6" sm="8">
+        <CCard class="mx-4 mb-0">
+          <CCardBody class="p-4">
+            <CForm @submit.prevent="register" method="POST">
+              <h1>Register</h1>
+              <p class="text-muted">Create your account</p>
+              <CInput
+                placeholder="Username"
+                prependHtml="<i class='cui-user'></i>"
+                autocomplete="username"
+                v-model="name"
+              />
+              <CInput
+                placeholder="Email"
+                prepend-html="@"
+                autocomplete="email"
+                v-model="email"
+              />
+              <CInput
+                placeholder="Password"
+                type="password"
+                prependHtml="<i class='cui-lock-locked'></i>"
+                autocomplete="new-password"
+                v-model="password"
+              />
+              <CInput
+                placeholder="Repeat password"
+                type="password"
+                prependHtml="<i class='cui-lock-locked'></i>"
+                autocomplete="new-password"
+                class="mb-4"
+                v-model="password_confirmation"
+              />
+              <CButton type="submit" color="success" block>Create Account</CButton>
+            </CForm>
+          </CCardBody>
+          <CCardFooter class="p-4">
+            <CRow>
+              <CCol col="6">
+                <CButton block color="facebook">
+                  Facebook
+                </CButton>
+              </CCol>
+              <CCol col="6">
+                <CButton block color="twitter">
+                  Twitter
+                </CButton>
+              </CCol>
+            </CRow>
+          </CCardFooter>
+        </CCard>
+      </CCol>
+    </CRow>
+  </CContainer>
+</template>
+
   <script>
     import axios from 'axios'
-
     export default {
       data() {
         return {
@@ -93,9 +81,8 @@
             self.email = '';
             self.password = '';
             self.password_confirmation = '';
-
             console.log(response);
-            self.$router.push('Login');
+            self.$router.push({ path: 'login' });
           })
           .catch(function (error) {
             console.log(error);
@@ -106,4 +93,3 @@
     }
   
   </script>
-  

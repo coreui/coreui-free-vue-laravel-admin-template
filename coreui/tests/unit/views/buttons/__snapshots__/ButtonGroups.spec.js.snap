@@ -1,879 +1,875 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ButtonGroups.vue renders correctly 1`] = `
-<div
-  class="wrapper"
+<crow-stub
+  gutters="true"
 >
-  <div
-    class="animated fadeIn"
+  <ccol-stub
+    col="12"
+    tag="div"
   >
-    <div
-      class="row"
-    >
-      <div
-        class="col-12"
-      >
+    <ccard-stub>
+      <ccardheader-stub>
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Bootstrap button group
+        </strong>
+         
         <div
-          class="card"
+          class="card-header-actions"
         >
-          <!---->
-          <header
-            class="card-header"
+          <a
+            class="card-header-action"
+            href="https://coreui.io/vue/docs/3.0/components/ButtonComponents"
+            rel="noreferrer noopener"
+            target="_blank"
           >
-            <div>
-              <i
-                class="fa fa-align-justify"
-              />
-              <strong>
-                 Bootstrap button group
-              </strong>
-               
-              <div
-                class="card-header-actions"
-              >
-                <a
-                  class="card-header-action"
-                  href="https://bootstrap-vue.js.org/docs/components/button-group"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  <small
-                    class="text-muted"
-                  >
-                    docs
-                  </small>
-                </a>
-              </div>
-            </div>
-          </header>
-          <div
-            class="card-body"
-          >
-            <!---->
-            <!---->
-             
-            <div>
-              <div
-                class="btn-group"
-                role="group"
-              >
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  One
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Two
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Three
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Four
-                </button>
-                 
-                <button
-                  class="btn d-sm-down-none btn-secondary"
-                  type="button"
-                >
-                  Five
-                </button>
-              </div>
-               
-              <br />
-              <br />
-               
-              <div
-                class="btn-group"
-                role="group"
-              >
-                <button
-                  class="btn d-sm-down-none btn-success"
-                  type="button"
-                >
-                  Success
-                </button>
-                 
-                <button
-                  class="btn btn-info"
-                  type="button"
-                >
-                  Info
-                </button>
-                 
-                <button
-                  class="btn btn-warning"
-                  type="button"
-                >
-                  Warn
-                </button>
-                 
-                <button
-                  class="btn d-sm-down-none btn-primary"
-                  type="button"
-                >
-                  Primary
-                </button>
-                 
-                <button
-                  class="btn btn-danger"
-                  type="button"
-                >
-                  Danger
-                </button>
-                 
-                <button
-                  class="btn btn-link"
-                  type="button"
-                >
-                  Link
-                </button>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <!---->
+            <small
+              class="text-muted"
+            >
+              docs
+            </small>
+          </a>
         </div>
-      </div>
+      </ccardheader-stub>
        
-      <div
-        class="col-12"
-      >
-        <div
-          class="card"
-        >
-          <!---->
-          <header
-            class="card-header"
-          >
-            <div>
-              <i
-                class="fa fa-align-justify"
-              />
-              <strong>
-                 Button group 
-              </strong>
-              sizing
-          
-            </div>
-          </header>
-          <div
-            class="card-body"
-          >
-            <!---->
-            <!---->
+      <ccardbody-stub>
+        <div>
+          <cbuttongroup-stub>
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              One
+            </cbutton-stub>
              
-            <div>
-              <div
-                class="btn-group"
-                role="group"
-              >
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Left
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Middle
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Right
-                </button>
-              </div>
-               
-              <br />
-              <br />
-               
-              <div
-                class="btn-group btn-group-sm"
-                role="group"
-              >
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Left
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Middle
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Right
-                </button>
-              </div>
-               
-              <br />
-              <br />
-               
-              <div
-                class="btn-group btn-group-lg"
-                role="group"
-              >
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Left
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Middle
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Right
-                </button>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <!---->
-        </div>
-      </div>
-       
-      <div
-        class="col-12"
-      >
-        <div
-          class="card"
-        >
-          <!---->
-          <header
-            class="card-header"
-          >
-            <div>
-              <i
-                class="fa fa-align-justify"
-              />
-              <strong>
-                 Button group 
-              </strong>
-              dropdown support
-          
-            </div>
-          </header>
-          <div
-            class="card-body"
-          >
-            <!---->
-            <!---->
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Two
+            </cbutton-stub>
              
-            <div>
-              <div
-                class="btn-group"
-                role="group"
-              >
-                <button
-                  class="btn d-sm-down-none btn-secondary"
-                  type="button"
-                >
-                  Button 1
-                </button>
-                 
-                <button
-                  class="btn d-sm-down-none btn-secondary"
-                  type="button"
-                >
-                  Button 2
-                </button>
-                 
-                <div
-                  class="dropdown btn-group b-dropdown"
-                >
-                  <!---->
-                  <button
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    class="btn dropdown-toggle btn-success"
-                    type="button"
-                  >
-                    Menu
-                  </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-right"
-                    role="menu"
-                    tabindex="-1"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 1
-                      </a>
-                    </li>
-                     
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 2
-                      </a>
-                    </li>
-                     
-                    <li>
-                      <hr
-                        aria-orientation="horizontal"
-                        class="dropdown-divider"
-                        role="separator"
-                      />
-                    </li>
-                     
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 3
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                 
-                <button
-                  class="btn d-sm-down-none btn-secondary"
-                  type="button"
-                >
-                  Button 3
-                </button>
-                 
-                <div
-                  class="dropdown btn-group b-dropdown"
-                >
-                  <button
-                    class="btn btn-info"
-                    type="button"
-                  >
-                    Split Menu
-                  </button>
-                  <button
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    class="btn dropdown-toggle btn-info dropdown-toggle-split"
-                    type="button"
-                  >
-                    <span
-                      class="sr-only"
-                    >
-                      Toggle Dropdown
-                    </span>
-                  </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-right"
-                    role="menu"
-                    tabindex="-1"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 1
-                      </a>
-                    </li>
-                     
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 2
-                      </a>
-                    </li>
-                     
-                    <li>
-                      <hr
-                        aria-orientation="horizontal"
-                        class="dropdown-divider"
-                        role="separator"
-                      />
-                    </li>
-                     
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 3
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <!---->
-        </div>
-      </div>
-       
-      <div
-        class="col-12"
-      >
-        <div
-          class="card"
-        >
-          <!---->
-          <header
-            class="card-header"
-          >
-            <div>
-              <i
-                class="fa fa-align-justify"
-              />
-              <strong>
-                 Button group 
-              </strong>
-              vertical variation
-          
-            </div>
-          </header>
-          <div
-            class="card-body"
-          >
-            <!---->
-            <!---->
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Three
+            </cbutton-stub>
              
-            <div>
-              <div
-                class="btn-group-vertical"
-                role="group"
-              >
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Top
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Middle
-                </button>
-                 
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                >
-                  Bottom
-                </button>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <!---->
-        </div>
-      </div>
-       
-      <div
-        class="col-12"
-      >
-        <div
-          class="card"
-        >
-          <!---->
-          <header
-            class="card-header"
-          >
-            <div>
-              <i
-                class="fa fa-align-justify"
-              />
-               
-              <strong>
-                Button toolbar
-              </strong>
-               
-              <small>
-                with button groups
-              </small>
-               
-              <div
-                class="card-header-actions"
-              >
-                <a
-                  class="card-header-action"
-                  href="https://bootstrap-vue.js.org/docs/components/button-toolbar"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  <small
-                    class="text-muted"
-                  >
-                    docs
-                  </small>
-                </a>
-              </div>
-            </div>
-          </header>
-          <div
-            class="card-body"
-          >
-            <!---->
-            <!---->
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Four
+            </cbutton-stub>
              
-            <div>
-              <div
-                aria-label="Toolbar with button groups"
-                class="btn-toolbar"
-                role="toolbar"
-                tabindex="0"
-              >
-                <div
-                  class="mx-1 btn-group"
-                  role="group"
-                >
-                  <button
-                    class="btn d-sm-down-none btn-secondary"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    «
-                  </button>
-                   
-                  <button
-                    class="btn btn-secondary"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    ‹
-                  </button>
-                </div>
-                 
-                <div
-                  class="mx-1 btn-group"
-                  role="group"
-                >
-                  <button
-                    class="btn d-sm-down-none btn-secondary"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    Edit
-                  </button>
-                   
-                  <button
-                    class="btn btn-secondary"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    Undo
-                  </button>
-                   
-                  <button
-                    class="btn btn-secondary"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    Redo
-                  </button>
-                </div>
-                 
-                <div
-                  class="mx-1 btn-group"
-                  role="group"
-                >
-                  <button
-                    class="btn btn-secondary"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    ›
-                  </button>
-                   
-                  <button
-                    class="btn d-sm-down-none btn-secondary"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    »
-                  </button>
-                </div>
-              </div>
-            </div>
-             
-            <hr
+            <cbutton-stub
+              activeclass="active"
               class="d-sm-down-none"
-            />
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Five
+            </cbutton-stub>
+          </cbuttongroup-stub>
+           
+          <br />
+          <br />
+           
+          <cbuttongroup-stub>
+            <cbutton-stub
+              activeclass="active"
+              class="d-sm-down-none"
+              color="success"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Success
+            </cbutton-stub>
              
-            <div>
-              <div
-                aria-label="Toolbar with button groups and input groups"
-                class="btn-toolbar d-sm-down-none"
-                role="toolbar"
-              >
-                <div
-                  class="mx-1 btn-group btn-group-sm"
-                  role="group"
-                >
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    New
-                  </button>
-                   
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    Edit
-                  </button>
-                </div>
-                 
-                <div
-                  class="input-group w-25 mx-1 input-group-sm"
-                  role="group"
-                >
-                  <!---->
-                  <div
-                    class="input-group-prepend"
-                  >
-                    <div
-                      class="input-group-text"
-                    >
-                      $
-                    </div>
-                  </div>
-                   
-                  <input
-                    class="text-right form-control"
-                    type="text"
-                  />
-                   
-                  <div
-                    class="input-group-append"
-                  >
-                    <div
-                      class="input-group-text"
-                    >
-                      .00
-                    </div>
-                  </div>
-                  <!---->
-                </div>
-                 
-                <div
-                  class="input-group w-25 mx-1 input-group-sm"
-                  role="group"
-                >
-                  <!---->
-                  <div
-                    class="input-group-prepend"
-                  >
-                    <div
-                      class="input-group-text"
-                    >
-                      Size
-                    </div>
-                  </div>
-                   
-                  <select
-                    class="custom-select"
-                  >
-                    <option
-                      value="Large"
-                    >
-                      Large
-                    </option>
-                    <option
-                      value="Medium"
-                    >
-                      Medium
-                    </option>
-                    <option
-                      value="Small"
-                    >
-                      Small
-                    </option>
-                  </select>
-                  <!---->
-                </div>
-                 
-                <div
-                  class="mx-1 btn-group btn-group-sm"
-                  role="group"
-                >
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    Save
-                  </button>
-                   
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </div>
+            <cbutton-stub
+              activeclass="active"
+              color="info"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Info
+            </cbutton-stub>
              
-            <hr />
+            <cbutton-stub
+              activeclass="active"
+              color="warning"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Warn
+            </cbutton-stub>
              
-            <div>
-              <div
-                aria-label="Toolbar with button groups and dropdown menu"
-                class="btn-toolbar"
-                role="toolbar"
-              >
-                <div
-                  class="mx-1 d-sm-down-none btn-group"
-                  role="group"
-                >
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    New
-                  </button>
-                   
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    Edit
-                  </button>
-                   
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    Undo
-                  </button>
-                </div>
-                 
-                <div
-                  class="dropdown btn-group b-dropdown mx-1"
-                >
-                  <!---->
-                  <button
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    class="btn dropdown-toggle btn-secondary"
-                    type="button"
-                  >
-                    menu
-                  </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-right"
-                    role="menu"
-                    tabindex="-1"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 1
-                      </a>
-                    </li>
-                     
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 2
-                      </a>
-                    </li>
-                     
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        role="menuitem"
-                        target="_self"
-                      >
-                        Item 3
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                 
-                <div
-                  class="mx-1 btn-group"
-                  role="group"
-                >
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    Save
-                  </button>
-                   
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <!---->
+            <cbutton-stub
+              activeclass="active"
+              class="d-sm-down-none"
+              color="primary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Primary
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="danger"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Danger
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="link"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Link
+            </cbutton-stub>
+          </cbuttongroup-stub>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+      </ccardbody-stub>
+    </ccard-stub>
+  </ccol-stub>
+   
+  <ccol-stub
+    col="12"
+    tag="div"
+  >
+    <ccard-stub>
+      <ccardheader-stub>
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Button group 
+        </strong>
+        sizing
+      
+      </ccardheader-stub>
+       
+      <ccardbody-stub>
+        <div>
+          <cbuttongroup-stub>
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Left
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Middle
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Right
+            </cbutton-stub>
+          </cbuttongroup-stub>
+           
+          <br />
+          <br />
+           
+          <cbuttongroup-stub
+            size="sm"
+          >
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Left
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Middle
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Right
+            </cbutton-stub>
+          </cbuttongroup-stub>
+           
+          <br />
+          <br />
+           
+          <cbuttongroup-stub
+            size="lg"
+          >
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Left
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Middle
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Right
+            </cbutton-stub>
+          </cbuttongroup-stub>
+        </div>
+      </ccardbody-stub>
+    </ccard-stub>
+  </ccol-stub>
+   
+  <ccol-stub
+    col="12"
+    tag="div"
+  >
+    <ccard-stub>
+      <ccardheader-stub>
+        <i
+          class="fa fa-align-justify"
+        />
+        <strong>
+           Button group 
+        </strong>
+        dropdown support
+      
+      </ccardheader-stub>
+       
+      <ccardbody-stub>
+        <div>
+          <cbuttongroup-stub>
+            <cbutton-stub
+              activeclass="active"
+              class="d-sm-down-none"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Button 1
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="d-sm-down-none"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Button 2
+            </cbutton-stub>
+             
+            <cdropdown-stub
+              caret="true"
+              color="success"
+              flip="true"
+              placement="bottom-start"
+              right=""
+              text="Menu"
+              togglertext="Dropdown"
+            >
+              <cdropdownitem-stub
+                activeclass="active"
+                event="click"
+                exactactiveclass="active"
+                routertag="a"
+                target="_self"
+              >
+                Item 1
+              </cdropdownitem-stub>
+               
+              <cdropdownitem-stub
+                activeclass="active"
+                event="click"
+                exactactiveclass="active"
+                routertag="a"
+                target="_self"
+              >
+                Item 2
+              </cdropdownitem-stub>
+               
+              <cdropdowndivider-stub
+                tag="div"
+              />
+               
+              <cdropdownitem-stub
+                activeclass="active"
+                event="click"
+                exactactiveclass="active"
+                routertag="a"
+                target="_self"
+              >
+                Item 3
+              </cdropdownitem-stub>
+            </cdropdown-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="d-sm-down-none"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Button 3
+            </cbutton-stub>
+             
+            <cdropdown-stub
+              caret="true"
+              color="info"
+              flip="true"
+              placement="bottom-start"
+              right=""
+              split="true"
+              text="Split Menu"
+              togglertext="Dropdown"
+            >
+              <cdropdownitem-stub
+                activeclass="active"
+                event="click"
+                exactactiveclass="active"
+                routertag="a"
+                target="_self"
+              >
+                Item 1
+              </cdropdownitem-stub>
+               
+              <cdropdownitem-stub
+                activeclass="active"
+                event="click"
+                exactactiveclass="active"
+                routertag="a"
+                target="_self"
+              >
+                Item 2
+              </cdropdownitem-stub>
+               
+              <cdropdowndivider-stub
+                tag="div"
+              />
+               
+              <cdropdownitem-stub
+                activeclass="active"
+                event="click"
+                exactactiveclass="active"
+                routertag="a"
+                target="_self"
+              >
+                Item 3
+              </cdropdownitem-stub>
+            </cdropdown-stub>
+          </cbuttongroup-stub>
+        </div>
+      </ccardbody-stub>
+    </ccard-stub>
+  </ccol-stub>
+   
+  <ccol-stub
+    col="12"
+    tag="div"
+  >
+    <ccard-stub>
+      <ccardheader-stub>
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Button group 
+        </strong>
+        vertical variation
+      
+      </ccardheader-stub>
+       
+      <ccardbody-stub>
+        <div>
+          <cbuttongroup-stub
+            vertical="true"
+          >
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Top
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Middle
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Bottom
+            </cbutton-stub>
+          </cbuttongroup-stub>
+        </div>
+      </ccardbody-stub>
+    </ccard-stub>
+  </ccol-stub>
+   
+  <ccol-stub
+    col="12"
+    tag="div"
+  >
+    <ccard-stub>
+      <ccardheader-stub>
+        <i
+          class="fa fa-align-justify"
+        />
+         
+        <strong>
+           Button toolbar 
+        </strong>
+         
+        <small>
+          with button groups
+        </small>
+      </ccardheader-stub>
+       
+      <ccardbody-stub>
+        <cbuttontoolbar-stub
+          aria-label="Toolbar with button groups"
+        >
+          <cbuttongroup-stub
+            class="mx-1"
+          >
+            <cbutton-stub
+              activeclass="active"
+              class="d-sm-down-none"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              «
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              ‹
+            </cbutton-stub>
+          </cbuttongroup-stub>
+           
+          <cbuttongroup-stub
+            class="mx-1"
+          >
+            <cbutton-stub
+              activeclass="active"
+              class="d-sm-down-none"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Edit
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Undo
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Redo
+            </cbutton-stub>
+          </cbuttongroup-stub>
+           
+          <cbuttongroup-stub
+            class="mx-1"
+          >
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              ›
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="d-sm-down-none"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              »
+            </cbutton-stub>
+          </cbuttongroup-stub>
+        </cbuttontoolbar-stub>
+         
+        <hr
+          class="d-sm-down-none"
+        />
+         
+        <cbuttontoolbar-stub
+          aria-label="Toolbar with button groups and input groups"
+          class="d-sm-down-none"
+        >
+          <cbuttongroup-stub
+            class="mx-1"
+            size="sm"
+          >
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              New
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Edit
+            </cbutton-stub>
+          </cbuttongroup-stub>
+           
+          <cinput-stub
+            appendhtml=".00"
+            class="mb-0 w-25 mx-1"
+            lazy="400"
+            prependhtml="$"
+            size="sm"
+            type="text"
+            value="100"
+          />
+           
+          <cselect-stub
+            class="mb-0 w-25 mx-1"
+            custom="true"
+            options="Large,Medium,Small"
+            prependhtml="Size"
+            size="sm"
+            value="Medium"
+          />
+           
+          <cbuttongroup-stub
+            class="mx-1"
+            size="sm"
+          >
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Save
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Cancel
+            </cbutton-stub>
+          </cbuttongroup-stub>
+        </cbuttontoolbar-stub>
+         
+        <hr />
+         
+        <cbuttontoolbar-stub
+          aria-label="Toolbar with button groups and dropdown menu"
+        >
+          <cbuttongroup-stub
+            class="mx-1 d-sm-down-none"
+          >
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              New
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Edit
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Undo
+            </cbutton-stub>
+          </cbuttongroup-stub>
+           
+          <cdropdown-stub
+            button-content="Menu"
+            caret="true"
+            class="mx-1"
+            color="secondary"
+            flip="true"
+            placement="bottom-end"
+            togglertext="Dropdown"
+          >
+            <cdropdownitem-stub
+              activeclass="active"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+            >
+              Item 1
+            </cdropdownitem-stub>
+             
+            <cdropdownitem-stub
+              activeclass="active"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+            >
+              Item 2
+            </cdropdownitem-stub>
+             
+            <cdropdownitem-stub
+              activeclass="active"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+            >
+              Item 3
+            </cdropdownitem-stub>
+          </cdropdown-stub>
+           
+          <cbuttongroup-stub
+            class="mx-1"
+          >
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Save
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              Cancel
+            </cbutton-stub>
+          </cbuttongroup-stub>
+        </cbuttontoolbar-stub>
+      </ccardbody-stub>
+    </ccard-stub>
+  </ccol-stub>
+</crow-stub>
 `;

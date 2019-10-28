@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Page404.vue renders correctly 1`] = `
-<div
-  class="app flex-row align-items-center"
+<ccontainer-stub
+  class="d-flex align-items-center min-vh-100"
 >
-  <div
-    class="container"
+  <crow-stub
+    class="w-100 justify-content-center"
+    gutters="true"
   >
-    <b-row-stub
-      class="justify-content-center"
+    <ccol-stub
+      md="6"
       tag="div"
     >
-      <b-col-stub
-        md="6"
-        tag="div"
+      <div
+        class="w-100"
       >
         <div
           class="clearfix"
@@ -37,46 +37,15 @@ exports[`Page404.vue renders correctly 1`] = `
           </p>
         </div>
          
-        <b-input-group-stub
-          tag="div"
-        >
-          <b-input-group-prepend-stub
-            tag="div"
-          >
-            <b-input-group-text-stub
-              tag="div"
-            >
-              <i
-                class="fa fa-search"
-              />
-            </b-input-group-text-stub>
-          </b-input-group-prepend-stub>
-           
-          <input
-            class="form-control"
-            id="prependedInput"
-            placeholder="What are you looking for?"
-            size="16"
-            type="text"
-          />
-           
-          <b-input-group-append-stub
-            tag="div"
-          >
-            <b-button-stub
-              event="click"
-              routertag="a"
-              tag="button"
-              target="_self"
-              type="button"
-              variant="info"
-            >
-              Search
-            </b-button-stub>
-          </b-input-group-append-stub>
-        </b-input-group-stub>
-      </b-col-stub>
-    </b-row-stub>
-  </div>
-</div>
+        <cinput-stub
+          class="mb-3"
+          lazy="400"
+          placeholder="What are you looking for?"
+          prependhtml=<i class='cui-magnifying-glass'></i>
+          type="text"
+        />
+      </div>
+    </ccol-stub>
+  </crow-stub>
+</ccontainer-stub>
 `;

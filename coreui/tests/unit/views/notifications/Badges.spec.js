@@ -1,25 +1,17 @@
 import Vue from 'vue'
 import { shallowMount, mount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import CoreuiVue from '@coreui/vue'
 import Badges from '@/views/notifications/Badges'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('Badges.vue', () => {
   it('has a name', () => {
-    expect(Badges.name).toMatch('badges')
-  })
-  it('is Vue instance', () => {
-    const wrapper = shallowMount(Badges)
-    expect(wrapper.isVueInstance()).toBe(true)
+    expect(Badges.name).toBe('Badges')
   })
   it('is Badges', () => {
     const wrapper = shallowMount(Badges)
     expect(wrapper.is(Badges)).toBe(true)
-  })
-  it('should render correct content', () => {
-    const wrapper = mount(Badges)
-    expect(wrapper.find('header.card-header > div').text()).toMatch('Bootstrap Badge docs')
   })
   test('renders correctly', () => {
     const wrapper = mount(Badges)

@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Cards.vue renders correctly 1`] = `
-<div
-  class="animated fadeIn"
->
+<div>
   <div
     class="row"
   >
@@ -14,53 +12,58 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card"
       >
         <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card title
+          
+          Card title
+          
+          <div
+            class="card-header-actions"
+          >
+            <a
+              class="card-header-action"
+              href="https://coreui.io/vue/docs/3.0/components/CardComponents"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <small
+                class="text-muted"
+              >
+                docs
+              </small>
+            </a>
           </div>
-        </div>
+        </header>
+         
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-      
-        </div>
-        <!---->
-        <!---->
-      </div>
-    </div>
-     
-    <div
-      class="col-sm-6 col-md-4"
-    >
-      <div
-        class="card"
-        show-footer=""
-      >
-        <!---->
-        <!---->
-        <div
-          class="card-body"
-        >
-          <!---->
-          <!---->
-          
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         
         </div>
+        <!---->
+      </div>
+    </div>
+     
+    <div
+      class="col-sm-6 col-md-4"
+    >
+      <div
+        class="card"
+      >
+        <!---->
         <div
+          class="card-body"
+        >
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </div>
+        <footer
           class="card-footer"
         >
-          <div>
-            Card footer
-          </div>
-        </div>
-        <!---->
+          Card Footer
+        </footer>
       </div>
     </div>
      
@@ -70,27 +73,19 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            <i
-              class="fa fa-check"
-            />
-             Card with icon
-          </div>
-        </div>
+          <i
+            class="cui-check"
+          />
+           Card with icon
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
-          
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-      
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -102,48 +97,35 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card"
       >
         <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            
+          
           Card with switch
           
-            <div
-              class="card-header-actions"
-              style="height: 21px;"
-            >
-              <label
-                class="switch switch-label switch-sm switch-info form-check-label"
-              >
-                <input
-                  class="switch-input form-check-input"
-                  false-value="uncheckedValue"
-                  id="switch-id-20"
-                  true-value="value"
-                  type="checkbox"
-                  value="true"
-                />
-                 
-                <span
-                  class="switch-slider"
-                  data-checked="On"
-                  data-unchecked="Off"
-                />
-              </label>
-            </div>
-          </div>
-        </div>
+          <label
+            class="float-right c-switch form-check-label c-switch-info c-switch-sm c-switch-pill"
+          >
+            <input
+              class="c-switch-input form-check-input"
+              data-off="Off"
+              data-on="On"
+              type="checkbox"
+              value=""
+            />
+            <span
+              class="c-switch-slider"
+            />
+          </label>
+        </header>
+         
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-      
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -155,34 +137,26 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card"
       >
         <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            
+          
           Card with label
           
-            <div
-              class="card-header-actions"
-            >
-              <span
-                class="badge badge-success"
-              >
-                Success
-              </span>
-            </div>
-          </div>
-        </div>
+          <span
+            class="badge float-right badge-success"
+          >
+            Success
+          </span>
+        </header>
+         
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-      
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -194,34 +168,26 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card"
       >
         <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            
+          
           Card with label
           
-            <div
-              class="card-header-actions"
-            >
-              <span
-                class="badge badge-danger badge-pill"
-              >
-                42
-              </span>
-            </div>
-          </div>
-        </div>
+          <span
+            class="badge float-right badge-danger badge-pill"
+          >
+            42
+          </span>
+        </header>
+         
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-      
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -235,25 +201,14 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card border-primary"
+        header="Card outline primary"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card outline primary
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
-          
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-      
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -263,25 +218,14 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card border-secondary"
+        header="Card outline secondary"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card outline secondary
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
-          
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-      
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -291,25 +235,16 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card border-success"
+        header="Card outline success"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card outline success
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -320,24 +255,18 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card border-info"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card outline info
-          </div>
-        </div>
+          Card outline info
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -348,24 +277,18 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card border-warning"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card outline warning
-          </div>
-        </div>
+          Card outline warning
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -376,24 +299,18 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card border-danger"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card outline danger
-          </div>
-        </div>
+          Card outline danger
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -407,25 +324,16 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card card-accent-primary"
+        header="Card with primary accent"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card with primary accent
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -435,25 +343,16 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card card-accent-secondary"
+        header="Card with secondary accent"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card with secondary accent
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -463,25 +362,16 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card card-accent-success"
+        header="Card with success accent"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card with success accent
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -491,25 +381,16 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card card-accent-info"
+        header="Card with info accent"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card with info accent
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -519,25 +400,16 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card card-accent-warning"
+        header="Card with warning accent"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card with warning accent
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -547,25 +419,16 @@ exports[`Cards.vue renders correctly 1`] = `
     >
       <div
         class="card card-accent-danger"
+        header="Card with danger accent"
       >
         <!---->
         <div
-          class="card-header"
-        >
-          <div>
-            Card with danger accent
-          </div>
-        </div>
-        <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -581,12 +444,9 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card bg-primary text-center"
       >
         <!---->
-        <!---->
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           <blockquote
             class="card-blockquote"
           >
@@ -605,7 +465,6 @@ exports[`Cards.vue renders correctly 1`] = `
             </footer>
           </blockquote>
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -617,12 +476,9 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card bg-success text-center"
       >
         <!---->
-        <!---->
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           <blockquote
             class="card-blockquote"
           >
@@ -641,7 +497,6 @@ exports[`Cards.vue renders correctly 1`] = `
             </footer>
           </blockquote>
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -653,12 +508,9 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card bg-info text-center"
       >
         <!---->
-        <!---->
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           <blockquote
             class="card-blockquote"
           >
@@ -677,7 +529,6 @@ exports[`Cards.vue renders correctly 1`] = `
             </footer>
           </blockquote>
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -689,12 +540,9 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card bg-warning text-center"
       >
         <!---->
-        <!---->
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           <blockquote
             class="card-blockquote"
           >
@@ -713,7 +561,6 @@ exports[`Cards.vue renders correctly 1`] = `
             </footer>
           </blockquote>
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -725,12 +572,9 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card bg-danger text-center"
       >
         <!---->
-        <!---->
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           <blockquote
             class="card-blockquote"
           >
@@ -749,7 +593,6 @@ exports[`Cards.vue renders correctly 1`] = `
             </footer>
           </blockquote>
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -761,12 +604,9 @@ exports[`Cards.vue renders correctly 1`] = `
         class="card bg-secondary text-center"
       >
         <!---->
-        <!---->
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           <blockquote
             class="card-blockquote"
           >
@@ -785,7 +625,6 @@ exports[`Cards.vue renders correctly 1`] = `
             </footer>
           </blockquote>
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -800,24 +639,18 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card bg-primary"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card title
-          </div>
-        </div>
+          Card title
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -828,24 +661,18 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card bg-success"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card title
-          </div>
-        </div>
+          Card title
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -856,24 +683,18 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card bg-info"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card title
-          </div>
-        </div>
+          Card title
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -884,24 +705,18 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card bg-warning"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card title
-          </div>
-        </div>
+          Card title
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -912,24 +727,18 @@ exports[`Cards.vue renders correctly 1`] = `
       <div
         class="card bg-danger"
       >
-        <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            Card title
-          </div>
-        </div>
+          Card title
+        </header>
         <div
           class="card-body"
         >
-          <!---->
-          <!---->
           
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       
         </div>
-        <!---->
         <!---->
       </div>
     </div>
@@ -942,67 +751,58 @@ exports[`Cards.vue renders correctly 1`] = `
         name="fade"
       >
         <!---->
-        <div
+        <header
           class="card-header"
         >
-          <div>
-            
+          
             Card with header actions
             
-            <div
-              class="card-header-actions"
+          <div
+            class="card-header-actions"
+          >
+            <a
+              class="card-header-action btn-setting"
+              href="#"
+              target="_self"
             >
-              <a
-                class="card-header-action btn-setting"
-                href="#"
-                target="_self"
-              >
-                <i
-                  class="icon-settings"
-                />
-              </a>
-               
-              <a
-                aria-controls="collapse1"
-                aria-expanded="false"
-                class="card-header-action btn-minimize"
-                href="#"
-                role="button"
-                target="_self"
-              >
-                <i
-                  class="icon-arrow-up"
-                />
-              </a>
-               
-              <a
-                class="card-header-action btn-close"
-                href="#"
-                target="_self"
-              >
-                <i
-                  class="icon-close"
-                />
-              </a>
-            </div>
+              <i
+                class="cui-settings"
+              />
+            </a>
+             
+            <a
+              class="card-header-action btn-minimize"
+              href="#"
+              target="_self"
+            >
+              <i
+                class="cui-chevron-bottom"
+              />
+            </a>
+             
+            <a
+              class="card-header-action btn-close"
+              href="#"
+              target="_self"
+            >
+              <i
+                class="cui-circle-x"
+              />
+            </a>
           </div>
-        </div>
+        </header>
          
         <div
-          class="collapse show"
-          id="collapse1"
+          class=""
         >
           <div
             class="card-body"
           >
-            <!---->
-            <!---->
             
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
             
           </div>
         </div>
-        <!---->
         <!---->
       </div>
     </div>

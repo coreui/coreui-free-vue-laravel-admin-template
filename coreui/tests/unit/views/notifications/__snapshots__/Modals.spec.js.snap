@@ -4,148 +4,187 @@ exports[`Modals.vue renders correctly 1`] = `
 <div
   class="wrapper"
 >
-  <div
-    class="animated fadeIn"
-  >
-    <b-row-stub
-      tag="div"
+  <div>
+    <crow-stub
+      gutters="true"
     >
-      <b-col-stub
-        cols="12"
+      <ccol-stub
+        col="12"
         tag="div"
       >
-        <b-card-stub
-          bodytag="div"
-          footertag="div"
-          headertag="div"
-          subtitle=""
-          subtitletag="h6"
-          subtitletextvariant="muted"
-          tag="div"
-          title=""
-          titletag="h4"
-        >
-          <div
-            slot="header"
-          >
+        <ccard-stub>
+          <ccardheader-stub>
             <i
               class="fa fa-align-justify"
             />
              Bootstrap Modals
-          </div>
+            
+            <div
+              class="card-header-actions"
+            >
+              <a
+                class="card-header-action"
+                href="https://coreui.io/vue/docs/3.0/components/Modal"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <small
+                  class="text-muted"
+                >
+                  docs
+                </small>
+              </a>
+            </div>
+          </ccardheader-stub>
            
-          <b-button-stub
-            class="mr-1"
-            event="click"
-            routertag="a"
-            tag="button"
-            target="_self"
-            type="button"
-            variant="secondary"
-          >
-            Launch demo modal
-          </b-button-stub>
-           
-          <b-button-stub
-            class="mr-1"
-            event="click"
-            routertag="a"
-            tag="button"
-            target="_self"
-            type="button"
-            variant="secondary"
-          >
-            Launch large modal
-          </b-button-stub>
-           
-          <b-button-stub
-            class="mr-1"
-            event="click"
-            routertag="a"
-            tag="button"
-            target="_self"
-            type="button"
-            variant="secondary"
-          >
-            Launch small modal
-          </b-button-stub>
-           
-          <hr />
-           
-          <b-button-stub
-            class="mr-1"
-            event="click"
-            routertag="a"
-            tag="button"
-            target="_self"
-            type="button"
-            variant="primary"
-          >
-            Launch primary modal
-          </b-button-stub>
-           
-          <b-button-stub
-            class="mr-1"
-            event="click"
-            routertag="a"
-            tag="button"
-            target="_self"
-            type="button"
-            variant="success"
-          >
-            Launch success modal
-          </b-button-stub>
-           
-          <b-button-stub
-            class="mr-1"
-            event="click"
-            routertag="a"
-            tag="button"
-            target="_self"
-            type="button"
-            variant="warning"
-          >
-            Launch warning modal
-          </b-button-stub>
-           
-          <b-button-stub
-            class="mr-1"
-            event="click"
-            routertag="a"
-            tag="button"
-            target="_self"
-            type="button"
-            variant="danger"
-          >
-            Launch danger modal
-          </b-button-stub>
-           
-          <b-button-stub
-            class="mr-1"
-            event="click"
-            routertag="a"
-            tag="button"
-            target="_self"
-            type="button"
-            variant="info"
-          >
-            Launch info modal
-          </b-button-stub>
-        </b-card-stub>
-      </b-col-stub>
-    </b-row-stub>
+          <ccardbody-stub>
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch demo modal
+            
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch large modal
+            
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="secondary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch small modal
+            
+            </cbutton-stub>
+             
+            <hr />
+             
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="primary"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch primary modal
+            
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="success"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch success modal
+            
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="warning"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch warning modal
+            
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="danger"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch danger modal
+            
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="info"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch info modal
+            
+            </cbutton-stub>
+             
+            <cbutton-stub
+              activeclass="active"
+              class="mr-1"
+              color="dark"
+              event="click"
+              exactactiveclass="active"
+              routertag="a"
+              target="_self"
+              type="button"
+            >
+              
+              Launch dark modal
+            
+            </cbutton-stub>
+          </ccardbody-stub>
+        </ccard-stub>
+      </ccol-stub>
+    </crow-stub>
   </div>
    
-  <b-modal-stub
-    buttonsize=""
-    canceltitle="Cancel"
-    cancelvariant="secondary"
-    headercloselabel="Close"
-    oktitle="OK"
-    okvariant="primary"
-    size="md"
+  <cmodal-stub
+    backdrop="true"
+    closeonbackdrop="true"
+    fade="true"
     title="Modal title"
-    titletag="h5"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -155,18 +194,14 @@ exports[`Modals.vue renders correctly 1`] = `
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   
-  </b-modal-stub>
+  </cmodal-stub>
    
-  <b-modal-stub
-    buttonsize=""
-    canceltitle="Cancel"
-    cancelvariant="secondary"
-    headercloselabel="Close"
-    oktitle="OK"
-    okvariant="primary"
+  <cmodal-stub
+    backdrop="true"
+    closeonbackdrop="true"
+    fade="true"
     size="lg"
     title="Modal title"
-    titletag="h5"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -176,18 +211,14 @@ exports[`Modals.vue renders correctly 1`] = `
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   
-  </b-modal-stub>
+  </cmodal-stub>
    
-  <b-modal-stub
-    buttonsize=""
-    canceltitle="Cancel"
-    cancelvariant="secondary"
-    headercloselabel="Close"
-    oktitle="OK"
-    okvariant="primary"
+  <cmodal-stub
+    backdrop="true"
+    closeonbackdrop="true"
+    fade="true"
     size="sm"
     title="Modal title"
-    titletag="h5"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -197,19 +228,13 @@ exports[`Modals.vue renders correctly 1`] = `
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   
-  </b-modal-stub>
+  </cmodal-stub>
    
-  <b-modal-stub
-    buttonsize=""
-    canceltitle="Cancel"
-    cancelvariant="secondary"
-    class="modal-primary"
-    headercloselabel="Close"
-    oktitle="OK"
-    okvariant="primary"
-    size="md"
+  <cmodal-stub
+    backdrop="true"
+    closeonbackdrop="true"
+    fade="true"
     title="Modal title"
-    titletag="h5"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -219,19 +244,14 @@ exports[`Modals.vue renders correctly 1`] = `
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   
-  </b-modal-stub>
+  </cmodal-stub>
    
-  <b-modal-stub
-    buttonsize=""
-    canceltitle="Cancel"
-    cancelvariant="secondary"
-    class="modal-success"
-    headercloselabel="Close"
-    oktitle="OK"
-    okvariant="success"
-    size="md"
+  <cmodal-stub
+    backdrop="true"
+    closeonbackdrop="true"
+    color="success"
+    fade="true"
     title="Modal title"
-    titletag="h5"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -241,19 +261,14 @@ exports[`Modals.vue renders correctly 1`] = `
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   
-  </b-modal-stub>
+  </cmodal-stub>
    
-  <b-modal-stub
-    buttonsize=""
-    canceltitle="Cancel"
-    cancelvariant="secondary"
-    class="modal-warning"
-    headercloselabel="Close"
-    oktitle="OK"
-    okvariant="warning"
-    size="md"
+  <cmodal-stub
+    backdrop="true"
+    closeonbackdrop="true"
+    color="warning"
+    fade="true"
     title="Modal title"
-    titletag="h5"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -263,19 +278,14 @@ exports[`Modals.vue renders correctly 1`] = `
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   
-  </b-modal-stub>
+  </cmodal-stub>
    
-  <b-modal-stub
-    buttonsize=""
-    canceltitle="Cancel"
-    cancelvariant="secondary"
-    class="modal-danger"
-    headercloselabel="Close"
-    oktitle="OK"
-    okvariant="danger"
-    size="md"
+  <cmodal-stub
+    backdrop="true"
+    closeonbackdrop="true"
+    color="danger"
+    fade="true"
     title="Modal title"
-    titletag="h5"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -285,19 +295,14 @@ exports[`Modals.vue renders correctly 1`] = `
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   
-  </b-modal-stub>
+  </cmodal-stub>
    
-  <b-modal-stub
-    buttonsize=""
-    canceltitle="Cancel"
-    cancelvariant="secondary"
-    class="modal-info"
-    headercloselabel="Close"
-    oktitle="OK"
-    okvariant="info"
-    size="md"
+  <cmodal-stub
+    backdrop="true"
+    closeonbackdrop="true"
+    color="info"
+    fade="true"
     title="Modal title"
-    titletag="h5"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -307,6 +312,26 @@ exports[`Modals.vue renders correctly 1`] = `
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   
-  </b-modal-stub>
+  </cmodal-stub>
+   
+  <cmodal-stub
+    backdrop="true"
+    centered="true"
+    closeonbackdrop="true"
+    color="dark"
+    fade="true"
+    no-close-on-backdrop="true"
+    size="lg"
+    title="Modal title 2"
+  >
+    
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+  </cmodal-stub>
 </div>
 `;

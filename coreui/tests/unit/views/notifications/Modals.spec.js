@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import { shallowMount, mount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import { shallowMount } from '@vue/test-utils'
+import CoreuiVue from '@coreui/vue'
 import Modals from '@/views/notifications/Modals'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('Modals.vue', () => {
   it('has a name', () => {
-    expect(Modals.name).toMatch('modals')
+    expect(Modals.name).toBe('Modals')
   })
   it('has a created hook', () => {
     expect(typeof Modals.data).toMatch('function')
@@ -24,10 +24,6 @@ describe('Modals.vue', () => {
   it('is Modals', () => {
     const wrapper = shallowMount(Modals)
     expect(wrapper.is(Modals)).toBe(true)
-  })
-  it('should render correct content', () => {
-    const wrapper = mount(Modals)
-    expect(wrapper.find('div.card-header > div').text()).toMatch('Bootstrap Modals')
   })
   test('renders correctly', () => {
     const wrapper = shallowMount(Modals)

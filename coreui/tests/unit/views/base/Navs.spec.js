@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import { shallowMount, mount } from '@vue/test-utils'
-import BootstrapVue from 'bootstrap-vue'
+import { shallowMount } from '@vue/test-utils'
+import CoreuiVue from '@coreui/vue'
 import Navs from '@/views/base/Navs'
 
-Vue.use(BootstrapVue)
+Vue.use(CoreuiVue)
 
 describe('Navs.vue', () => {
   it('has a name', () => {
-    expect(Navs.name).toMatch('navs')
+    expect(Navs.name).toBe('Navs')
   })
   it('is Vue instance', () => {
     const wrapper = shallowMount(Navs)
@@ -16,10 +16,6 @@ describe('Navs.vue', () => {
   it('is Navbars', () => {
     const wrapper = shallowMount(Navs)
     expect(wrapper.is(Navs)).toBe(true)
-  })
-  it('should render correct content', () => {
-    const wrapper = mount(Navs)
-    expect(wrapper.find('header.card-header > div > strong').text()).toMatch('Bootstrap Navs')
   })
   test('renders correctly', () => {
     const wrapper = shallowMount(Navs)

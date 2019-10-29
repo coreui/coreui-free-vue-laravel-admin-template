@@ -7,6 +7,7 @@
 !/laravel/public/robots
 !/laravel/public/mix-manifest.json
 
+/laravel/composer.phar
 /laravel/node_modules
 /laravel/public/hot
 /laravel/public/storage

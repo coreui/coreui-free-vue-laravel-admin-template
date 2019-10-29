@@ -25,7 +25,6 @@
             <CInput label="Applies to date" type="date" id="applies_to_date" v-model="note.applies_to_date"/>
             <CSelect id="status_id" 
               :value.sync="note.status_id"
-              v-model="note.status_id"
               :options="statuses"
               label="Status"
             >
@@ -56,14 +55,13 @@ export default {
           title: '',
           content: '',
           applies_to_date: '',
-          status_id: '',
+          status_id: null,
           note_type: '',
         },
         statuses: [],
         message: '',
         dismissSecs: 7,
         dismissCountDown: 0,
-        showDismissibleAlert: false
     }
   },
   methods: {
@@ -95,13 +93,10 @@ export default {
               }
               self.showAlert();
             }else{
-              console.log(error);
+              console.log(error); 
               self.$router.push({ path: 'login' }); 
             }
         });
-    },
-    countDownChanged (dismissCountDown) {
-      this.dismissCountDown = dismissCountDown
     },
     showAlert () {
       this.dismissCountDown = this.dismissSecs
@@ -111,8 +106,9 @@ export default {
     let self = this;
     axios.get('/api/notes/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
-        self.note = response.data.note;
-        self.statuses = response.data.statuses;
+        let data = JSON.parse(JSON.stringify(response.data));
+        self.note = data.note;
+        self.statuses = data.statuses;
     }).catch(function (error) {
         console.log(error);
         self.$router.push({ path: 'login' });

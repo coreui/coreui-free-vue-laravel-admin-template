@@ -23,7 +23,6 @@
             <CSelect id="status_id"
               label="Status" 
               :value.sync="note.status_id"
-              v-model="note.status_id"
               :plain="true"
               :options="statuses"
             >

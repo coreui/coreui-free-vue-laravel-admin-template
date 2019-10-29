@@ -107,9 +107,8 @@ export default {
     let self = this;
     axios.get('/api/notes/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
-        let data = JSON.parse(JSON.stringify(response.data));
-        self.note = data.note;
-        self.statuses = data.statuses;
+        self.note = response.data.note;
+        self.statuses = response.data.statuses;
         self.$forceUpdate()
     }).catch(function (error) {
         console.log(error);

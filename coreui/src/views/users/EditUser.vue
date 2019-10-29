@@ -16,11 +16,11 @@
             </CAlert>
             <b-form-group>
               <label for="name">Name</label>
-              <CInput type="text" id="company" placeholder="Name" v-model="name"></CInput>
+              <CInput type="text" placeholder="Name" v-model="name"></CInput>
             </b-form-group>
             <b-form-group>
               <label for="email">Email</label>
-              <CInput type="text" id="email" placeholder="Email" v-model="email"></CInput>
+              <CInput type="text" placeholder="Email" v-model="email"></CInput>
             </b-form-group>
           
             <CButton color="primary" @click="update()">Edit</CButton>

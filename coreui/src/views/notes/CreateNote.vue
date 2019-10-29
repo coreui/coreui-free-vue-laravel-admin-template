@@ -14,20 +14,20 @@
             ({{dismissCountDown}}) {{ message }}
           </CAlert>
 
-            <CInput label="Title" type="text" id="title" placeholder="Title" v-model="note.title"></CInput>
+            <CInput label="Title" type="text" placeholder="Title" v-model="note.title"></CInput>
 
-            <CInput textarea="true" label="Content" id="content" :rows="9" placeholder="Content.." v-model="note.content"></CInput>
+            <CInput textarea="true" label="Content" :rows="9" placeholder="Content.." v-model="note.content"></CInput>
 
-            <CInput label="Applies to date" type="date" id="applies_to_date" v-model="note.applies_to_date"></CInput>
+            <CInput label="Applies to date" type="date" v-model="note.applies_to_date"></CInput>
 
-            <CSelect id="status_id"
+            <CSelect
               label="Status" 
               :value.sync="note.status_id"
               :plain="true"
               :options="statuses"
             >
             </CSelect>
-            <CInput label="Note type" type="text" id="note_type" v-model="note.note_type"></CInput>
+            <CInput label="Note type" type="text" v-model="note.note_type"></CInput>
 
           <CButton color="primary" @click="store()">Create</CButton>
           <CButton color="primary" @click="goBack">Back</CButton>

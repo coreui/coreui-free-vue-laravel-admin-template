@@ -13,7 +13,7 @@
           >
             ({{dismissCountDown}}) {{ message }}
           </CAlert>
-            <CInput label="Title" type="text" id="title" placeholder="Title" v-model="note.title"/>
+            <CInput label="Title" type="text" placeholder="Title" v-model="note.title"/>
             <CInput
               label="Content"
               placeholder="Content.."
@@ -22,15 +22,13 @@
               rows="9"
               v-model="note.content"
             />
-            <CInput label="Applies to date" type="date" id="applies_to_date" v-model="note.applies_to_date"/>
+            <CInput label="Applies to date" type="date" v-model="note.applies_to_date"/>
             <CSelect 
-              id="status_id" 
               :value.sync="note.status_id"
               :options="statuses"
               label="Status"
             />
-            <CInput label="Note type" type="text" id="note_type" v-model="note.note_type"></CInput>
-       
+            <CInput label="Note type" type="text" v-model="note.note_type"/>
           <CButton color="primary" @click="update()">Edit</CButton>
           <CButton color="primary" @click="goBack">Back</CButton>
         </CCardBody>

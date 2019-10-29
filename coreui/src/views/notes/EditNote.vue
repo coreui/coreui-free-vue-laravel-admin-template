@@ -58,7 +58,6 @@ export default {
           status_id: null,
           note_type: '',
         },
-        // status_id: null,
         statuses: [],
         message: '',
         dismissSecs: 7,
@@ -109,7 +108,6 @@ export default {
     .then(function (response) {
         self.note = response.data.note;
         self.statuses = response.data.statuses;
-        self.$forceUpdate()
     }).catch(function (error) {
         console.log(error);
         self.$router.push({ path: '/login' });

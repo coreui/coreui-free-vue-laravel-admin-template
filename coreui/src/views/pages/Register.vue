@@ -82,7 +82,7 @@
             self.password = '';
             self.password_confirmation = '';
             console.log(response);
-            self.$router.push({ path: 'login' });
+            self.$router.push({ path: '/login' });
           })
           .catch(function (error) {
             console.log(error);

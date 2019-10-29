@@ -51,7 +51,7 @@ export default {
       self.items = items.map(([key, value]) => {return {key: key, value: value}});
     }).catch(function (error) {
       console.log(error);
-      self.$router.push({ path: 'login' });
+      self.$router.push({ path: '/login' });
     });
   }
 }

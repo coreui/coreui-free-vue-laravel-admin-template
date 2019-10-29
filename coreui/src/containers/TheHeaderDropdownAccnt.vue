@@ -80,7 +80,7 @@ export default {
       let self = this;
       axios.post('/api/logout?token=' + localStorage.getItem("api_token"),{})
       .then(function (response) {
-        self.$router.push({ path: 'login' }); 
+        self.$router.push({ path: '/login' });
       }).catch(function (error) {
         console.log(error); 
       });

@@ -137,7 +137,7 @@ export default {
           self.getNotes();
       }).catch(function (error) {
         console.log(error);
-        self.$router.push({ path: 'login' });
+        self.$router.push({ path: '/login' });
       });
     },
     createNote () {
@@ -156,7 +156,7 @@ export default {
         self.items = response.data;
       }).catch(function (error) {
         console.log(error);
-        self.$router.push({ path: 'login' });
+        self.$router.push({ path: '/login' });
       });
     }
   },

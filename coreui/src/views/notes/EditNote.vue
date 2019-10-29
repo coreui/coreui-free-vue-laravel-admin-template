@@ -23,12 +23,12 @@
               v-model="note.content"
             />
             <CInput label="Applies to date" type="date" id="applies_to_date" v-model="note.applies_to_date"/>
-            <CSelect id="status_id" 
+            <CSelect 
+              id="status_id" 
               :value.sync="note.status_id"
               :options="statuses"
               label="Status"
-            >
-            </CSelect>
+            />
             <CInput label="Note type" type="text" id="note_type" v-model="note.note_type"></CInput>
        
           <CButton color="primary" @click="update()">Edit</CButton>
@@ -58,6 +58,7 @@ export default {
           status_id: null,
           note_type: '',
         },
+        // status_id: null,
         statuses: [],
         message: '',
         dismissSecs: 7,
@@ -94,7 +95,7 @@ export default {
               self.showAlert();
             }else{
               console.log(error); 
-              self.$router.push({ path: 'login' }); 
+              self.$router.push({ path: '/login' }); 
             }
         });
     },
@@ -109,9 +110,10 @@ export default {
         let data = JSON.parse(JSON.stringify(response.data));
         self.note = data.note;
         self.statuses = data.statuses;
+        self.$forceUpdate()
     }).catch(function (error) {
         console.log(error);
-        self.$router.push({ path: 'login' });
+        self.$router.push({ path: '/login' });
     });
   }
 }

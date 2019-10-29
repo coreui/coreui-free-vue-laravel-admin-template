@@ -72,7 +72,7 @@ export default {
             self.showAlert();
         }).catch(function (error) {
             console.log(error);
-            self.$router.push({ path: 'login' });
+            self.$router.push({ path: '/login' });
         });
     },
     countDownChanged (dismissCountDown) {
@@ -90,7 +90,7 @@ export default {
         self.email = response.data.email;
     }).catch(function (error) {
         console.log(error);
-        self.$router.push({ path: 'login' });
+        self.$router.push({ path: '/login' });
     });
   }
 }

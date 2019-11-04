@@ -54,7 +54,7 @@ class NotesTest extends TestCase
         $response->assertStatus(200)->assertJson([
             [
                 'value' => $status->id,
-                'text' => $status->name,
+                'label' => $status->name,
             ]
         ]);
     }

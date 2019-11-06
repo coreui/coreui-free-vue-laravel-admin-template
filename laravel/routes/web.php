@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/{any}', function () {
     return view('coreui.homepage');
-});
+})->where('any', '.*');
 
 //Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');

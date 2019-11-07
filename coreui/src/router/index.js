@@ -87,24 +87,14 @@ function configRoutes () {
           component: Dashboard
         },
         {
-          path: 'theme',
-          redirect: '/theme/colors',
-          name: 'Theme',
-          component: {
-            render (c) { return c('router-view') }
-          },
-          children: [
-            {
-              path: 'colors',
-              name: 'Colors',
-              component: Colors
-            },
-            {
-              path: 'typography',
-              name: 'Typography',
-              component: Typography
-            }
-          ]
+          path: 'colors',
+          name: 'Colors',
+          component: Colors
+        },
+        {
+          path: 'typography',
+          name: 'Typography',
+          component: Typography
         },
         {
           path: 'charts',
@@ -206,28 +196,28 @@ function configRoutes () {
               component: Tabs
             },
             {
-              path: 'breadcrumbs',
-              name: 'Breadcrumbs',
+              path: 'breadcrumb',
+              name: 'Breadcrumb',
               component: Breadcrumbs
             },
             {
-              path: 'carousels',
-              name: 'Carousels',
+              path: 'carousel',
+              name: 'Carousel',
               component: Carousels
             },
             {
-              path: 'collapses',
-              name: 'Collapses',
+              path: 'collapse',
+              name: 'Collapse',
               component: Collapses
             },
             {
-              path: 'jumbotrons',
-              name: 'Jumbotrons',
+              path: 'jumbotron',
+              name: 'Jumbotron',
               component: Jumbotrons
             },
             {
-              path: 'list-groups',
-              name: 'List Groups',
+              path: 'list-group',
+              name: 'List Group',
               component: ListGroups
             },
             {
@@ -241,8 +231,8 @@ function configRoutes () {
               component: Navbars
             },
             {
-              path: 'paginations',
-              name: 'Paginations',
+              path: 'pagination',
+              name: 'Pagination',
               component: Paginations
             },
             {
@@ -251,8 +241,8 @@ function configRoutes () {
               component: Popovers
             },
             {
-              path: 'progress-bars',
-              name: 'Progress Bars',
+              path: 'progress',
+              name: 'Progress',
               component: ProgressBars
             },
             {
@@ -271,13 +261,13 @@ function configRoutes () {
           },
           children: [
             {
-              path: 'standard-buttons',
-              name: 'Standard Buttons',
+              path: 'buttons',
+              name: 'Buttons',
               component: StandardButtons
             },
             {
-              path: 'button-groups',
-              name: 'Button Groups',
+              path: 'button-group',
+              name: 'Button Group',
               component: ButtonGroups
             },
             {
@@ -293,7 +283,7 @@ function configRoutes () {
           ]
         },
         {
-          path: 'icons',
+          path: 'icon',
           redirect: '/icons/coreui-icons',
           name: 'CoreUI Icons',
           component: {
@@ -331,8 +321,8 @@ function configRoutes () {
               component: Alerts
             },
             {
-              path: 'badges',
-              name: 'Badges',
+              path: 'badge',
+              name: 'Badge',
               component: Badges
             },
             {

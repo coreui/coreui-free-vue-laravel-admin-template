@@ -114,6 +114,7 @@ export default {
     axios.get('/api/menu?token=' + localStorage.getItem("api_token") )
     .then(function (response) {
       self.nav = self.rebuildData(response.data);
+      console.log(self.rebuildData(response.data));
     }).catch(function (error) {
       console.log(error);
       self.$router.push({ path: '/login' });

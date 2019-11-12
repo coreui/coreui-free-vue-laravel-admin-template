@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Menus\Menus;
+use App\Http\Menus\GetSidebarMenu;
 
 class MenuController extends Controller
 {
@@ -24,7 +24,7 @@ class MenuController extends Controller
         } catch (Exception $e) {
             $roles = '';
         }   
-        $menus = new Menus();
+        $menus = new GetSidebarMenu();
         return response()->json( $menus->get( $roles ) );
     }
 

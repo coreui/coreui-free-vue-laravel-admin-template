@@ -28,17 +28,50 @@ export default {
     return {
       minimize: false,
       nav: [],
-      show: true
+      show: true,
+      buffor: [],
     }
   },
   methods: {
+    dropdown(data){
+      let result = [
+        'CSidebarNavDropdown',
+        {
+          props: {
+            name: data['name'],
+            route: data['href'],
+            icon: data['icon']
+          }
+        },
+        []
+      ];
+      for(let i=0; i<data['elements'].length; i++){
+        if(data['elements'][i]['slug'] == 'dropdown'){
+          result[2].push( this.dropdown(data['elements'][i]) );
+        }else{
+          result[2].push(
+            [
+              'CSidebarNavLink',
+              {
+                 props: {
+                   name:   data['elements'][i]['name'],
+                   to:     data['elements'][i]['href'],
+                   icon:   data['elements'][i]['icon']
+                }
+              }
+            ]
+          );
+        }
+      }
+      return result;
+    },
     rebuildData(data){
-      let result = ['CSidebarNav',[]]
+      this.buffor = ['CSidebarNav',[]]
       for(let k=0; k<data.length; k++){
         switch(data[k]['slug']){
           case 'link':
             if(data[k]['href'].indexOf('http') !== -1){
-              result[1].push(
+              this.buffor[1].push(
                 [
                   'CSidebarNavLink',
                   {
@@ -52,7 +85,7 @@ export default {
                 ]
               );
             }else{
-              result[1].push(
+              this.buffor[1].push(
                 [
                   'CSidebarNavLink',
                   {
@@ -67,7 +100,7 @@ export default {
             }
           break;
           case 'title':
-            result[1].push(
+            this.buffor[1].push(
               [
                 'CSidebarNavTitle',
                 [data[k]['name']]
@@ -75,37 +108,11 @@ export default {
             );
           break;
           case 'dropdown':
-            result[1].push(
-              [
-                'CSidebarNavDropdown',
-                {
-                  props: {
-                    name: data[k]['name'],
-                    route: data[k]['href'],
-                    icon: data[k]['icon']
-                  }
-                },
-                []
-              ]
-            );
-            for(let i=0; i<data[k]['elements'].length; i++){
-              result[1][k][2].push(
-                [
-                  'CSidebarNavLink',
-                  {
-                    props: {
-                      name:   data[k]['elements'][i]['name'],
-                      to:     data[k]['elements'][i]['href'],
-                      icon:   data[k]['elements'][i]['icon']
-                    }
-                  }
-                ]
-              );
-            }
+            this.buffor[1].push( this.dropdown(data[k]) );
           break;
         }
       }
-      return result;
+      return this.buffor;
     }
   },
   mounted () {
@@ -114,7 +121,6 @@ export default {
     axios.get('/api/menu?token=' + localStorage.getItem("api_token") )
     .then(function (response) {
       self.nav = self.rebuildData(response.data);
-      console.log(self.rebuildData(response.data));
     }).catch(function (error) {
       console.log(error);
       self.$router.push({ path: '/login' });

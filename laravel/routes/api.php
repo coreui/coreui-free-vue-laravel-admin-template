@@ -24,6 +24,9 @@ Route::group(['middleware' => 'api'], function ($router) {
     Route::resource('notes', 'NotesController');
     Route::group(['middleware' => 'admin'], function ($router) {
         Route::resource('users', 'UsersController')->except( ['create', 'store'] );
+        Route::get('menu/edit', 'MenuEditController@index');
+        Route::get('menu/edit/selected', 'MenuEditController@menuSelected');
+        Route::get('menu/edit/selected/switch', 'MenuEditController@switch');
     });
 });
 

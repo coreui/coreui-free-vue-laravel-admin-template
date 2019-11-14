@@ -64,6 +64,8 @@ const Note = () => import('@/views/notes/Note')
 const EditNote = () => import('@/views/notes/EditNote')
 const CreateNote = () => import('@/views/notes/CreateNote')
 
+const EditMenu = () => import('@/views/menu/EditMenu')
+
 Vue.use(Router)
 
 export default new Router({
@@ -81,6 +83,11 @@ function configRoutes () {
       name: 'Home',
       component: TheContainer,
       children: [
+        {
+          path: '/menu',
+          name: 'Edit Menu',
+          component: EditMenu
+        },
         {
           path: 'dashboard',
           name: 'Dashboard',

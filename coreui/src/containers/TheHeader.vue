@@ -16,7 +16,7 @@
       <CHeaderNavItem class="px-3" to="/dashboard">Dashboard</CHeaderNavItem>
       <CHeaderNavItem class="px-3" to="/notes" exact>Notes</CHeaderNavItem>
       <CHeaderNavItem class="px-3" to="/users" exact>Users</CHeaderNavItem>
-      <CHeaderNavItem class="px-3">Settings</CHeaderNavItem>
+      <CHeaderNavItem class="px-3" to="/menu" exact>Menu</CHeaderNavItem>
     </CHeaderNav>
     <CHeaderNav class="mr-4">
       <CHeaderNavItem class="d-md-down-none mx-2">

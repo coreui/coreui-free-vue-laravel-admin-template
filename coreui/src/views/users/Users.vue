@@ -11,10 +11,7 @@
           >
             ({{dismissCountDown}}) {{ message }}
           </CAlert>
-          <CTable
-            :hover="hover"
-            :striped="striped"
-            :bordered="bordered"
+          <CDataTable
             :items="items"
             :fields="fields"
             :items-per-page="10"
@@ -40,7 +37,7 @@
               <CButton v-if="you!=item.id" color="danger" @click="deleteUser( item.id )">Delete</CButton>
             </td>
           </template>
-        </CTable>
+        </CDataTable>
         </CCardBody>
       </CCard>
       </transition>

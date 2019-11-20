@@ -111,14 +111,14 @@ class MenusTableSeeder extends Seeder
         /* sidebar menu */
         $this->menuId = 1;
         /* guest menu */
-        $this->insertLink('guest,user,admin', 'Dashboard', '/', 'cui-speedometer');
-        $this->insertLink('guest', 'Login', '/login', 'cui-account-logout');
-        $this->insertLink('guest', 'Register', '/register', 'cui-account-logout');     
+        $this->insertLink('guest,user,admin', 'Dashboard', '/', 'cil-speedometer');
+        $this->insertLink('guest', 'Login', '/login', 'cil-account-logout');
+        $this->insertLink('guest', 'Register', '/register', 'cil-account-logout');     
         $this->insertTitle('user,admin', 'Theme');
-        $this->insertLink('user,admin', 'Colors', '/colors', 'cui-drop1');
-        $this->insertLink('user,admin', 'Typography', '/typography', 'cui-pencil');
+        $this->insertLink('user,admin', 'Colors', '/colors', 'cil-drop');
+        $this->insertLink('user,admin', 'Typography', '/typography', 'cil-pencil');
         $this->insertTitle('user,admin', 'Components');
-        $this->beginDropdown('user,admin', 'Base', '/base', 'cui-puzzle');
+        $this->beginDropdown('user,admin', 'Base', '/base', 'cil-puzzle');
             $this->insertLink('user,admin', 'Breadcrumb',    '/base/breadcrumb');
             $this->insertLink('user,admin', 'Cards',         '/base/cards');
             $this->insertLink('user,admin', 'Carousel',      '/base/carousel');
@@ -136,33 +136,33 @@ class MenusTableSeeder extends Seeder
             $this->insertLink('user,admin', 'Tabs',          '/base/tabs');
             $this->insertLink('user,admin', 'Tooltips',      '/base/tooltips');
         $this->endDropdown();
-        $this->beginDropdown('user,admin', 'Buttons', '/buttons', 'cui-cursor');
+        $this->beginDropdown('user,admin', 'Buttons', '/buttons', 'cil-cursor');
             $this->insertLink('user,admin', 'Buttons',           '/buttons/buttons');
             $this->insertLink('user,admin', 'Buttons Group',     '/buttons/button-group');
             $this->insertLink('user,admin', 'Dropdowns',         '/buttons/dropdowns');
             $this->insertLink('user,admin', 'Brand Buttons',     '/buttons/brand-buttons');
         $this->endDropdown();
-        $this->insertLink('user,admin', 'Charts', '/charts', 'cui-chart-pie');
-        $this->beginDropdown('user,admin', 'Icons', '/icon', 'cui-star');
+        $this->insertLink('user,admin', 'Charts', '/charts', 'cil-chart-pie');
+        $this->beginDropdown('user,admin', 'Icons', '/icon', 'cil-star');
             $this->insertLink('user,admin', 'CoreUI Icons',      '/icon/coreui-icons');
             $this->insertLink('user,admin', 'Flags',             '/icon/flags');
             $this->insertLink('user,admin', 'Brands',            '/icon/brands');
         $this->endDropdown();
-        $this->beginDropdown('user,admin', 'Notifications', '/notifications', 'cui-bell');
+        $this->beginDropdown('user,admin', 'Notifications', '/notifications', 'cil-bell');
             $this->insertLink('user,admin', 'Alerts',     '/notifications/alerts');
             $this->insertLink('user,admin', 'Badge',      '/notifications/badge');
             $this->insertLink('user,admin', 'Modals',     '/notifications/modals');
         $this->endDropdown();
-        $this->insertLink('user,admin', 'Widgets', '/widgets', 'cui-calculator');
+        $this->insertLink('user,admin', 'Widgets', '/widgets', 'cil-calculator');
         $this->insertTitle('user,admin', 'Extras');
-        $this->beginDropdown('user,admin', 'Pages', '/pages', 'cui-star');
+        $this->beginDropdown('user,admin', 'Pages', '/pages', 'cil-star');
             $this->insertLink('user,admin', 'Login',         '/login');
             $this->insertLink('user,admin', 'Register',      '/register');
             $this->insertLink('user,admin', 'Error 404',     '/404');
             $this->insertLink('user,admin', 'Error 500',     '/500');
         $this->endDropdown();
-        $this->insertLink('guest,user,admin', 'Download CoreUI', 'https://coreui.io', 'cui-cloud-download');
-        $this->insertLink('guest,user,admin', 'Try CoreUI PRO', 'https://coreui.io/pro/', 'cui-layers');
+        $this->insertLink('guest,user,admin', 'Download CoreUI', 'https://coreui.io', 'cil-cloud-download');
+        $this->insertLink('guest,user,admin', 'Try CoreUI PRO', 'https://coreui.io/pro/', 'cil-layers');
 
         $this->joinAllByTransaction(); ///   <===== Must by use on end of this seeder
     }

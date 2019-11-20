@@ -2,37 +2,65 @@
   <CHeader fixed with-subheader light>
     <CToggler
       in-header
-      class="c-header-toggler ml-3"
+      class="ml-3 d-lg-none"
+      v-c-emit-root-event:toggle-sidebar-mobile
+    />
+    <CToggler
+      in-header
+      class="ml-3 d-md-down-none"
       v-c-emit-root-event:toggle-sidebar
     />
-    <img
-      class="c-header-brand mx-auto d-lg-none" 
-      src="img/brand/coreui-base.svg" 
-      width="97" 
-      height="46" 
+    <CHeaderBrand
+      class="mx-auto d-lg-none" 
+      src="img/brand/coreui-base.svg"
+      width="97"
+      height="46"
       alt="CoreUI Logo"
+      :wrappedInLink="{ href: 'https://coreui.io', target: '_blank'}"
     />
     <CHeaderNav class="d-md-down-none mr-auto">
-      <CHeaderNavItem class="px-3" to="/dashboard">Dashboard</CHeaderNavItem>
-      <CHeaderNavItem class="px-3" to="/notes" exact>Notes</CHeaderNavItem>
-      <CHeaderNavItem class="px-3" to="/users" exact>Users</CHeaderNavItem>
-      <CHeaderNavItem class="px-3" to="/menu" exact>Menu</CHeaderNavItem>
+      <CHeaderNavItem class="px-3">
+        <CHeaderNavLink to="/dashboard">
+          Dashboard
+        </CHeaderNavLink>
+      </CHeaderNavItem>
+      <CHeaderNavItem class="px-3">
+        <CHeaderNavLink to="/notes">
+          Notes
+        </CHeaderNavLink>
+      </CHeaderNavItem>
+      <CHeaderNavItem class="px-3">
+        <CHeaderNavLink to="/users">
+          Users
+        </CHeaderNavLink>
+      </CHeaderNavItem>
+      <CHeaderNavItem class="px-3">
+        <CHeaderNavLink to="/menu">
+          Menu
+        </CHeaderNavLink>
+      </CHeaderNavItem>
     </CHeaderNav>
     <CHeaderNav class="mr-4">
       <CHeaderNavItem class="d-md-down-none mx-2">
-        <i class="cui-bell"></i>
+        <CHeaderNavLink>
+          <CIcon name="cil-bell"/>
+        </CHeaderNavLink>
       </CHeaderNavItem>
       <CHeaderNavItem class="d-md-down-none mx-2">
-        <i class="cui-list"></i>
+        <CHeaderNavLink>
+          <CIcon name="cil-list"/>
+        </CHeaderNavLink>
       </CHeaderNavItem>
       <CHeaderNavItem class="d-md-down-none mx-2">
-        <i class="cui-envelope-open"></i>
+        <CHeaderNavLink>
+          <CIcon name="cil-envelope-open"/>
+        </CHeaderNavLink>
       </CHeaderNavItem>
       <TheHeaderDropdownAccnt/>
     </CHeaderNav>
-    <div class="c-subheader px-3">
+    <CSubheader class="px-3">
       <CBreadcrumbRouter class="border-0"/>
-    </div>
+    </CSubheader>
   </CHeader>
 </template>
 

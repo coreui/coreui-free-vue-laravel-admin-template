@@ -483,7 +483,7 @@
             Sizes
           </CCardHeader>
           <CCardBody class="p-0">
-            <CTable
+            <CDataTable
               hover
               striped
               class="table-align-middle mb-0"
@@ -506,7 +506,7 @@
                   <span v-html="item.size_prop"></span>
                 </td>
               </template>
-            </CTable>
+            </CDataTable>
           </CCardBody>
         </CCard>
       </CCol>

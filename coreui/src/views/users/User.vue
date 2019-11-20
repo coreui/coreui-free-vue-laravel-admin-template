@@ -5,7 +5,7 @@
         <template slot="header">
           User id:  {{ $route.params.id }}
         </template>
-        <CTable 
+        <CDataTable 
           striped 
           small 
           fixed
@@ -15,7 +15,7 @@
           <template slot="value" slot-scope="data">
             <strong>{{data.item.value}}</strong>
           </template>
-        </CTable>
+        </CDataTable>
         
           <CButton color="primary" @click="goBack">Back</CButton>
       </CCard>

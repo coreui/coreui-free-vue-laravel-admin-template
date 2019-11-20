@@ -2,7 +2,7 @@
   <CSidebar 
     fixed 
     :minimize="minimize"
-    :show="show"
+    :show.sync="show"
   >
     <CSidebarBrand
       :imgFull="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/coreui-base-white.svg'}"
@@ -11,7 +11,7 @@
     />
     <!-- <CSidebarHeader/> -->
     <!-- <CSidebarForm/> -->
-    <CRenderFunction :contentToRender="nav"/>
+    <CRenderFunction flat :content-to-render="nav"/>
     <!-- <CSidebarFooter/> -->
     <CSidebarMinimizer 
       class="d-md-down-none"
@@ -34,81 +34,67 @@ export default {
   },
   methods: {
     dropdown(data){
-      let result = [
-        'CSidebarNavDropdown',
-        {
-          props: {
+      let result = {
+            _name: 'CSidebarNavDropdown',
             name: data['name'],
             route: data['href'],
-            icon: data['icon']
-          }
-        },
-        []
-      ];
+            icon: data['icon'],
+            items: [],
+      }
       for(let i=0; i<data['elements'].length; i++){
         if(data['elements'][i]['slug'] == 'dropdown'){
-          result[2].push( this.dropdown(data['elements'][i]) );
+          result.items.push( this.dropdown(data['elements'][i]) );
         }else{
-          result[2].push(
-            [
-              'CSidebarNavLink',
-              {
-                 props: {
+          result.items.push(
+            {
                    name:   data['elements'][i]['name'],
                    to:     data['elements'][i]['href'],
                    icon:   data['elements'][i]['icon']
-                }
-              }
-            ]
+            } 
           );
         }
       }
       return result;
     },
     rebuildData(data){
-      this.buffor = ['CSidebarNav',[]]
+      this.buffor = [{    
+        _name: 'CSidebarNav',
+        _children: []
+      }];
       for(let k=0; k<data.length; k++){
         switch(data[k]['slug']){
           case 'link':
             if(data[k]['href'].indexOf('http') !== -1){
-              this.buffor[1].push(
-                [
-                  'CSidebarNavLink',
+              this.buffor[0]._children.push(
                   {
-                    props: {
+                      _name: 'CSidebarNavItem',
                       name: data[k]['name'],
                       href: data[k]['href'],
                       icon: data[k]['icon'],
                       target: '_blank'
-                    }
                   }
-                ]
               );
             }else{
-              this.buffor[1].push(
-                [
-                  'CSidebarNavLink',
+              this.buffor[0]._children.push(
                   {
-                    props: {
+                      _name: 'CSidebarNavItem',
                       name: data[k]['name'],
                       to:   data[k]['href'],
                       icon: data[k]['icon'],
-                    }
                   }
-                ]
               );
             }
           break;
           case 'title':
-            this.buffor[1].push(
-              [
-                'CSidebarNavTitle',
-                [data[k]['name']]
-              ]
+            this.buffor[0]._children.push(
+              {
+                _name: 'CSidebarNavTitle',
+                _children: [data[k]['name']]
+              }
             );
           break;
           case 'dropdown':
-            this.buffor[1].push( this.dropdown(data[k]) );
+            this.buffor[0]._children.push( this.dropdown(data[k]) );
           break;
         }
       }

@@ -13,7 +13,7 @@
               <CButton color="primary" @click="selectRole()">Edit</CButton>
             </div>
             <div v-else>
-              <CTable
+              <CDataTable
                 hover
                 :items="tableData"
                 :fields="fields"
@@ -31,7 +31,7 @@
                     <i v-if="item.dropdown" class="cui-chevron-right icons font-2xl d-block"></i>
                   </td>
                 </template>
-              </CTable>
+              </CDataTable>
             </div>
           </CCardBody>  
         </CCard>

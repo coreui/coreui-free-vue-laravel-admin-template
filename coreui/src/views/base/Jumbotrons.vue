@@ -4,7 +4,7 @@
       <CCol>
         <CCard>
           <CCardHeader>
-            <i class="fa fa-align-justify"></i>
+            <CIcon name="cil-justify-center"/>
             <strong> Bootstrap Jumbotron </strong>
             <div class="card-header-actions">
               <a 
@@ -18,7 +18,9 @@
             </div>
           </CCardHeader>
           <CCardBody>
-            <CJumbotron header="Bootstrap 4" lead="Bootstrap 4 Components for Vue.js 2">
+            <CJumbotron>
+              <h1 class="display-3">Bootstrap 4</h1>
+              <p class="lead">Bootstrap 4 Components for Vue.js 2.6+</p>
               <p>For more information visit website</p>
               <CButton color="primary" href="#">More Info</CButton>
             </CJumbotron>
@@ -28,12 +30,13 @@
       <CCol>
         <CCard>
           <CCardHeader>
-            <i class="fa fa-align-justify"></i> <strong> Jumbotron </strong>
+            <CIcon name="cil-justify-center"/> <strong> Jumbotron </strong>
             <small>with slots</small>
           </CCardHeader>
           <CCardBody>
             <CJumbotron header="Bootstrap 4" lead="">
-              <p slot="lead" class="lead">
+              <h1 class="display-3">Bootstrap 4</h1>
+              <p class="lead">
                 This is a simple hero unit, a simple jumbotron-style component for
                 calling extra attention to featured content or information.
               </p>
@@ -53,7 +56,7 @@
       <CCol>
         <CCard>
           <CCardHeader>
-            <i class="fa fa-align-justify"></i> <strong> Jumbotron </strong>
+            <CIcon name="cil-justify-center"/> <strong> Jumbotron </strong>
             <small>colors</small>
           </CCardHeader>
           <CCardBody>
@@ -61,9 +64,9 @@
               color="info"
               text-color="white"
               border-color="dark"
-              header="Bootstrap 4"
             >
-              <p slot="lead" class="lead">
+              <h1 class="display-3">Bootstrap 4</h1>
+              <p class="lead">
                 This is a simple hero unit, a simple jumbotron-style component for
                 calling extra attention to featured content or information.
               </p>

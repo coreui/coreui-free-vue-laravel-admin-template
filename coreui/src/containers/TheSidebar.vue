@@ -39,14 +39,15 @@ export default {
             name: data['name'],
             route: data['href'],
             icon: data['icon'],
-            items: [],
+            _children: [],
       }
       for(let i=0; i<data['elements'].length; i++){
         if(data['elements'][i]['slug'] == 'dropdown'){
-          result.items.push( this.dropdown(data['elements'][i]) );
+          result._children.push( this.dropdown(data['elements'][i]) );
         }else{
-          result.items.push(
+          result._children.push(
             {
+                   _name:  'CSidebarNavItem',
                    name:   data['elements'][i]['name'],
                    to:     data['elements'][i]['href'],
                    icon:   data['elements'][i]['icon']

@@ -3,11 +3,11 @@
     <CCol col="12" md="6">
       <CCard>
         <CCardHeader>
-          <i class="fa fa-align-justify"></i>
+          <CIcon name="cil-justify-center"/>
           <strong> Bootstrap Alert</strong>
           <div class="card-header-actions">
             <a 
-              href="https://coreui.io/vue/docs/3.0/components/Alert" 
+              href="https://coreui.io/vue/docs/components/alert"
               class="card-header-action" 
               rel="noreferrer noopener" 
               target="_blank"
@@ -34,7 +34,7 @@
     <CCol col="12" md="6">
       <CCard>
         <CCardHeader>
-          <i class="fa fa-align-justify"></i> Alert
+          <CIcon name="cil-justify-center"/> Alert
           <small> use <code>.alert-link</code> to provide links</small>
         </CCardHeader>
         <CCardBody>
@@ -72,7 +72,7 @@
     <CCol col="12" md="6">
       <CCard>
         <CCardHeader>
-          <i class="fa fa-align-justify"></i> Alerts <small>with additional content</small>
+          <CIcon name="cil-justify-center"/> Alerts <small>with additional content</small>
         </CCardHeader>
         <CCardBody>
           <CAlert show color="success">
@@ -93,31 +93,21 @@
     <CCol col="12" md="6">
       <CCard>
         <CCardHeader>
-          <i class="fa fa-align-justify"></i> Alerts
+          <CIcon name="cil-justify-center"/> Alerts
           <small>dismissible</small>
         </CCardHeader>
         <CCardBody>
           <CAlert
             color="secondary"
             closeButton
-            :show.sync="dismissibleAlerts[0]"
+            :show.sync="alert1"
           >
             Dismissible Alert!
           </CAlert>
 
           <CAlert
             color="secondary"
-            closeButton
-            fade
-            :show.sync="dismissibleAlerts[1]"
-          >
-            Dismissible Alert with fade effect!
-          </CAlert>
-
-          <CAlert
-            color="secondary"
-            :show.sync="dismissibleAlerts[2]"
-            v-slot="{dismiss}"
+            :show.sync="alert2"
             class="alert-dismissible"
           >
             Dismissible Alert with custom button!
@@ -125,9 +115,9 @@
               class="position-absolute"
               color="secondary"
               style="right:10px;top: 50%;transform: translateY(-50%);"
-              @click="dismiss"
+              @click="alert2 = false"
             >
-              <i>Close</i>
+              Close
             </CButton>
           </CAlert>
           <CButton
@@ -141,7 +131,7 @@
       </CCard>
       <CCard>
         <CCardHeader>
-          <i class="fa fa-align-justify"></i> Alerts
+          <CIcon name="cil-justify-center"/> Alerts
           <small>auto dismissible</small>
         </CCardHeader>
         <CCardBody>
@@ -186,7 +176,8 @@ export default {
     return {
       dismissSecs: 10,
       dismissCountDown: 10,
-      dismissibleAlerts: [true, true, true],
+      alert1: true,
+      alert2: true
     }
   },
   methods: {
@@ -197,7 +188,7 @@ export default {
       this.dismissCountDown = this.dismissSecs
     },
     showDismissibleAlerts () {
-      this.dismissibleAlerts = this.dismissibleAlerts.map(el => el = true)
+      ['alert1', 'alert2', 'alert3'].forEach(alert => this[alert] = true)
     }
   }
 }

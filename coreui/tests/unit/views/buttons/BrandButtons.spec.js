@@ -5,8 +5,6 @@ import BrandButtons from '@/views/buttons/BrandButtons'
 import { CIconPlugin } from '@coreui/icons/vue'
 import { iconsSet } from '@/assets/icons/icons.js'
 
-
-Vue.use(CIconPlugin, iconsSet)
 Vue.use(CoreuiVue)
 
 describe('BrandButtons.vue', () => {

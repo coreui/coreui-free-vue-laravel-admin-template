@@ -15,9 +15,8 @@
           <template slot="value" slot-scope="data">
             <strong>{{data.item.value}}</strong>
           </template>
-        </CDataTable>
-        
-          <CButton color="primary" @click="goBack">Back</CButton>
+        </CDataTable>  
+        <CButton color="primary" @click="goBack">Back</CButton>
       </CCard>
     </CCol>
   </CRow>
@@ -37,9 +36,13 @@ export default {
     }
   },
   methods: {
+    getUserData (id) {
+      const user = usersData.find((user, index) => index + 1 == id)
+      const userDetails = user ? Object.entries(user) : [['id', 'Not found']]
+      return userDetails.map(([key, value]) => { return { key, value } })
+    },
     goBack() {
       this.$router.go(-1)
-      // this.$router.replace({path: '/users'})
     }
   },
   mounted: function(){

@@ -12,10 +12,12 @@
                 prependHtml="<i class='cui-user'></i>"
                 autocomplete="username"
                 v-model="name"
-              />
+              >
+                <template #prepend-content><CIcon name="cil-user"/></template>
+              </CInput>
               <CInput
                 placeholder="Email"
-                prepend-html="@"
+                prepend="@"
                 autocomplete="email"
                 v-model="email"
               />
@@ -25,7 +27,9 @@
                 prependHtml="<i class='cui-lock-locked'></i>"
                 autocomplete="new-password"
                 v-model="password"
-              />
+              >
+                <template #prepend-content><CIcon name="cil-lock-locked"/></template>
+              </CInput>
               <CInput
                 placeholder="Repeat password"
                 type="password"
@@ -33,7 +37,9 @@
                 autocomplete="new-password"
                 class="mb-4"
                 v-model="password_confirmation"
-              />
+              >
+                <template #prepend-content><CIcon name="cil-lock-locked"/></template>
+              </CInput>
               <CButton type="submit" color="success" block>Create Account</CButton>
             </CForm>
           </CCardBody>

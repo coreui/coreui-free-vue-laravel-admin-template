@@ -5,8 +5,8 @@
         <CIcon name="cil-justify-center"/>
         <strong> Bootstrap Navbar </strong>
         <div class="card-header-actions">
-          <a 
-            href="https://coreui.io/vue/docs/3.0/components/Navbar" 
+          <a
+            href="https://coreui.io/vue/docs/components/navbar"
             class="card-header-action" 
             rel="noreferrer noopener" 
             target="_blank"

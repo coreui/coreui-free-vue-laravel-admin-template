@@ -2,29 +2,25 @@
   <div>
     <CRow>
       <CCol sm="6" lg="3">
-        <CWidgetProgress
-          header="89.9%"
-          text="Lorem ipsum..."
-          footer="Lorem ipsum dolor sit amet enim."
-        >
+        <CWidgetProgress footer="Lorem ipsum dolor sit amet enim.">
+          <div class="h4 m-0">89.9%</div>
+          <div class="card-header-actions">
+            <a 
+              href="https://coreui.io/vue/docs/components/widgets" 
+              class="card-header-action position-absolute"
+              style="right:5px; top:5px"
+              rel="noreferrer noopener" 
+              target="_blank"
+            >
+              <small class="text-muted">docs</small>
+            </a>
+          </div>
+          <div>Lorem ipsum...</div>
           <CProgress
             color="success"
             :value="25"
             class="progress-xs my-3 mb-0"
           />
-          <template #header>
-            <div class="card-header-actions">
-              <a 
-                href="https://coreui.io/vue/docs/3.0/components/ButtonComponents" 
-                class="card-header-action position-absolute"
-                style="right:10px; top:10px"
-                rel="noreferrer noopener" 
-                target="_blank"
-              >
-                <small class="text-muted">docs</small>
-              </a>
-            </div>
-          </template>
         </CWidgetProgress>
       </CCol>
       <CCol sm="6" lg="3">
@@ -103,7 +99,7 @@
           text="Income"
           color="primary"
         >
-          <CIcon name="settings" width="24"/>
+          <CIcon name="cil-settings" width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="3">
@@ -112,7 +108,7 @@
           text="Income"
           color="info"
         >
-          <CIcon name="laptop" width="24"/>
+          <CIcon name="cil-laptop" width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="3">
@@ -121,7 +117,7 @@
           text="Income"
           color="warning"
         >
-          <CIcon name="moon" width="24"/>
+          <CIcon name="cil-moon" width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="3">
@@ -130,7 +126,7 @@
           text="Income"
           color="danger"
         >
-          <CIcon name="bell" width="24"/>
+          <CIcon name="cil-bell" width="24"/>
         </CWidgetIcon>
       </CCol>
     </CRow>
@@ -142,7 +138,8 @@
           color="primary"
           :icon-padding="false"
         >
-          <CIcon name="settings" width="24"/>
+          <CIcon name="cil-settings" width="24"/>
+
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="3">
@@ -152,7 +149,7 @@
           color="info"
           :icon-padding="false"
         >
-          <CIcon name="laptop" width="24"/>
+          <CIcon name="cil-laptop" width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="3">
@@ -162,7 +159,7 @@
           color="warning"
           :icon-padding="false"
         >
-          <CIcon name="moon" width="24"/>
+          <CIcon name="cil-moon" width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="3">
@@ -172,7 +169,7 @@
           color="danger"
           :icon-padding="false"
         >
-          <CIcon name="bell" width="24"/>
+          <CIcon name="cil-bell" width="24"/>
         </CWidgetIcon>
       </CCol>
     </CRow>
@@ -184,7 +181,7 @@
           color="primary"
           :icon-padding="false"
         >
-          <CIcon name="settings" class="mx-5 " width="24"/>
+          <CIcon name="cil-settings" class="mx-5 " width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="4">
@@ -194,7 +191,7 @@
           color="info"
           :icon-padding="false"
         >
-          <CIcon name="laptop" class="mx-5 " width="24"/>
+          <CIcon name="cil-laptop" class="mx-5 " width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="4">
@@ -204,7 +201,7 @@
           color="warning"
           :icon-padding="false"
         >
-          <CIcon name="moon" class="mx-5 " width="24"/>
+          <CIcon name="cil-moon" class="mx-5 " width="24"/>
           <template #footer>
             <CCardFooter class="card-footer px-3 py-2">
               <CLink
@@ -212,7 +209,7 @@
                 href="https://coreui.io/"
               >
                 View more
-                <CIcon name="arrowRight" class="float-right" width="16"/>
+                <CIcon name="cil-arrowRight" class="float-right" width="16"/>
               </CLink>
             </CCardFooter>
           </template>
@@ -228,7 +225,7 @@
           :icon-padding="false"
           link="#"
         >
-          <CIcon name="settings" class="mx-5 " width="24"/>
+          <CIcon name="cil-settings" class="mx-5 " width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="4">
@@ -239,7 +236,7 @@
           :icon-padding="false"
           link="#"
         >
-          <CIcon name="laptop" class="mx-5 " width="24"/>
+          <CIcon name="cil-laptop" class="mx-5 " width="24"/>
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="4">
@@ -250,7 +247,7 @@
           :icon-padding="false"
           link="#"
         >
-          <CIcon name="moon" class="mx-5" width="24"/>
+          <CIcon name="cil-moon" class="mx-5" width="24"/>
         </CWidgetIcon>
       </CCol>
     </CRow> -->
@@ -262,34 +259,34 @@
         text="Visitors"
         color="info"
       >
-        <CIcon name="people" height="36"/>
+        <CIcon name="cil-people" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="385"
         text="New Clients"
         color="success"
       >
-        <CIcon name="userFollow" height="36"/>
+        <CIcon name="cil-userFollow" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="1238"
         text="Products sold"
         color="warning"
       >
-        <CIcon name="basketLoaded" height="36"/>
+        <CIcon name="cil-basket" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="28%"
         text="Returning Visitors"
       >
-        <CIcon name="chartPie" height="36"/>
+        <CIcon name="cil-chartPie" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="5:34:11"
         text="Avg. Time"
         color="danger"
       >
-        <CIcon name="speedometer" height="36"/>
+        <CIcon name="cil-speedometer" height="36"/>
       </CWidgetProgressIcon>
     </CCardGroup>
     <CCardGroup class="mb-4">
@@ -299,7 +296,7 @@
         color="info"
         inverse
       >
-        <CIcon name="people" height="36"/>
+        <CIcon name="cil-people" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="385"
@@ -307,7 +304,7 @@
         color="success"
         inverse
       >
-        <CIcon name="userFollow" height="36"/>
+        <CIcon name="cil-userFollow" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="1238"
@@ -315,7 +312,7 @@
         color="warning"
         inverse
       >
-        <CIcon name="basketLoaded" height="36"/>
+        <CIcon name="cil-basket" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="28%"
@@ -323,7 +320,7 @@
         color="primary"
         inverse
       >
-        <CIcon name="chartPie" height="36"/>
+        <CIcon name="cil-chartPie" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="5:34:11"
@@ -331,7 +328,7 @@
         color="danger"
         inverse
       >
-        <CIcon name="speedometer" height="36"/>
+        <CIcon name="cil-speedometer" height="36"/>
       </CWidgetProgressIcon>
     </CCardGroup>
     <CRow>
@@ -341,7 +338,7 @@
           text="Visitors"
           color="info"
         >
-          <CIcon name="people" height="36"/>
+          <CIcon name="cil-people" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -350,7 +347,7 @@
           text="New Clients"
           color="success"
         >
-          <CIcon name="userFollow" height="36"/>
+          <CIcon name="cil-userFollow" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -359,7 +356,7 @@
           text="Products sold"
           color="warning"
         >
-          <CIcon name="basketLoaded" height="36"/>
+          <CIcon name="cil-basket" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -368,7 +365,7 @@
           text="Returning Visitors"
           color="primary"
         >
-          <CIcon name="chartPie" height="36"/>
+          <CIcon name="cil-chartPie" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -377,7 +374,7 @@
           text="Avg. Time"
           color="danger"
         >
-          <CIcon name="speedometer" height="36"/>
+          <CIcon name="cil-speedometer" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -386,7 +383,7 @@
           text="comments"
           color="info"
         >
-          <CIcon name="speech" height="36"/>
+          <CIcon name="cil-speech" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
     </CRow>
@@ -398,7 +395,7 @@
           color="info"
           inverse
         >
-          <CIcon name="people" height="36"/>
+          <CIcon name="cil-people" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -408,7 +405,7 @@
           color="success"
           inverse
         >
-          <CIcon name="userFollow" height="36"/>
+          <CIcon name="cil-userFollow" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -418,7 +415,7 @@
           color="warning"
           inverse
         >
-          <CIcon name="basketLoaded" height="36"/>
+          <CIcon name="cil-basket" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -428,7 +425,7 @@
           color="primary"
           inverse
         >
-          <CIcon name="chartPie" height="36"/>
+          <CIcon name="cil-chartPie" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -438,7 +435,7 @@
           color="danger"
           inverse
         >
-          <CIcon name="speedometer" height="36"/>
+          <CIcon name="cil-speedometer" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
       <CCol sm="6" md="2">
@@ -448,61 +445,11 @@
           color="info"
           inverse
         >
-          <CIcon name="speech" height="36"/>
+          <CIcon name="cil-speech" height="36"/>
         </CWidgetProgressIcon>
       </CCol>
     </CRow>
     <WidgetsDropdown/>
-    <CRow>
-      <CCol sm="6" lg="3">
-        <CWidgetHeaderDetails
-          color="primary"
-          right-header="SALE"
-          right-footer="Today 6:43 AM"
-          left-header="$1.890,65"
-          left-footer="+432,50 (15,78%)"
-        >
-          <CChartLineSimple style="height:40px"/>
-          <CChartBarSimple style="height:40px"/>
-        </CWidgetHeaderDetails>
-      </CCol>
-      <CCol sm="6" lg="3">
-        <CWidgetHeaderDetails
-          color="success"
-          right-header="SALE"
-          right-footer="Today 6:43 AM"
-          left-header="$1.890,65"
-          left-footer="+432,50 (15,78%)"
-        >
-          <CChartLineSimple style="height:40px"/>
-          <CChartBarSimple style="height:40px"/>
-        </CWidgetHeaderDetails>
-      </CCol>
-      <CCol sm="6" lg="3">
-        <CWidgetHeaderDetails
-          color="danger"
-          right-header="SALE"
-          right-footer="Today 6:43 AM"
-          left-header="$1.890,65"
-          left-footer="+432,50 (15,78%)"
-        >
-          <CChartLineSimple style="height:40px"/>
-          <CChartBarSimple style="height:40px"/>
-        </CWidgetHeaderDetails>
-      </CCol>
-      <CCol sm="6" lg="3">
-        <CWidgetHeaderDetails
-          color="warning"
-          right-header="SALE"
-          right-footer="Today 6:43 AM"
-          left-header="$1.890,65"
-          left-footer="+432,50 (15,78%)"
-        >
-          <CChartLineSimple style="height:40px"/>
-          <CChartBarSimple style="height:40px"/>
-        </CWidgetHeaderDetails>
-      </CCol>
-    </CRow>
     <CRow>
       <CCol sm="4" lg="2">
         <CWidgetSimple header="title" text="1,123">

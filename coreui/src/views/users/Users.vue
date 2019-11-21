@@ -12,6 +12,8 @@
             ({{dismissCountDown}}) {{ message }}
           </CAlert>
           <CDataTable
+            hover
+            striped
             :items="items"
             :fields="fields"
             :items-per-page="10"
@@ -65,7 +67,11 @@ export default {
       showDismissibleAlert: false
     }
   },
-  computed: {
+  paginationProps: {
+    align: 'center',
+    doubleArrows: false,
+    previousButtonHtml: 'prev',
+    nextButtonHtml: 'next'
   },
   methods: {
     getBadge (status) {
@@ -73,9 +79,6 @@ export default {
         : status === 'Inactive' ? 'secondary'
           : status === 'Pending' ? 'warning'
             : status === 'Banned' ? 'danger' : 'primary'
-    },
-    getRowCount (items) {
-      return items.length
     },
     userLink (id) {
       return `users/${id.toString()}`

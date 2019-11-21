@@ -4,16 +4,13 @@
     :minimize="minimize"
     :show.sync="show"
   >
-    <CSidebarBrand
+    <CSidebarBrand 
       :imgFull="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/coreui-base-white.svg'}"
       :imgMinimized="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/coreui-signet-white.svg'}"
       :wrappedInLink="{ href: 'https://coreui.io/', target: '_blank'}"
     />
-    <!-- <CSidebarHeader/> -->
-    <!-- <CSidebarForm/> -->
     <CRenderFunction flat :content-to-render="nav"/>
-    <!-- <CSidebarFooter/> -->
-    <CSidebarMinimizer 
+    <CSidebarMinimizer
       class="d-md-down-none"
       @click.native="minimize = !minimize"
     />
@@ -112,7 +109,6 @@ export default {
       console.log(error);
       self.$router.push({ path: '/login' });
     });
-
   }
 }
 </script>

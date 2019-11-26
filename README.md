@@ -188,7 +188,7 @@ This user has roles: _user_ and _admin_
 
 ### How to add a link to the sidebar:
 
-> Instructions for CoreUI Free Laravel admin template only. _Pro and Vue.js versions have separate instructions._
+> Instructions for CoreUI Free Vue Laravel admin template only. _Pro version have separate instruction._
 
 #### To add a __link__ to the sidebar - modify seeds file:  
 `my-project/database/seeds/MenusTableSeeder.php`

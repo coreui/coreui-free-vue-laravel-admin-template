@@ -167,22 +167,76 @@ $ npm run dev
 ## Usage
 
 ``` bash
-# start local server from laravel directory
+# start local server
 $ php artisan serve
+
+# test
+$ php vendor/bin/phpunit
 ```
-Open your browser and open adress: "localhost:8000"
-Choice "Notes" from top bar menu. Then login with credentials:
 
-* E-mail: admin@admin.com
-* Password: password
+Open your browser with address: [localhost:8000](localhost:8000)  
+Click "Notes" on topbar menu and log in with credentials:
 
-This user has roles: 'user' and 'admin'
-* Role 'user' is required for notes management.
-* Role 'admin' is required for users management.
+* E-mail: _admin@admin.com_
+* Password: _password_
 
-``` bash
-# testing from laravel directory
-$ php
+This user has roles: _user_ and _admin_
+* Role _user_ is required for **notes** management.
+* Role _admin_ is required for **users** management.
+
+--- 
+
+### How to add a link to the sidebar:
+
+> Instructions for CoreUI Free Laravel admin template only. _Pro and Vue.js versions have separate instructions._
+
+#### To add a __link__ to the sidebar - modify seeds file:  
+`my-project/database/seeds/MenusTableSeeder.php`
+
+In `run()` function - add `insertLink()`:
+```php
+$id = $this->insertLink( $rolesString, $visibleName, $href, $iconString);
+```
+* `$rolesString` - a string with list of user roles this menu element will be available, ex. `"guest,user,admin"`
+* `$visibleName` - a string caption visible in sidebar
+* `$href` - a href, ex. `/homepage` or `http://example.com`
+* `$iconString` - a string containing valid CoreUI Icon name (kebab-case), ex. `cui-speedometer` or `cui-star`
+
+To add a __title__ to the sidebar - use function `insertTitle()`:
+```php
+$id = $this->insertTitle( $rolesString, $title );
+```
+* `$rolesString` - a string with list of user roles this menu element will be available, ex. `"guest,user,admin"`
+* `$title` - a string caption visible in sidebar
+
+To add a __dropdown__ menu to the sidebar - use function `beginDropdown()`:
+```php
+$id = $this->beginDropdown( $rolesString, $visibleName, $href, $iconString);
+```
+* `$rolesString` - a string with list of user roles this menu element will be available, ex. `"guest,user,admin"`
+* `$visibleName` - a string caption visible in sidebar
+* `$href` - a href, ex. `/homepage` or `http://example.com`
+* `$iconString` - a string containing valid CoreUI icon name (kebab-case). For example: `cui-speedometer` or `cui-star`
+
+To end dropdown section - use function `endDropdown()`. 
+
+To add __link__ to __dropdown__ call function `insertLink()` between function calls `beginDropdown()` and `endDropdown()`. 
+Example:
+```php
+$id = $this->beginDropdown('guest,user,admin', 'Some dropdown', 'http://example.com', 'cui-puzzle');
+$id = $this->insertLink('guest,user,admin', 'Dropdown name', 'http://example.com');
+$this->endDropdown();
+```
+
+__IMPORTANT__ - At the end of `run()` function, call `joinAllByTransaction()` function:
+```php
+$this->joinAllByTransaction();
+```
+
+Once done with seeds file edit, __run__:
+``` bash 
+$ php artisan migrate:refresh --seed
+# This command also rollbacks database and migrates it again.
 ```
 
 ## Creators

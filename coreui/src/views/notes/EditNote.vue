@@ -29,7 +29,7 @@
               label="Status"
             />
             <CInput label="Note type" type="text" v-model="note.note_type"/>
-          <CButton color="primary" @click="update()">Edit</CButton>
+          <CButton color="primary" @click="update()">Save</CButton>
           <CButton color="primary" @click="goBack">Back</CButton>
         </CCardBody>
       </CCard>

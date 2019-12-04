@@ -14,18 +14,10 @@
             >
               ({{dismissCountDown}}) {{ message }}
             </CAlert>
-            <b-form-group>
-              <label for="name">Name</label>
-              <CInput type="text" placeholder="Name" v-model="name"></CInput>
-            </b-form-group>
-            <b-form-group>
-              <label for="email">Email</label>
-              <CInput type="text" placeholder="Email" v-model="email"></CInput>
-            </b-form-group>
-          
-            <CButton color="primary" @click="update()">Edit</CButton>
+            <CInput type="text" label="Name" placeholder="Name" v-model="name"></CInput>
+            <CInput type="text" label="Email" placeholder="Email" v-model="email"></CInput>
+            <CButton color="primary" @click="update()">Save</CButton>
             <CButton color="primary" @click="goBack">Back</CButton>
-          
           </CForm>
         </CCardBody>
       </CCard>

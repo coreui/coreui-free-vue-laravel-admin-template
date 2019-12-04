@@ -269,7 +269,7 @@ function configRoutes () {
           children: [
             {
               path: 'buttons',
-              name: 'Buttons',
+              name: 'Standard Buttons',
               component: StandardButtons
             },
             {

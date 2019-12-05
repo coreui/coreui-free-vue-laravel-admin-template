@@ -139,7 +139,6 @@
           :icon-padding="false"
         >
           <CIcon name="cil-settings" width="24"/>
-
         </CWidgetIcon>
       </CCol>
       <CCol col="12" sm="6" lg="3">

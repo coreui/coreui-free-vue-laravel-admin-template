@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheHeader.vue renders correctly 1`] = `
+<cheader-stub
+  colorscheme="light"
+  fixed="true"
+  light=""
+  tag="header"
+  withsubheader="true"
+>
+  <ctoggler-stub
+    class="ml-3 d-lg-none"
+    inheader="true"
+    tag="button"
+  />
+   
+  <ctoggler-stub
+    class="ml-3 d-md-down-none"
+    inheader="true"
+    tag="button"
+  />
+   
+  <cheaderbrand-stub
+    alt="CoreUI Logo"
+    class="mx-auto d-lg-none"
+    height="46"
+    src="img/brand/coreui-vue-logo.svg"
+    width="190"
+  />
+   
+  <cheadernav-stub
+    class="d-md-down-none mr-auto"
+  >
+    <cheadernavitem-stub
+      class="px-3"
+    >
+      <cheadernavlink-stub
+        activeclass="active"
+        event="click"
+        exactactiveclass="active"
+        routertag="a"
+        target="_self"
+        to="/dashboard"
+      >
+        
+        Dashboard
+      
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+     
+    <cheadernavitem-stub
+      class="px-3"
+    >
+      <cheadernavlink-stub
+        activeclass="active"
+        event="click"
+        exact="true"
+        exactactiveclass="active"
+        routertag="a"
+        target="_self"
+        to="/users"
+      >
+        
+        Users
+      
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+     
+    <cheadernavitem-stub
+      class="px-3"
+    >
+      <cheadernavlink-stub
+        activeclass="active"
+        event="click"
+        exactactiveclass="active"
+        routertag="a"
+        target="_self"
+      >
+        
+        Settings
+      
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+  </cheadernav-stub>
+   
+  <cheadernav-stub
+    class="mr-4"
+  >
+    <cheadernavitem-stub
+      class="d-md-down-none mx-2"
+    >
+      <cheadernavlink-stub
+        activeclass="active"
+        event="click"
+        exactactiveclass="active"
+        routertag="a"
+        target="_self"
+      >
+        <cicon-stub
+          name="cil-bell"
+        />
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+     
+    <cheadernavitem-stub
+      class="d-md-down-none mx-2"
+    >
+      <cheadernavlink-stub
+        activeclass="active"
+        event="click"
+        exactactiveclass="active"
+        routertag="a"
+        target="_self"
+      >
+        <cicon-stub
+          name="cil-list"
+        />
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+     
+    <cheadernavitem-stub
+      class="d-md-down-none mx-2"
+    >
+      <cheadernavlink-stub
+        activeclass="active"
+        event="click"
+        exactactiveclass="active"
+        routertag="a"
+        target="_self"
+      >
+        <cicon-stub
+          name="cil-envelope-open"
+        />
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+     
+    <theheaderdropdownaccnt-stub />
+  </cheadernav-stub>
+   
+  <csubheader-stub
+    class="px-3"
+    tag="div"
+  >
+    <cbreadcrumbrouter-stub
+      class="border-0"
+    />
+  </csubheader-stub>
+</cheader-stub>
+`;

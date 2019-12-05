@@ -5,8 +5,8 @@
         <CIcon name="cil-justify-center"/>
         <strong> Bootstrap Progress</strong>
         <div class="card-header-actions">
-          <a
-            href="https://coreui.io/vue/docs/components/progress"
+          <a 
+            href="https://coreui.io/vue/docs/components/progress" 
             class="card-header-action" 
             rel="noreferrer noopener" 
             target="_blank"

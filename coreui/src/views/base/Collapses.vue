@@ -6,8 +6,8 @@
           <CIcon name="cil-justify-center"/>
           <strong> Bootstrap Collapse </strong>
           <div class="card-header-actions">
-            <a 
-              href="https://coreui.io/vue/docs/components/collapse"
+            <a
+              href="https://coreui.io/vue/docs/components/collapse" 
               class="card-header-action" 
               rel="noreferrer noopener" 
               target="_blank"

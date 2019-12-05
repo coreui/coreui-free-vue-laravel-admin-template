@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheSidebar.vue renders correctly 1`] = `
+<csidebar-stub
+  breakpoint="lg"
+  colorscheme="dark"
+  dropdownmode="openActive"
+  fixed="true"
+  hideonmobileclick="true"
+  show="responsive"
+>
+  <csidebarbrand-stub
+    imgfull="[object Object]"
+    imgminimized="[object Object]"
+    wrappedinlink="[object Object]"
+  />
+   
+  <crenderfunction-stub
+    contenttorender="[object Object]"
+    flat="true"
+  />
+   
+  <csidebarminimizer-stub
+    class="d-md-down-none"
+  />
+</csidebar-stub>
+`;

@@ -552,7 +552,6 @@
           </CCol>
           <CCol col="2" class="mb-3 mb-xl-0 text-center">
             <CButton color="danger" size="sm" shape="pill">Pill Button</CButton>
-
           </CCol>
         </CRow>
         <CRow class="align-items-center mt-3">
@@ -591,7 +590,7 @@
           <CCol col="2" class="mb-3 mb-xl-0 text-center">
             <CButton color="warning" size="lg" square>Square Button</CButton>
           </CCol>
-          <CCol col="2" class="mb-3 mb-xl-0 text-center"
+          <CCol col="2" class="mb-3 mb-xl-0 text-center">
             <CButton color="danger" size="lg" shape="pill">Pill Button</CButton>
           </CCol>
         </CRow>

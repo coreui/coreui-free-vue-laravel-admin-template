@@ -12,11 +12,10 @@
     />
     <CHeaderBrand
       class="mx-auto d-lg-none" 
-      src="img/brand/coreui-base.svg"
-      width="97"
+      src="img/brand/coreui-vue-logo.svg"
+      width="190"
       height="46"
       alt="CoreUI Logo"
-      :wrappedInLink="{ href: 'https://coreui.io', target: '_blank'}"
     />
     <CHeaderNav class="d-md-down-none mr-auto">
       <CHeaderNavItem class="px-3">

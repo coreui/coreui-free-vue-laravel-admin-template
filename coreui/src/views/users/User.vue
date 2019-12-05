@@ -49,7 +49,6 @@ export default {
     let self = this;
     axios.get('/api/users/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
-      //const items = response.data.users;
       const items = Object.entries(response.data);
       self.items = items.map(([key, value]) => {return {key: key, value: value}});
     }).catch(function (error) {
@@ -58,13 +57,4 @@ export default {
     });
   }
 }
-
-/*
-      items: (id) => {
-        const user = usersData.find( user => user.id.toString() === id)
-        const userDetails = user ? Object.entries(user) : [['id', 'Not found']]
-        return userDetails.map(([key, value]) => {return {key: key, value: value}})
-      },
-*/
-
 </script>

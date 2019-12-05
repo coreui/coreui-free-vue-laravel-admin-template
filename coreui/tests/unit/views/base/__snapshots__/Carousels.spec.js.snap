@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousels.vue renders correctly 1`] = `
+<div
+  class="row"
+>
+  <div
+    class="col-md-12 col-lg-7"
+  >
+    <div
+      class="card"
+    >
+      <header
+        class="card-header"
+      >
+        <svg
+          class="c-icon"
+          viewBox="0 0 64 64"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            cilJustifyCenter
+          </title>
+          undefined
+        </svg>
+         
+        <strong>
+           Bootstrap Carousel
+        </strong>
+         
+        <div
+          class="card-header-actions"
+        >
+          <a
+            class="card-header-action"
+            href="https://coreui.io/vue/docs/components/carousel"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <small
+              class="text-muted"
+            >
+              docs
+            </small>
+          </a>
+        </div>
+      </header>
+       
+      <div
+        class="card-body"
+      >
+        <div
+          class="carousel slide"
+          data-v-9c4fbe64=""
+          style="height: 400px;"
+        >
+          <ol
+            class="carousel-indicators"
+            data-v-9c4fbe64=""
+          >
+            <li
+              class="active"
+              data-v-9c4fbe64=""
+            />
+            <li
+              class=""
+              data-v-9c4fbe64=""
+            />
+            <li
+              class=""
+              data-v-9c4fbe64=""
+            />
+          </ol>
+          <div
+            class="carousel-inner"
+            data-v-9c4fbe64=""
+          >
+            <div
+              class="carousel-item active"
+              data-v-9c4fbe64=""
+            >
+              <img
+                class="d-block w-100 h-100 img-fluid"
+                src="https://picsum.photos/1024/480/?image=52"
+              />
+              <div
+                class="carousel-caption"
+              >
+                <h3>
+                  First Slide
+                </h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </div>
+            </div>
+             
+            <div
+              class="carousel-item"
+              data-v-9c4fbe64=""
+            >
+              <svg
+                class="d-block w-100 h-100 img-fluid"
+                style="background-color: grey;"
+              />
+              <div
+                class="carousel-caption"
+              >
+                <h3>
+                  Blank page
+                </h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </div>
+            </div>
+             
+            <div
+              class="carousel-item"
+              data-v-9c4fbe64=""
+            >
+              <img
+                class="d-block w-100 h-100 img-fluid"
+                src="https://picsum.photos/1024/480/?image=54"
+              />
+              <!---->
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            data-v-9c4fbe64=""
+          >
+            <span
+              aria-label="Previous"
+              class="carousel-control-prev-icon"
+              data-v-9c4fbe64=""
+            />
+          </a>
+          <a
+            class="carousel-control-next"
+            data-v-9c4fbe64=""
+          >
+            <span
+              aria-label="Next"
+              class="carousel-control-next-icon"
+              data-v-9c4fbe64=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

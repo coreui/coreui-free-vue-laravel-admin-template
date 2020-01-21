@@ -65,6 +65,7 @@ const EditNote = () => import('@/views/notes/EditNote')
 const CreateNote = () => import('@/views/notes/CreateNote')
 
 const EditMenu = () => import('@/views/menu/EditMenu')
+const Media = () => import('@/views/media/Media')
 
 Vue.use(Router)
 
@@ -87,6 +88,11 @@ function configRoutes () {
           path: '/menu',
           name: 'Edit Menu',
           component: EditMenu
+        },
+        {
+          path: 'media',
+          name: 'Media',
+          component: Media
         },
         {
           path: 'dashboard',

@@ -128,7 +128,7 @@ export default {
     deleteNote ( id ) {
       let self = this;
       let noteId = id;
-      axios.post('/api/notes/' + id + '?token=' + localStorage.getItem("api_token"), {
+      axios.post(  '/api/notes/' + id + '?token=' + localStorage.getItem("api_token"), {
         _method: 'DELETE'
       })
       .then(function (response) {
@@ -151,7 +151,7 @@ export default {
     },
     getNotes (){
       let self = this;
-      axios.get('/api/notes?token=' + localStorage.getItem("api_token") )
+      axios.get(  '/api/notes?token=' + localStorage.getItem("api_token") )
       .then(function (response) {
         self.items = response.data;
       }).catch(function (error) {

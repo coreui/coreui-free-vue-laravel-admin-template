@@ -17,8 +17,8 @@ class NotesTest extends TestCase
     public function testCanReadListOfNotes()
     {
         $user = factory('App\User')->create();
-        $noteOne = factory('App\Notes')->create();
-        $noteTwo = factory('App\Notes')->create();
+        $noteOne = factory('App\Models\Notes')->create();
+        $noteTwo = factory('App\Models\Notes')->create();
         $response = $this->actingAs($user, 'api')->get('/api/notes');
         $response->assertStatus(200)->assertJson([
             [
@@ -34,8 +34,8 @@ class NotesTest extends TestCase
     public function testCanReadSingleNote()
     {
         $userOne = factory('App\User')->create();
-        $note = factory('App\Notes')->create();
-        $noteTwo = factory('App\Notes')->create();
+        $note = factory('App\Models\Notes')->create();
+        $noteTwo = factory('App\Models\Notes')->create();
         $response = $this->actingAs($userOne, 'api')->get('/api/notes/' . $note->id );
         $response->assertStatus(200)->assertJson([
             'title' => $note->title,
@@ -49,7 +49,7 @@ class NotesTest extends TestCase
     public function testCanOpenNoteCreateForm()
     {
         $user = factory('App\User')->create();
-        $status = factory('App\Status')->create();
+        $status = factory('App\Models\Status')->create();
         $response = $this->actingAs($user, 'api')->get('/api/notes/create');
         $response->assertStatus(200)->assertJson([
             [
@@ -65,7 +65,7 @@ class NotesTest extends TestCase
     public function testCanCreateNewNote()
     {
         $user = factory('App\User')->create();
-        $note = factory('App\Notes')->create();
+        $note = factory('App\Models\Notes')->create();
         $response = $this->actingAs($user)->post('/api/notes',  $note->toArray());
         $this->assertDatabaseHas('notes',['title' => $note->title, 'content' => $note->content]);
     }
@@ -76,7 +76,7 @@ class NotesTest extends TestCase
     public function testCanOpenNoteEdition()
     {
         $user = factory('App\User')->create();
-        $note = factory('App\Notes')->create();
+        $note = factory('App\Models\Notes')->create();
         $response = $this->actingAs($user)->get('/api/notes/'.$note->id . '/edit');
         $response->assertStatus(200)->assertJson([ 'note' => [
             'title' => $note->title,
@@ -90,7 +90,7 @@ class NotesTest extends TestCase
     public function testCanEditNote()
     {
         $user = factory('App\User')->create();
-        $note = factory('App\Notes')->create();
+        $note = factory('App\Models\Notes')->create();
         $note->title = 'Updated title';
         $note->content = 'Updated content';
         $this->actingAs($user)->put('/api/notes/'.$user->id, $note->toArray());
@@ -103,7 +103,7 @@ class NotesTest extends TestCase
     public function testCanDeleteNote()
     {
         $user = factory('App\User')->create();
-        $note = factory('App\Notes')->create();
+        $note = factory('App\Models\Notes')->create();
         $this->actingAs( $user );
         $this->delete('/api/notes/'.$note->id);
         $this->assertDatabaseMissing('notes',['id'=> $note->id]);

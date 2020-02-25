@@ -78,7 +78,7 @@ import axios from "axios";
         },
         login() {
           let self = this;
-          axios.post('/api/login', {
+          axios.post(  '/api/login', {
             email: self.email,
             password: self.password,
           }).then(function (response) {

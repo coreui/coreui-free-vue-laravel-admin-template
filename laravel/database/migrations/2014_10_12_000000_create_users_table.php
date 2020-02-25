@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             ->unique()
             ->nullable()
             ->default(null);
-            $table->string('roles');
+            $table->string('menuroles');
             $table->string('status');
             $table->rememberToken();
             $table->timestamps();

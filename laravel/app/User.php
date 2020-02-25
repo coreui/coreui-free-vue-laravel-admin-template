@@ -7,11 +7,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Tymon\JWTAuth\Contracts\JWTSubject;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
     use SoftDeletes;
+    use HasRoles;
  
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
@@ -63,8 +65,6 @@ class User extends Authenticatable implements JWTSubject
     protected $dates = [
         'deleted_at'
     ];
-
-    protected $attributes = [ 
-        'roles' => 'user',
-    ];
+    
+    protected $guard_name = 'api';
 }

@@ -17,7 +17,7 @@ class MenuController extends Controller
         try {
             $user = auth()->user();
             if($user && !empty($user)){
-                $roles =  $user->roles;
+                $roles =  $user->menuroles;
             }else{
                 $roles = '';
             }

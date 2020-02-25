@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\EditMenuViewService;
-use App\Menurole;
+use App\Services\RolesService;
+use App\Models\Menurole;
 
 class MenuEditController extends Controller
 {
@@ -26,7 +27,9 @@ class MenuEditController extends Controller
      */
     public function index()
     {
-        $roles = explode(',', env("APP_ROLES", 'guest,user,admin'));
+        //$roles = explode(',', env("APP_ROLES", 'guest,user,admin'));
+        $rolesService = new RolesService();
+        $roles = $rolesService->get();
         return response()->json( array('roles' => $roles) );
     }
 

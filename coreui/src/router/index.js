@@ -64,8 +64,31 @@ const Note = () => import('@/views/notes/Note')
 const EditNote = () => import('@/views/notes/EditNote')
 const CreateNote = () => import('@/views/notes/CreateNote')
 
+//Roles
+const Roles = () => import('@/views/roles/Roles')
+const Role = () => import('@/views/roles/Role')
+const EditRole = () => import('@/views/roles/EditRole')
+const CreateRole = () => import('@/views/roles/CreateRole')
+
+//Bread
+const Breads = () => import('@/views/bread/Breads')
+const Bread = () => import('@/views/bread/Bread')
+const EditBread = () => import('@/views/bread/EditBread')
+const CreateBread = () => import('@/views/bread/CreateBread')
+const DeleteBread = () => import('@/views/bread/DeleteBread')
+
+//Resources
+const Resources = () => import('@/views/resources/Resources')
+const CreateResource = () => import('@/views/resources/CreateResources')
+const Resource = () => import('@/views/resources/Resource')
+const EditResource = () => import('@/views/resources/EditResource')
+const DeleteResource = () => import('@/views/resources/DeleteResource')
+
 const EditMenu = () => import('@/views/menu/EditMenu')
 const Media = () => import('@/views/media/Media')
+
+
+
 
 Vue.use(Router)
 
@@ -139,7 +162,7 @@ function configRoutes () {
             {
               path: ':id/edit',
               meta: { label: 'Edit User' },
-              name: 'EditUser',
+              name: 'Edit User',
               component: EditUser
             },
           ]
@@ -158,7 +181,7 @@ function configRoutes () {
             {
               path: 'create',
               meta: { label: 'Create Note' },
-              name: 'CreateNote',
+              name: 'Create Note',
               component: CreateNote
             },
             {
@@ -170,8 +193,113 @@ function configRoutes () {
             {
               path: ':id/edit',
               meta: { label: 'Edit Note' },
-              name: 'EditNote',
+              name: 'Edit Note',
               component: EditNote
+            },
+          ]
+        },
+        {
+          path: 'roles',
+          meta: { label: 'Roles'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: Roles,
+            },
+            {
+              path: 'create',
+              meta: { label: 'Create Role' },
+              name: 'Create Note',
+              component: CreateRole
+            },
+            {
+              path: ':id',
+              meta: { label: 'Role Details'},
+              name: 'Role',
+              component: Role,
+            },
+            {
+              path: ':id/edit',
+              meta: { label: 'Edit Role' },
+              name: 'Edit Role',
+              component: EditRole
+            },
+          ]
+        },
+        {
+          path: 'bread',
+          meta: { label: 'Bread'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: Breads,
+            },
+            {
+              path: 'create',
+              meta: { label: 'Create Bread' },
+              name: 'CreateBread',
+              component: CreateBread
+            },
+            {
+              path: ':id',
+              meta: { label: 'Bread Details'},
+              name: 'Bread',
+              component: Bread,
+            },
+            {
+              path: ':id/edit',
+              meta: { label: 'Edit Bread' },
+              name: 'Edit Bread',
+              component: EditBread
+            },
+            {
+              path: ':id/delete',
+              meta: { label: 'Delete Bread' },
+              name: 'Delete Bread',
+              component: DeleteBread
+            },
+          ]
+        },
+        {
+          path: 'resource',
+          meta: { label: 'Resources'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: ':bread/resource',
+              component: Resources,
+            },
+            {
+              path: ':bread/resource/create',
+              meta: { label: 'Create Resource' },
+              name: 'CreateResource',
+              component: CreateResource
+            },
+            {
+              path: ':bread/resource/:id',
+              meta: { label: 'Resource Details'},
+              name: 'Resource',
+              component: Resource,
+            },
+            {
+              path: ':bread/resource/:id/edit',
+              meta: { label: 'Edit Resource' },
+              name: 'Edit Resource',
+              component: EditResource
+            },
+            {
+              path: ':bread/resource/:id/delete',
+              meta: { label: 'Delete Resource' },
+              name: 'Delete Resource',
+              component: DeleteResource
             },
           ]
         },

@@ -97,7 +97,7 @@ export default {
     deleteUser ( id ) {
       let self = this;
       let userId = id;
-      axios.post('/api/users/' + id + '?token=' + localStorage.getItem("api_token"), {
+      axios.post(  '/api/users/' + id + '?token=' + localStorage.getItem("api_token"), {
         _method: 'DELETE'
       })
       .then(function (response) {
@@ -117,7 +117,7 @@ export default {
     },
     getUsers (){
       let self = this;
-      axios.get('/api/users?token=' + localStorage.getItem("api_token"))
+      axios.get(  '/api/users?token=' + localStorage.getItem("api_token"))
       .then(function (response) {
         self.items = response.data.users;
         self.you = response.data.you;

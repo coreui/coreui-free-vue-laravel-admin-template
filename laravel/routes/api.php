@@ -22,7 +22,13 @@ Route::group(['middleware' => 'api'], function ($router) {
     Route::post('register', 'AuthController@register'); 
 
     Route::resource('notes', 'NotesController');
+
+    Route::resource('resource/{table}/resource', 'ResourceController');
+    
     Route::group(['middleware' => 'admin'], function ($router) {
+        
+        Route::resource('bread',  'BreadController');   //create BREAD (resource)
+
         Route::resource('users', 'UsersController')->except( ['create', 'store'] );
         Route::get('menu/edit', 'MenuEditController@index');
         Route::get('menu/edit/selected', 'MenuEditController@menuSelected');
@@ -46,6 +52,10 @@ Route::group(['middleware' => 'api'], function ($router) {
 
             Route::get('/file/download',    'MediaController@fileDownload');
         });
+
+        Route::resource('roles',        'RolesController');
+        Route::get('/roles/move/move-up',      'RolesController@moveUp')->name('roles.up');
+        Route::get('/roles/move/move-down',    'RolesController@moveDown')->name('roles.down');
     });
 });
 

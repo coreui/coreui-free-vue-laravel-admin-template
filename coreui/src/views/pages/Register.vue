@@ -77,7 +77,7 @@
       methods: {
         register() {
           var self = this;
-          axios.post('/api/register', {
+          axios.post(  '/api/register', {
             name: self.name,
             email: self.email,
             password: self.password,

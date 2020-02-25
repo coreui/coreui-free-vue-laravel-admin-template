@@ -109,7 +109,7 @@ export default {
       this.show = sidebarClosed ? true : 'responsive'
     })
     let self = this;
-    axios.get('/api/menu?token=' + localStorage.getItem("api_token") )
+    axios.get(   '/api/menu?token=' + localStorage.getItem("api_token") )
     .then(function (response) {
       self.nav = self.rebuildData(response.data);
     }).catch(function (error) {

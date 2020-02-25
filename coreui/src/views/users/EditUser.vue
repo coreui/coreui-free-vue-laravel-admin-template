@@ -53,7 +53,7 @@ export default {
     },
     update() {
         let self = this;
-        axios.post('/api/users/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
+        axios.post(  '/api/users/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
         {
             _method: 'PUT',
             name: self.name,
@@ -76,7 +76,7 @@ export default {
   },
   mounted: function(){
     let self = this;
-    axios.get('/api/users/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
+    axios.get(  '/api/users/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
         self.name = response.data.name;
         self.email = response.data.email;

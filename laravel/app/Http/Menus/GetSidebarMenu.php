@@ -7,7 +7,7 @@ namespace App\Http\Menus;
 
 use App\MenuBuilder\MenuBuilder;
 use Illuminate\Support\Facades\DB;
-use App\Menus;
+use App\Models\Menus;
 use App\MenuBuilder\RenderFromDatabaseData;
 
 class GetSidebarMenu implements MenuInterface{

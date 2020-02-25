@@ -18,6 +18,7 @@ class CreateFolderTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->integer('folder_id')->unsigned()->nullable();
+            $table->boolean('resource')->nullable();
         });
     }
 

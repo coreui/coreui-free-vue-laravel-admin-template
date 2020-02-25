@@ -95,7 +95,7 @@ export default {
     selectRole(){
       let self = this;
       console.log(this.roleSelected);
-      axios.get('/api/menu/edit/selected?token=' + localStorage.getItem("api_token") + '&role=' + this.roleSelected )
+      axios.get(  '/api/menu/edit/selected?token=' + localStorage.getItem("api_token") + '&role=' + this.roleSelected )
       .then(function (response) {
         self.tableData = self.buildArrayData(response.data.menuToEdit);
         self.thisMenuRole = response.data.role;
@@ -107,7 +107,7 @@ export default {
     },
     toggleElement(id){
       let self = this;
-      axios.get('/api/menu/edit/selected/switch?token=' + localStorage.getItem("api_token") + '&role=' + this.thisMenuRole + '&id=' + id )
+      axios.get(  '/api/menu/edit/selected/switch?token=' + localStorage.getItem("api_token") + '&role=' + this.thisMenuRole + '&id=' + id )
       .then(function (response) {
         self.selectRole();
       }).catch(function (error) {
@@ -119,7 +119,7 @@ export default {
   mounted () {
     this.$root.$on('toggle-sidebar', () => this.show = !this.show)
     let self = this;
-    axios.get('/api/menu/edit?token=' + localStorage.getItem("api_token") )
+    axios.get(  '/api/menu/edit?token=' + localStorage.getItem("api_token") )
     .then(function (response) {
       self.roles = response.data.roles;
     }).catch(function (error) {

@@ -23,7 +23,7 @@ $factory->define(User::class, function (Faker $faker) {
         'email_verified_at' => now(),
         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         'remember_token' => Str::random(10),
-        'roles' => 'user',
+        'menuroles' => 'user',
         'status' => 'Active',
         'api_token' => Str::random(80),
     ];
@@ -31,6 +31,6 @@ $factory->define(User::class, function (Faker $faker) {
 
 $factory->state(\App\User::class, 'admin', function (Faker $faker) {
     return [
-        'roles' => 'user,admin',
+        'menuroles' => 'user,admin',
     ];
 });

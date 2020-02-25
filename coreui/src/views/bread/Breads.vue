@@ -25,6 +25,11 @@
                   <strong>{{item.name}}</strong>
                 </td>
               </template>
+              <template #goto="{item}">
+                <td>
+                  <CButton color="primary" @click="goto( item.id )">Go to resources</CButton>
+                </td>
+              </template>
               <template #show="{item}">
                 <td>
                   <CButton color="primary" @click="showBread( item.id )">Show</CButton>
@@ -56,7 +61,7 @@ export default {
   data: () => {
     return {
       items: [],
-      fields: ['name', 'show', 'edit', 'delete'],
+      fields: ['name', 'goto', 'show', 'edit', 'delete'],
       currentPage: 1,
       perPage: 5,
       totalRows: 0,
@@ -70,6 +75,9 @@ export default {
   computed: {
   },
   methods: {
+    goto( id){
+      this.$router.push({path: `resource/${id.toString()}/resource`})
+    },
     breadLink (id) {
       return `bread/${id.toString()}`
     },

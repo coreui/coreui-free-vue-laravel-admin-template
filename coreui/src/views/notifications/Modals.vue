@@ -7,7 +7,7 @@
             <CCardHeader>
               <CIcon name="cil-justify-center"/> Bootstrap Modals
               <div class="card-header-actions">
-                <a
+                <a 
                   href="https://coreui.io/vue/docs/components/modal" 
                   class="card-header-action" 
                   rel="noreferrer noopener" 

@@ -522,4 +522,3 @@ function configRoutes () {
     }
   ]
 }
-

@@ -51,14 +51,14 @@
       </CCard>
       <CCard>
         <CCardHeader>Simple bar chart</CCardHeader>
-        <CCardBody><CChartBarSimple background-color="danger"/></CCardBody>
+        <CCardBody><CChartBarSimple background-color="danger"/></CCardBody>        
       </CCard>
     </CCardGroup>
   </div>
 </template>
+
 <script>
 import * as Charts from './index.js'
-
 export default {
   name: 'Charts',
   components: {

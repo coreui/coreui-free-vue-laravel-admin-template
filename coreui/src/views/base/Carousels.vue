@@ -6,7 +6,7 @@
           <CIcon name="cil-justify-center"/>
           <strong> Bootstrap Carousel</strong>
           <div class="card-header-actions">
-            <a
+            <a 
               href="https://coreui.io/vue/docs/components/carousel" 
               class="card-header-action" 
               rel="noreferrer noopener" 

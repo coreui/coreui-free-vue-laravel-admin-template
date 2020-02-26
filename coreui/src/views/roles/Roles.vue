@@ -1,6 +1,6 @@
 <template>
   <CRow>
-    <CCol cols="12" xl="12">
+    <CCol col="12" xl="12">
       <transition name="slide">
       <CCard>
         <CCardBody>

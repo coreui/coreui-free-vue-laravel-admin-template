@@ -1,6 +1,6 @@
 <template>
   <CRow>
-    <CCol cols="12" lg="6">
+    <CCol col="12" lg="6">
       <CCard no-header>
         <CCardBody>
           <h3>Single BREAD</h3>

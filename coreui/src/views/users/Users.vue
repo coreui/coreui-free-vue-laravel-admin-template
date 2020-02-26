@@ -1,8 +1,11 @@
 <template>
   <CRow>
-    <CCol cols="12" xl="8">
+    <CCol col="12" xl="8">
       <transition name="slide">
       <CCard>
+        <CCardHeader>
+            Users
+        </CCardHeader>
         <CCardBody>
           <CAlert
             :show.sync="dismissCountDown"
@@ -16,7 +19,7 @@
             striped
             :items="items"
             :fields="fields"
-            :items-per-page="10"
+            :items-per-page="5"
             pagination
           >
           <template #status="{item}">

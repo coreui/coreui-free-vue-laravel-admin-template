@@ -2,17 +2,22 @@
   <CSidebar 
     fixed 
     :minimize="minimize"
-    :show.sync="show"
+    :show="show"
+    @update:show="(value) => $store.commit('set', ['sidebarShow', value])"
   >
-    <CSidebarBrand 
-      :imgFull="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/coreui-base-white.svg'}"
-      :imgMinimized="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/coreui-signet-white.svg'}"
-      :wrappedInLink="{ href: 'https://coreui.io/', target: '_blank'}"
-    />
+    <CSidebarBrand class="d-md-down-none" to="/">
+      <CIcon 
+        class="d-block" 
+        name="logo" 
+        size="custom-size" 
+        :height="35" 
+        :viewBox="`0 0 ${minimize ? 110 : 556} 134`"
+      />
+    </CSidebarBrand>
     <CRenderFunction flat :content-to-render="nav"/>
     <CSidebarMinimizer
       class="d-md-down-none"
-      @click.native="minimize = !minimize"
+      @click.native="$store.commit('set', ['sidebarMinimize', !minimize])"
     />
   </CSidebar>
 </template>
@@ -23,10 +28,18 @@ export default {
   name: 'TheSidebar',
   data () {
     return {
-      minimize: false,
+      //minimize: false,
       nav: [],
-      show: true,
+      //show: true,
       buffor: [],
+    }
+  },
+  computed: {
+    show () {
+      return this.$store.state.sidebarShow 
+    },
+    minimize () {
+      return this.$store.state.sidebarMinimize 
     }
   },
   methods: {

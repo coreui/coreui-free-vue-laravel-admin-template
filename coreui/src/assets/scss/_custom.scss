@@ -1,6 +1,17 @@
 // Here you can add other styles
 
+/*
 .card-header > .c-icon:first-child {
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+}
+*/
+
+.card-header:not(.content-center) > .c-icon:first-child {
   margin-right: 0.1rem;
   margin-top: 0.1rem;
   vertical-align: top;

@@ -1,7 +1,7 @@
 <template>
-  <CContainer class="d-flex align-items-center min-vh-100">
-    <CRow class="justify-content-center">
-      <CCol md="8">
+  <CContainer class="d-flex content-center min-vh-100">
+    <CRow>
+      <CCol>
         <CCardGroup>
           <CCard class="p-4">
             <CCardBody>
@@ -40,7 +40,6 @@
             color="primary"
             text-color="white"
             class="text-center py-5 d-md-down-none"
-            style="width:44%"
             body-wrapper
           >
             <h2>Sign up</h2>
@@ -64,6 +63,7 @@
 import axios from "axios";
 
     export default {
+      name: 'Login',
       data() {
         return {
           email: '',

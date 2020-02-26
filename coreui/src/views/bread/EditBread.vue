@@ -1,6 +1,6 @@
 <template>
   <CRow>
-    <CCol cols="6" lg="6">
+    <CCol col="6" lg="6">
       <CCard>
         <CCardBody>
           <h3>
@@ -56,7 +56,7 @@
         </CCardBody>
       </CCard>
     </CCol>
-    <CCol cols="6" lg="6">
+    <CCol col="6" lg="6">
       <CCard>
         <CCardBody>
             <h4>Assign to roles:</h4>
@@ -72,7 +72,7 @@
         </CCardBody>
       </CCard>
     </CCol>
-    <CCol cols="6" lg="6">
+    <CCol col="6" lg="6">
       <CCard>
         <CCardBody>
 

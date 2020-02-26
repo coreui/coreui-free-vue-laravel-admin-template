@@ -1,7 +1,7 @@
 <template>
   <div>
     <CRow v-if="marker">
-      <CCol cols="6" lg="6">
+      <CCol col="6" lg="6">
         <CCard no-header>
           <CCardBody>
             <h3>
@@ -26,7 +26,7 @@
       </CCol>
     </CRow>
     <CRow v-else>
-      <CCol cols="6" lg="6">
+      <CCol col="6" lg="6">
         <CCard no-header>
           <CCardBody>
               <h3>
@@ -82,7 +82,7 @@
           </CCardBody>
         </CCard>
       </CCol>
-      <CCol cols="6" lg="6">
+      <CCol col="6" lg="6">
         <CCard no-header>
           <CCardBody>
             <h4>Assign to roles:</h4>
@@ -97,7 +97,7 @@
           </CCardBody>
         </CCard>
       </CCol>
-      <CCol cols="6" lg="6">  
+      <CCol col="6" lg="6">  
         <CCard no-header>
           <CCardBody>
               <CreateBreadFieldCard 

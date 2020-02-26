@@ -1,6 +1,6 @@
 <template>
   <CRow>
-    <CCol cols="12" xl="6">
+    <CCol col="12" xl="6">
       <transition name="slide">
         <CCard>
           <CCardBody>
@@ -87,7 +87,7 @@
         </CCard>
       </transition>
     </CCol>
-    <CCol cols="12" xl="6">
+    <CCol col="12" xl="6">
       <transition name="slide">
         <CCard v-if="rightCard == 'fileInfo'">
           <CCardBody>

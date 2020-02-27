@@ -14,25 +14,34 @@
       <CIcon name="logo" height="48" alt="Logo"/>
     </CHeaderBrand>
     <CHeaderNav class="d-md-down-none mr-auto">
-      <CHeaderNavItem class="px-3">
-        <CHeaderNavLink to="/media">
-          Media
-        </CHeaderNavLink>
+      <CHeaderNavItem>
+        <CDropdown
+          color="link"
+          :caret="false"
+        >
+          <template #toggler-content>
+            <a class="c-header-nav-link">
+              Pages
+            </a>
+          </template>
+          <CDropdownItem href="#/notes">Notes</CDropdownItem>
+          <CDropdownItem href="#/users">Users</CDropdownItem>
+        </CDropdown>
       </CHeaderNavItem>
-      <CHeaderNavItem class="px-3">
-        <CHeaderNavLink to="/notes">
-          Notes
-        </CHeaderNavLink>
-      </CHeaderNavItem>
-      <CHeaderNavItem class="px-3">
-        <CHeaderNavLink to="/users">
-          Users
-        </CHeaderNavLink>
-      </CHeaderNavItem>
-      <CHeaderNavItem class="px-3">
-        <CHeaderNavLink to="/menu">
-          Menu
-        </CHeaderNavLink>
+      <CHeaderNavItem>
+        <CDropdown
+          color="link"
+          :caret="false"
+        >
+          <template #toggler-content>
+            <a class="c-header-nav-link">
+              Settings
+            </a>
+          </template>
+          <CDropdownItem href="#/media">Media</CDropdownItem>
+          <CDropdownItem href="#/menu">Menu</CDropdownItem>
+          <CDropdownItem href="#/bread">Bread</CDropdownItem>
+        </CDropdown>
       </CHeaderNavItem>
     </CHeaderNav>
     <CHeaderNav class="mr-4">

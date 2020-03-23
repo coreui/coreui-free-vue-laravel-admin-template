@@ -1,7 +1,7 @@
 {
-  "name": "@coreui/coreui-free-vue-admin-template",
-  "version": "3.0.0-beta.2",
-  "description": "Open Source Bootstrap Admin Template",
+  "name": "@coreui/coreui-free-vue-laravel-admin-template",
+  "version": "3.0.0-beta.1",
+  "description": "CoreUI Free Vue Laravel Bootstrap Admin Template Tweet",
   "author": {
     "name": "CoreUI",
     "url": "https://coreui.io",
@@ -15,7 +15,7 @@
     }
   ],
   "homepage": "http://coreui.io",
-  "copyright": "Copyright 2019 creativeLabs Łukasz Holeczek",
+  "copyright": "Copyright 2020 creativeLabs Łukasz Holeczek",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",

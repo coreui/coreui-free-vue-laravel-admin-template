@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         $this->call('FolderTableSeeder');
         $this->call('ExampleSeeder');
         $this->call('BREADSeeder');
+        $this->call('EmailSeeder');
     }
 }

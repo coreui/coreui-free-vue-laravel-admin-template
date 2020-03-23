@@ -84,6 +84,13 @@ const Resource = () => import('@/views/resources/Resource')
 const EditResource = () => import('@/views/resources/EditResource')
 const DeleteResource = () => import('@/views/resources/DeleteResource')
 
+//Email
+const Emails        = () => import('@/views/email/Emails')
+const CreateEmail  = () => import('@/views/email/CreateEmail')
+const EditEmail    = () => import('@/views/email/EditEmail')
+const ShowEmail     = () => import('@/views/email/ShowEmail')
+const SendEmail     = () => import('@/views/email/SendEmail')
+
 const EditMenu = () => import('@/views/menu/EditMenu')
 const Media = () => import('@/views/media/Media')
 
@@ -212,7 +219,7 @@ function configRoutes () {
             {
               path: 'create',
               meta: { label: 'Create Role' },
-              name: 'Create Note',
+              name: 'Create Role',
               component: CreateRole
             },
             {
@@ -263,6 +270,43 @@ function configRoutes () {
               meta: { label: 'Delete Bread' },
               name: 'Delete Bread',
               component: DeleteBread
+            },
+          ]
+        },
+        {
+          path: 'email',
+          meta: { label: 'Emails'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: Emails,
+            },
+            {
+              path: 'create',
+              meta: { label: 'Create Email Template' },
+              name: 'Create Email Template',
+              component: CreateEmail
+            },
+            {
+              path: ':id',
+              meta: { label: 'Show Email Template'},
+              name: 'Show Email Tempalte',
+              component: ShowEmail,
+            },
+            {
+              path: ':id/edit',
+              meta: { label: 'Edit Email Tempalate' },
+              name: 'Edit Email Template',
+              component: EditEmail
+            },
+            {
+              path: ':id/sendEmail',
+              meta: { label: 'Send Email' },
+              name: 'Send Email',
+              component: SendEmail
             },
           ]
         },

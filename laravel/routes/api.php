@@ -26,7 +26,11 @@ Route::group(['middleware' => 'api'], function ($router) {
     Route::resource('resource/{table}/resource', 'ResourceController');
     
     Route::group(['middleware' => 'admin'], function ($router) {
-        
+
+        Route::resource('mail',        'MailController');
+        Route::get('prepareSend/{id}', 'MailController@prepareSend')->name('prepareSend');
+        Route::post('mailSend/{id}',   'MailController@send')->name('mailSend');
+
         Route::resource('bread',  'BreadController');   //create BREAD (resource)
 
         Route::resource('users', 'UsersController')->except( ['create', 'store'] );

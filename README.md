@@ -256,8 +256,7 @@ $ php artisan migrate:refresh --seed
 ### Table of contents:
 * Notes
 * Users
-* Management of menus
-* Manage menu items
+* Menu management
 * Role management
 * Management of the media
 * BREAD

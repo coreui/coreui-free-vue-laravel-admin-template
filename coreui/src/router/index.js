@@ -86,15 +86,23 @@ const DeleteResource = () => import('@/views/resources/DeleteResource')
 
 //Email
 const Emails        = () => import('@/views/email/Emails')
-const CreateEmail  = () => import('@/views/email/CreateEmail')
-const EditEmail    = () => import('@/views/email/EditEmail')
+const CreateEmail   = () => import('@/views/email/CreateEmail')
+const EditEmail     = () => import('@/views/email/EditEmail')
 const ShowEmail     = () => import('@/views/email/ShowEmail')
 const SendEmail     = () => import('@/views/email/SendEmail')
 
-const EditMenu = () => import('@/views/menu/EditMenu')
+const Menus       = () => import('@/views/menu/MenuIndex')
+const CreateMenu  = () => import('@/views/menu/CreateMenu')
+const EditMenu    = () => import('@/views/menu/EditMenu')
+const DeleteMenu  = () => import('@/views/menu/DeleteMenu')
+
+const MenuElements = () => import('@/views/menuElements/ElementsIndex')
+const CreateMenuElement = () => import('@/views/menuElements/CreateMenuElement')
+const EditMenuElement = () => import('@/views/menuElements/EditMenuElement')
+const ShowMenuElement = () => import('@/views/menuElements/ShowMenuElement')
+const DeleteMenuElement = () => import('@/views/menuElements/DeleteMenuElement')
+
 const Media = () => import('@/views/media/Media')
-
-
 
 
 Vue.use(Router)
@@ -114,11 +122,6 @@ function configRoutes () {
       name: 'Home',
       component: TheContainer,
       children: [
-        {
-          path: '/menu',
-          name: 'Edit Menu',
-          component: EditMenu
-        },
         {
           path: 'media',
           name: 'Media',
@@ -148,6 +151,74 @@ function configRoutes () {
           path: 'widgets',
           name: 'Widgets',
           component: Widgets
+        },
+        {
+          path: 'menu',
+          meta: { label: 'Menu'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: Menus,
+            },
+            {
+              path: 'create',
+              meta: { label: 'Create Menu' },
+              name: 'CreateMenu',
+              component: CreateMenu
+            },
+            {
+              path: ':id/edit',
+              meta: { label: 'Edit Menu' },
+              name: 'EditMenu',
+              component: EditMenu
+            },
+            {
+              path: ':id/delete',
+              meta: { label: 'Delete Menu' },
+              name: 'DeleteMenu',
+              component: DeleteMenu
+            },
+          ]
+        },
+        {
+          path: 'menuelement',
+          meta: { label: 'MenuElement'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: ':menu/menuelement',
+              component: MenuElements,
+            },
+            {
+              path: ':menu/menuelement/create',
+              meta: { label: 'Create Menu Element' },
+              name: 'Create Menu Element',
+              component: CreateMenuElement
+            },
+            {
+              path: ':menu/menuelement/:id',
+              meta: { label: 'Menu Element Details'},
+              name: 'Menu Element',
+              component: ShowMenuElement,
+            },
+            {
+              path: ':menu/menuelement/:id/edit',
+              meta: { label: 'Edit Menu Element' },
+              name: 'Edit Menu Element',
+              component: EditMenuElement
+            },
+            {
+              path: ':menu/menuelement/:id/delete',
+              meta: { label: 'Delete Menu Element' },
+              name: 'Delete Menu Element',
+              component: DeleteMenuElement
+            },
+          ]
         },
         {
           path: 'users',

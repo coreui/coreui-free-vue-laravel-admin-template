@@ -54,9 +54,9 @@ class GetSidebarMenu implements MenuInterface{
         return $rfd->render($this->menu);
     }
 
-    public function getAll(){
+    public function getAll( $menuId = 1 ){
         $this->menu = Menus::select('menus.*')
-            ->where('menus.menu_id', '=', 1)
+            ->where('menus.menu_id', '=', $menuId)
             ->orderBy('menus.sequence', 'asc')->get();  
         $rfd = new RenderFromDatabaseData;
         return $rfd->render($this->menu);

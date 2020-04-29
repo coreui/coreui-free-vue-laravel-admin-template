@@ -87,7 +87,7 @@ class MenusTableSeeder extends Seeder
         return $lastId;
     }
 
-    public function beginDropdown($roles, $name, $href, $icon){
+    public function beginDropdown($roles, $name, $href='', $icon=''){
         if(count($this->dropdownId)){
             $parentId = $this->dropdownId[count($this->dropdownId) - 1];
         }else{
@@ -191,6 +191,24 @@ class MenusTableSeeder extends Seeder
         $this->endDropdown();
         $this->insertLink('guest,user,admin', 'Download CoreUI', 'https://coreui.io', 'cil-cloud-download');
         $this->insertLink('guest,user,admin', 'Try CoreUI PRO', 'https://coreui.io/pro/', 'cil-layers');
+
+        /* Create top menu */
+        DB::table('menulist')->insert([
+            'name' => 'top_menu'
+        ]);
+        $this->menuId = DB::getPdo()->lastInsertId();  //set menuId
+        $this->beginDropdown('guest,user,admin', 'Pages');
+            $this->insertLink('guest,user,admin', 'Dashboard',    '/');
+            $this->insertLink('user,admin', 'Notes',              '/notes');
+            $this->insertLink('admin', 'Users',                   '/users');
+        $this->endDropdown();
+        $this->beginDropdown('admin', 'Settings');
+            $this->insertLink('admin', 'Edit menu',               '/menu');
+            $this->insertLink('admin', 'Edit roles',              '/roles');
+            $this->insertLink('admin', 'Media',                   '/media');
+            $this->insertLink('admin', 'BREAD',                   '/bread');
+            $this->insertLink('admin', 'E-mail',                  '/email');
+        $this->endDropdown();
 
         $this->joinAllByTransaction(); ///   <===== Must by use on end of this seeder
     }

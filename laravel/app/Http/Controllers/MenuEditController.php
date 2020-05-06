@@ -81,7 +81,9 @@ class MenuEditController extends Controller
     }
 
     public function edit(Request $request){
-        return response()->json( array('menulist'  => Menulist::where('id', '=', $request->input('id'))->first() ) );
+        return response()->json( array(
+            'menulist'  => Menulist::where('id', '=', $request->input('id'))->first()
+        ));
     }
 
     public function update(Request $request){

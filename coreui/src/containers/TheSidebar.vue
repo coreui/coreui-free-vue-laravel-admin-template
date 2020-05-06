@@ -1,16 +1,16 @@
 <template>
-  <CSidebar 
-    fixed 
+  <CSidebar
+    fixed
     :minimize="minimize"
     :show="show"
     @update:show="(value) => $store.commit('set', ['sidebarShow', value])"
   >
     <CSidebarBrand class="d-md-down-none" to="/">
-      <CIcon 
-        class="d-block" 
-        name="logo" 
-        size="custom-size" 
-        :height="35" 
+      <CIcon
+        class="d-block"
+        name="logo"
+        size="custom-size"
+        :height="35"
         :viewBox="`0 0 ${minimize ? 110 : 556} 134`"
       />
     </CSidebarBrand>
@@ -36,39 +36,38 @@ export default {
   },
   computed: {
     show () {
-      return this.$store.state.sidebarShow 
+      return this.$store.state.sidebarShow
     },
     minimize () {
-      return this.$store.state.sidebarMinimize 
+      return this.$store.state.sidebarMinimize
     }
   },
   methods: {
     dropdown(data){
+      console.log(data)
       let result = {
-            _name: 'CSidebarNavDropdown',
-            name: data['name'],
-            route: data['href'],
-            icon: data['icon'],
-            _children: [],
+        _name: 'CSidebarNavDropdown',
+        name: data['name'],
+        route: data['href'],
+        icon: data['icon'],
+        _children: [],
       }
       for(let i=0; i<data['elements'].length; i++){
         if(data['elements'][i]['slug'] == 'dropdown'){
           result._children.push( this.dropdown(data['elements'][i]) );
         }else{
-          result._children.push(
-            {
-                   _name:  'CSidebarNavItem',
-                   name:   data['elements'][i]['name'],
-                   to:     data['elements'][i]['href'],
-                   icon:   data['elements'][i]['icon']
-            } 
-          );
+          result._children.push({
+            _name:  'CSidebarNavItem',
+            name:   data['elements'][i]['name'],
+            to:     data['elements'][i]['href'],
+            icon:   data['elements'][i]['icon']
+          });
         }
       }
       return result;
     },
     rebuildData(data){
-      this.buffor = [{    
+      this.buffor = [{
         _name: 'CSidebarNav',
         _children: []
       }];
@@ -76,33 +75,27 @@ export default {
         switch(data[k]['slug']){
           case 'link':
             if(data[k]['href'].indexOf('http') !== -1){
-              this.buffor[0]._children.push(
-                  {
-                      _name: 'CSidebarNavItem',
-                      name: data[k]['name'],
-                      href: data[k]['href'],
-                      icon: data[k]['icon'],
-                      target: '_blank'
-                  }
-              );
+              this.buffor[0]._children.push({
+                _name: 'CSidebarNavItem',
+                name: data[k]['name'],
+                href: data[k]['href'],
+                icon: data[k]['icon'],
+                target: '_blank'
+              });
             }else{
-              this.buffor[0]._children.push(
-                  {
-                      _name: 'CSidebarNavItem',
-                      name: data[k]['name'],
-                      to:   data[k]['href'],
-                      icon: data[k]['icon'],
-                  }
-              );
+              this.buffor[0]._children.push({
+                _name: 'CSidebarNavItem',
+                name: data[k]['name'],
+                to:   data[k]['href'],
+                icon: data[k]['icon'],
+              });
             }
           break;
           case 'title':
-            this.buffor[0]._children.push(
-              {
-                _name: 'CSidebarNavTitle',
-                _children: [data[k]['name']]
-              }
-            );
+            this.buffor[0]._children.push({
+              _name: 'CSidebarNavTitle',
+              _children: [data[k]['name']]
+            });
           break;
           case 'dropdown':
             this.buffor[0]._children.push( this.dropdown(data[k]) );
@@ -122,10 +115,10 @@ export default {
       this.show = sidebarClosed ? true : 'responsive'
     })
     let self = this;
-    axios.get(   '/api/menu?token=' + localStorage.getItem("api_token") )
-    .then(function (response) {
-      self.nav = self.rebuildData(response.data);
-    }).catch(function (error) {
+    let url = '/api/menu/1?token=' + localStorage.getItem("api_token")
+    axios.get(url).then((res) => {
+      self.nav = self.rebuildData(res.data);
+    }).catch((error) => {
       console.log(error);
       self.$router.push({ path: '/login' });
     });

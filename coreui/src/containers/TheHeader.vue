@@ -13,9 +13,37 @@
     <CHeaderBrand class="mx-auto d-lg-none" to="/">
       <CIcon name="logo" height="48" alt="Logo"/>
     </CHeaderBrand>
-
-    <CMenu/>
-
+    <CHeaderNav class="d-md-down-none mr-auto">
+      <CHeaderNavItem>
+        <CDropdown
+          color="link"
+          :caret="false"
+        >
+          <template #toggler-content>
+            <a class="c-header-nav-link">
+              Pages
+            </a>
+          </template>
+          <CDropdownItem href="#/notes">Notes</CDropdownItem>
+          <CDropdownItem href="#/users">Users</CDropdownItem>
+        </CDropdown>
+      </CHeaderNavItem>
+      <CHeaderNavItem>
+        <CDropdown
+          color="link"
+          :caret="false"
+        >
+          <template #toggler-content>
+            <a class="c-header-nav-link">
+              Settings
+            </a>
+          </template>
+          <CDropdownItem href="#/media">Media</CDropdownItem>
+          <CDropdownItem href="#/menu">Menu</CDropdownItem>
+          <CDropdownItem href="#/bread">Bread</CDropdownItem>
+        </CDropdown>
+      </CHeaderNavItem>
+    </CHeaderNav>
     <CHeaderNav class="mr-4">
       <CHeaderNavItem class="d-md-down-none mx-2">
         <CHeaderNavLink>
@@ -41,14 +69,12 @@
 </template>
 
 <script>
-import CMenu from './Menu'
 import TheHeaderDropdownAccnt from './TheHeaderDropdownAccnt'
 
 export default {
   name: 'TheHeader',
   components: {
-    TheHeaderDropdownAccnt,
-    CMenu
+    TheHeaderDropdownAccnt
   }
 }
 </script>

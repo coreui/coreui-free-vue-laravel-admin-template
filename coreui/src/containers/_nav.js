@@ -52,7 +52,7 @@ export default [
             name: 'Carousels',
             to: '/base/carousels',
             icon: 'cil-puzzle'
-          }, 
+          },
           {
             name: 'Collapses',
             to: '/base/collapses',

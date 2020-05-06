@@ -1,25 +1,25 @@
 /composer.phar
 
-/laravel/public/*
-!/laravel/public/index.php
-!/laravel/public/.htaccess
-!/laravel/public/web.config
-!/laravel/public/robots
-!/laravel/public/mix-manifest.json
+/public/*
+!/public/index.php
+!/public/.htaccess
+!/public/web.config
+!/public/robots
+!/public/mix-manifest.json
 
-/laravel/composer.phar
-/laravel/node_modules
-/laravel/public/hot
-/laravel/public/storage
-/laravel/storage/*.key
-/laravel/vendor
-/laravel/.env
-/laravel/.env.backup
-/laravel/.phpunit.result.cache
-/laravel/Homestead.json
-/laravel/Homestead.yaml
-/laravel/npm-debug.log
-/laravel/yarn-error.log
+/composer.phar
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.env
+/.env.backup
+/.phpunit.result.cache
+/Homestead.json
+/Homestead.yaml
+/npm-debug.log
+/yarn-error.log
 
 
 /coreui/.DS_Store

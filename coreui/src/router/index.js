@@ -26,136 +26,220 @@ const CreateRole = () => import("@/views/roles/CreateRole");
 
 Vue.use(Router);
 
-export default new Router({
+const routes = [
+    {
+        path: "/",
+        redirect: "/dashboard",
+        name: "Home",
+        component: TheContainer,
+        meta: {
+            requiresAuth: true
+        },
+        children: [
+            {
+                path: "dashboard",
+                name: "Dashboard",
+                component: Dashboard,
+                meta: { 
+                    requiresAuth: true
+                }
+            },
+            {
+                path: "users",
+                meta: {
+                    label: "Users",
+                    requiresAuth: true
+                },
+                component: {
+                    render(c) {
+                        return c("router-view");
+                    }
+                },
+                children: [
+                    {
+                        path: "",
+                        component: Users,
+                        meta: {
+                            requiresAuth: true
+                        }
+                    },
+                    {
+                        path: ":id",
+                        name: "User",
+                        component: User,
+                        meta: {
+                            label: "User Details",
+                            requiresAuth: true
+                        },
+                    },
+                    {
+                        path: ":id/edit",
+                        name: "Edit User",
+                        component: EditUser,
+                        meta: {
+                            label: "Edit User",
+                            requiresAuth: true
+                        },
+                    }
+                ]
+            },
+            {
+                path: "roles",
+                meta: {
+                    label: "Roles",
+                    requiresAuth: true
+                },
+                component: {
+                    render(c) {
+                        return c("router-view");
+                    }
+                },
+                children: [
+                    {
+                        path: "",
+                        component: Roles
+                    },
+                    {
+                        path: "create",
+                        name: "Create Role",
+                        component: CreateRole,
+                        meta: {
+                            label: "Create Role",
+                            requiresAuth: true
+                        }
+                    },
+                    {
+                        path: ":id",
+                        name: "Role",
+                        component: Role,
+                        meta: {
+                            label: "Role Details",
+                            requiresAuth: true
+                        }
+                    },
+                    {
+                        path: ":id/edit",
+                        name: "Edit Role",
+                        component: EditRole,
+                        meta: {
+                            label: "Edit Role",
+                            requiresAuth: true
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        path: "/pages",
+        redirect: "/pages/404",
+        name: "Pages",
+        component: {
+            render(c) {
+                return c("router-view");
+            }
+        },
+        meta: {
+            requiresAuth: false
+        },
+        children: [
+            {
+                path: "404",
+                name: "Page404",
+                component: Page404,
+                meta: {
+                    requiresAuth: false
+                }
+            },
+            {
+                path: "500",
+                name: "Page500",
+                component: Page500,
+                meta: {
+                    requiresAuth: false
+                }
+            }
+        ]
+    },
+    {
+        path: "/",
+        redirect: "/login",
+        name: "Auth",
+        component: {
+            render(c) {
+                return c("router-view");
+            }
+        },
+        meta: {
+            requiresAuth: false
+        },
+        children: [
+            {
+                path: "login",
+                name: "Login",
+                component: Login,
+                meta: {
+                    requiresAuth: false
+                }
+            },
+            {
+                path: "register",
+                name: "Register",
+                component: Register,
+                meta: {
+                    requiresAuth: false
+                }
+            }
+        ]
+    },
+    {
+        path: "*",
+        name: "404",
+        component: Page404,
+        meta: {
+            requiresAuth: false
+        }
+    }
+];
+
+const router = new Router({
     mode: "history", // https://router.vuejs.org/api/#mode
     linkActiveClass: "active",
     scrollBehavior: () => ({ y: 0 }),
-    routes: configRoutes()
+    routes: routes
 });
 
-function configRoutes() {
-    return [
-        {
-            path: "/",
-            redirect: "/dashboard",
-            name: "Home",
-            component: TheContainer,
-            children: [
-                {
-                    path: "dashboard",
-                    name: "Dashboard",
-                    component: Dashboard
-                },
-                {
-                    path: "users",
-                    meta: { label: "Users" },
-                    component: {
-                        render(c) {
-                            return c("router-view");
-                        }
-                    },
-                    children: [
-                        {
-                            path: "",
-                            component: Users
-                        },
-                        {
-                            path: ":id",
-                            meta: { label: "User Details" },
-                            name: "User",
-                            component: User
-                        },
-                        {
-                            path: ":id/edit",
-                            meta: { label: "Edit User" },
-                            name: "Edit User",
-                            component: EditUser
-                        }
-                    ]
-                },
-                {
-                    path: "roles",
-                    meta: { label: "Roles" },
-                    component: {
-                        render(c) {
-                            return c("router-view");
-                        }
-                    },
-                    children: [
-                        {
-                            path: "",
-                            component: Roles
-                        },
-                        {
-                            path: "create",
-                            meta: { label: "Create Role" },
-                            name: "Create Role",
-                            component: CreateRole
-                        },
-                        {
-                            path: ":id",
-                            meta: { label: "Role Details" },
-                            name: "Role",
-                            component: Role
-                        },
-                        {
-                            path: ":id/edit",
-                            meta: { label: "Edit Role" },
-                            name: "Edit Role",
-                            component: EditRole
-                        }
-                    ]
+router.beforeEach((to, from, next) => {
+    if(to.matched.some(record => record.meta.requiresAuth)) {
+        if (localStorage.getItem('jwt') == null) {
+            next({
+                path: '/login',
+                params: { nextUrl: to.fullPath }
+            })
+        } else {
+            let user = JSON.parse(localStorage.getItem('u'))
+            if(to.matched.some(record => record.meta.is_admin)) {
+                if(user.is_admin == 1){
+                    next()
                 }
-            ]
-        },
-        {
-            path: "/pages",
-            redirect: "/pages/404",
-            name: "Pages",
-            component: {
-                render(c) {
-                    return c("router-view");
+                else{
+                    next({ name: 'dashboard'})
                 }
-            },
-            children: [
-                {
-                    path: "404",
-                    name: "Page404",
-                    component: Page404
-                },
-                {
-                    path: "500",
-                    name: "Page500",
-                    component: Page500
-                }
-            ]
-        },
-        {
-            path: "/",
-            redirect: "/login",
-            name: "Auth",
-            component: {
-                render(c) {
-                    return c("router-view");
-                }
-            },
-            children: [
-                {
-                    path: "login",
-                    name: "Login",
-                    component: Login
-                },
-                {
-                    path: "register",
-                    name: "Register",
-                    component: Register
-                }
-            ]
-        },
-        {
-            path: "*",
-            name: "404",
-            component: Page404
+            }else {
+                next()
+            }
         }
-    ];
-}
+    } else if(to.matched.some(record => record.meta.guest)) {
+        if(localStorage.getItem('jwt') == null){
+            next()
+        }
+        else{
+            next({ name: 'dashboard'})
+        }
+    }else {
+        next() 
+    }
+})
+
+
+export default router;

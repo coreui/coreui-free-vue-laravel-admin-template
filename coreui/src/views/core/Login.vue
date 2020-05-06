@@ -83,7 +83,7 @@ export default {
         .then(function(response) {
           self.email = "";
           self.password = "";
-          localStorage.setItem("api_token", response.data.access_token);
+          localStorage.setItem("jwt", response.data.access_token);
           self.$router.push({ path: "dashboard" });
         })
         .catch(function(error) {

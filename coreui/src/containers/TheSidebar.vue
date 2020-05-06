@@ -115,7 +115,7 @@ export default {
       this.show = sidebarClosed ? true : 'responsive'
     })
     let self = this;
-    let url = '/api/menu/1?token=' + localStorage.getItem("api_token")
+    let url = '/api/menu/1?token=' + localStorage.getItem("jwt")
     axios.get(url).then((res) => {
       self.nav = self.rebuildData(res.data);
     }).catch((error) => {

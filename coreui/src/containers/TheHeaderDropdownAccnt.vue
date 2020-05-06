@@ -57,7 +57,7 @@ export default {
     },
     mounted () {
         let self = this;
-        axios.get('/api/menu/2?token=' + localStorage.getItem('api_token')).then((response) => {
+        axios.get('/api/menu/2?token=' + localStorage.getItem('jwt')).then((response) => {
             response.data.forEach((item) => {
                 switch(item.slug) {
                     case 'dropdown':

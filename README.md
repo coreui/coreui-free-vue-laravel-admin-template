@@ -185,14 +185,12 @@ $ php vendor/bin/phpunit
 ```
 
 Open your browser with address: [localhost:8000](localhost:8000)  
-Click "Notes" on topbar menu and log in with credentials:
+Click "Login" on sidebar menu and log in with credentials:
 
 * E-mail: _admin@admin.com_
 * Password: _password_
 
 This user has roles: _user_ and _admin_
-* Role _user_ is required for **notes** management.
-* Role _admin_ is required for **users** management.
 
 --- 
 
@@ -210,7 +208,7 @@ $id = $this->insertLink( $rolesString, $visibleName, $href, $iconString);
 * `$rolesString` - a string with list of user roles this menu element will be available, ex. `"guest,user,admin"`
 * `$visibleName` - a string caption visible in sidebar
 * `$href` - a href, ex. `/homepage` or `http://example.com`
-* `$iconString` - a string containing valid CoreUI Icon name (kebab-case), ex. `cui-speedometer` or `cui-star`
+* `$iconString` - a string containing valid CoreUI Icon name (kebab-case), ex. `cil-speedometer` or `cil-pencil`
 
 To add a __title__ to the sidebar - use function `insertTitle()`:
 ```php
@@ -226,14 +224,14 @@ $id = $this->beginDropdown( $rolesString, $visibleName, $href, $iconString);
 * `$rolesString` - a string with list of user roles this menu element will be available, ex. `"guest,user,admin"`
 * `$visibleName` - a string caption visible in sidebar
 * `$href` - a href, ex. `/homepage` or `http://example.com`
-* `$iconString` - a string containing valid CoreUI icon name (kebab-case). For example: `cui-speedometer` or `cui-star`
+* `$iconString` - a string containing valid CoreUI icon name (kebab-case). For example: `cil-speedometer` or `cil-pencil`
 
 To end dropdown section - use function `endDropdown()`. 
 
 To add __link__ to __dropdown__ call function `insertLink()` between function calls `beginDropdown()` and `endDropdown()`. 
 Example:
 ```php
-$id = $this->beginDropdown('guest,user,admin', 'Some dropdown', 'http://example.com', 'cui-puzzle');
+$id = $this->beginDropdown('guest,user,admin', 'Some dropdown', 'http://example.com', 'cil-puzzle');
 $id = $this->insertLink('guest,user,admin', 'Dropdown name', 'http://example.com');
 $this->endDropdown();
 ```

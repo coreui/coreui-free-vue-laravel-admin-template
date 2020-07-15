@@ -66,7 +66,7 @@ $ composer install
 $ npm install
 ```
 
-### If you choice to use SQLite
+### If you choose SQLite
 
 ``` bash
 
@@ -87,7 +87,7 @@ To this:
 * DB_CONNECTION=sqlite
 * DB_DATABASE=/path_to_your_project/database/database.sqlite
 
-### If you choice to use PostgreSQL
+### If you choose PostgreSQL
 
 1. Install PostgreSQL
 
@@ -128,7 +128,7 @@ To this:
 * DB_USERNAME=laravel
 * DB_PASSWORD=password
 
-### If you choice to use MySQL
+### If you choose MySQL
 
 Copy file ".env.example", and change its name to ".env".
 Then in file ".env" complete this database configuration:

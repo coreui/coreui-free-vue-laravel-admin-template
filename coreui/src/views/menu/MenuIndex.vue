@@ -70,7 +70,6 @@ export default {
       let self = this;
       axios.get(  '/api/menu/menu?token=' + localStorage.getItem("api_token") )
       .then(function (response) {
-        console.log(response.data);
         self.items = response.data.menulist;
       }).catch(function (error) {
         console.log(error);

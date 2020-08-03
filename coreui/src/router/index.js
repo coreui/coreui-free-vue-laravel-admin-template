@@ -107,12 +107,43 @@ const Media = () => import('@/views/media/Media')
 
 Vue.use(Router)
 
-export default new Router({
+let router = new Router({
   mode: 'hash', // https://router.vuejs.org/api/#mode
   linkActiveClass: 'active',
   scrollBehavior: () => ({ y: 0 }),
   routes: configRoutes()
 })
+
+
+router.beforeEach((to, from, next) => {
+  let roles = localStorage.getItem("roles");
+  if(roles != null){
+    roles = roles.split(',')
+  }
+  if(to.matched.some(record => record.meta.requiresAdmin)) {
+    if(roles != null && roles.indexOf('admin') >= 0 ){
+      next()
+    }else{
+      next({
+        path: '/login',
+        params: { nextUrl: to.fullPath }
+      })
+    }
+  }else if(to.matched.some(record => record.meta.requiresUser)) {
+    if(roles != null && roles.indexOf('user') >= 0 ){
+      next()
+    }else{
+      next({
+        path: '/login',
+        params: { nextUrl: to.fullPath }
+      })
+    }
+  }else{
+    next()
+  }
+})
+
+export default router
 
 function configRoutes () {
   return [
@@ -125,7 +156,10 @@ function configRoutes () {
         {
           path: 'media',
           name: 'Media',
-          component: Media
+          component: Media,
+          meta:{
+            requiresAdmin: true
+          }
         },
         {
           path: 'dashboard',
@@ -135,22 +169,34 @@ function configRoutes () {
         {
           path: 'colors',
           name: 'Colors',
-          component: Colors
+          component: Colors,
+          meta:{
+            requiresUser: true
+          }
         },
         {
           path: 'typography',
           name: 'Typography',
-          component: Typography
+          component: Typography,
+          meta:{
+            requiresUser: true
+          }
         },
         {
           path: 'charts',
           name: 'Charts',
-          component: Charts
+          component: Charts,
+          meta:{
+            requiresUser: true
+          }
         },
         {
           path: 'widgets',
           name: 'Widgets',
-          component: Widgets
+          component: Widgets,
+          meta:{
+            requiresUser: true
+          }
         },
         {
           path: 'menu',
@@ -162,24 +208,36 @@ function configRoutes () {
             {
               path: '',
               component: Menus,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: 'create',
               meta: { label: 'Create Menu' },
               name: 'CreateMenu',
-              component: CreateMenu
+              component: CreateMenu,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id/edit',
               meta: { label: 'Edit Menu' },
               name: 'EditMenu',
-              component: EditMenu
+              component: EditMenu,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id/delete',
               meta: { label: 'Delete Menu' },
               name: 'DeleteMenu',
-              component: DeleteMenu
+              component: DeleteMenu,
+              meta:{
+                requiresAdmin: true
+              }
             },
           ]
         },
@@ -193,30 +251,45 @@ function configRoutes () {
             {
               path: ':menu/menuelement',
               component: MenuElements,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':menu/menuelement/create',
               meta: { label: 'Create Menu Element' },
               name: 'Create Menu Element',
-              component: CreateMenuElement
+              component: CreateMenuElement,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':menu/menuelement/:id',
               meta: { label: 'Menu Element Details'},
               name: 'Menu Element',
               component: ShowMenuElement,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':menu/menuelement/:id/edit',
               meta: { label: 'Edit Menu Element' },
               name: 'Edit Menu Element',
-              component: EditMenuElement
+              component: EditMenuElement,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':menu/menuelement/:id/delete',
               meta: { label: 'Delete Menu Element' },
               name: 'Delete Menu Element',
-              component: DeleteMenuElement
+              component: DeleteMenuElement,
+              meta:{
+                requiresAdmin: true
+              }
             },
           ]
         },
@@ -230,18 +303,27 @@ function configRoutes () {
             {
               path: '',
               component: Users,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id',
               meta: { label: 'User Details'},
               name: 'User',
               component: User,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id/edit',
               meta: { label: 'Edit User' },
               name: 'Edit User',
-              component: EditUser
+              component: EditUser,
+              meta:{
+                requiresAdmin: true
+              }
             },
           ]
         },
@@ -255,24 +337,36 @@ function configRoutes () {
             {
               path: '',
               component: Notes,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'create',
               meta: { label: 'Create Note' },
               name: 'Create Note',
-              component: CreateNote
+              component: CreateNote,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: ':id',
               meta: { label: 'Note Details'},
               name: 'Note',
               component: Note,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: ':id/edit',
               meta: { label: 'Edit Note' },
               name: 'Edit Note',
-              component: EditNote
+              component: EditNote,
+              meta:{
+                requiresUser: true
+              }
             },
           ]
         },
@@ -286,24 +380,36 @@ function configRoutes () {
             {
               path: '',
               component: Roles,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: 'create',
               meta: { label: 'Create Role' },
               name: 'Create Role',
-              component: CreateRole
+              component: CreateRole,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id',
               meta: { label: 'Role Details'},
               name: 'Role',
               component: Role,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id/edit',
               meta: { label: 'Edit Role' },
               name: 'Edit Role',
-              component: EditRole
+              component: EditRole,
+              meta:{
+                requiresAdmin: true
+              }
             },
           ]
         },
@@ -317,30 +423,45 @@ function configRoutes () {
             {
               path: '',
               component: Breads,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: 'create',
               meta: { label: 'Create Bread' },
               name: 'CreateBread',
-              component: CreateBread
+              component: CreateBread,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id',
               meta: { label: 'Bread Details'},
               name: 'Bread',
               component: Bread,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id/edit',
               meta: { label: 'Edit Bread' },
               name: 'Edit Bread',
-              component: EditBread
+              component: EditBread,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id/delete',
               meta: { label: 'Delete Bread' },
               name: 'Delete Bread',
-              component: DeleteBread
+              component: DeleteBread,
+              meta:{
+                requiresAdmin: true
+              }
             },
           ]
         },
@@ -354,30 +475,45 @@ function configRoutes () {
             {
               path: '',
               component: Emails,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: 'create',
               meta: { label: 'Create Email Template' },
               name: 'Create Email Template',
-              component: CreateEmail
+              component: CreateEmail,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id',
               meta: { label: 'Show Email Template'},
               name: 'Show Email Tempalte',
               component: ShowEmail,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id/edit',
               meta: { label: 'Edit Email Tempalate' },
               name: 'Edit Email Template',
-              component: EditEmail
+              component: EditEmail,
+              meta:{
+                requiresAdmin: true
+              }
             },
             {
               path: ':id/sendEmail',
               meta: { label: 'Send Email' },
               name: 'Send Email',
-              component: SendEmail
+              component: SendEmail,
+              meta:{
+                requiresAdmin: true
+              }
             },
           ]
         },
@@ -429,82 +565,130 @@ function configRoutes () {
             {
               path: 'cards',
               name: 'Cards',
-              component: Cards
+              component: Cards,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'forms',
               name: 'Forms',
-              component: Forms
+              component: Forms,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'switches',
               name: 'Switches',
-              component: Switches
+              component: Switches,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'tables',
               name: 'Tables',
-              component: Tables
+              component: Tables,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'tabs',
               name: 'Tabs',
-              component: Tabs
+              component: Tabs,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'breadcrumb',
               name: 'Breadcrumb',
-              component: Breadcrumbs
+              component: Breadcrumbs,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'carousel',
               name: 'Carousel',
-              component: Carousels
+              component: Carousels,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'collapse',
               name: 'Collapse',
-              component: Collapses
+              component: Collapses,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'jumbotron',
               name: 'Jumbotron',
-              component: Jumbotrons
+              component: Jumbotrons,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'list-group',
               name: 'List Group',
-              component: ListGroups
+              component: ListGroups,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'navs',
               name: 'Navs',
-              component: Navs
+              component: Navs,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'navbars',
               name: 'Navbars',
-              component: Navbars
+              component: Navbars,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'pagination',
               name: 'Pagination',
-              component: Paginations
+              component: Paginations,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'popovers',
               name: 'Popovers',
-              component: Popovers
+              component: Popovers,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'progress',
               name: 'Progress',
-              component: ProgressBars
+              component: ProgressBars,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'tooltips',
               name: 'Tooltips',
-              component: Tooltips
+              component: Tooltips,
+              meta:{
+                requiresUser: true
+              }
             }
           ]
         },
@@ -519,22 +703,34 @@ function configRoutes () {
             {
               path: 'buttons',
               name: 'Standard Buttons',
-              component: StandardButtons
+              component: StandardButtons,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'button-group',
               name: 'Button Group',
-              component: ButtonGroups
+              component: ButtonGroups,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'dropdowns',
               name: 'Dropdowns',
-              component: Dropdowns
+              component: Dropdowns,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'brand-buttons',
               name: 'Brand Buttons',
-              component: BrandButtons
+              component: BrandButtons,
+              meta:{
+                requiresUser: true
+              }
             }
           ]
         },
@@ -549,17 +745,26 @@ function configRoutes () {
             {
               path: 'coreui-icons',
               name: 'Icons library',
-              component: CoreUIIcons
+              component: CoreUIIcons,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'brands',
               name: 'Brands',
-              component: Brands
+              component: Brands,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'flags',
               name: 'Flags',
-              component: Flags
+              component: Flags,
+              meta:{
+                requiresUser: true
+              }
             }
           ]
         },
@@ -574,17 +779,26 @@ function configRoutes () {
             {
               path: 'alerts',
               name: 'Alerts',
-              component: Alerts
+              component: Alerts,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'badge',
               name: 'Badge',
-              component: Badges
+              component: Badges,
+              meta:{
+                requiresUser: true
+              }
             },
             {
               path: 'modals',
               name: 'Modals',
-              component: Modals
+              component: Modals,
+              meta:{
+                requiresUser: true
+              }
             }
           ]
         }

@@ -22,8 +22,8 @@ class ExampleSeeder extends Seeder
         for($i=0; $i<25; $i++){
             DB::table('example')->insert([
                 'name'         => $faker->sentence(4,true),
-                'description'       => $faker->paragraph(3,true),
-                'status_id'     => $statusIds[random_int(0,count($statusIds) - 1)],
+                'description'  => $faker->paragraph(1,true),
+                'status_id'    => $statusIds[random_int(0,count($statusIds) - 1)],
             ]);
         }
     }

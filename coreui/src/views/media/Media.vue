@@ -255,6 +255,7 @@ export default {
         croppModal: false,
         cropper: null,
         croppUrl: '',
+        changePort: 'localhost:8080',
     }
   },
   computed: {
@@ -290,7 +291,7 @@ export default {
         .then(function (response) {
             self.elementId = response.data.id
             self.croppUrl = response.data.url
-            self.croppUrl = self.croppUrl.replace( 'localhost', this.$apiAdress )
+            self.croppUrl = self.croppUrl.replace( 'localhost', self.changePort )
             document.getElementById('cropp-img-img').setAttribute('src', self.croppUrl)
             self.croppModal = true
 

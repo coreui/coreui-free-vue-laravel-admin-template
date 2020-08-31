@@ -40,7 +40,7 @@ export default {
     },
     update() {
         let self = this;
-        axios.post(  '/api/menu/menu/update' + '?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/menu/menu/update' + '?token=' + localStorage.getItem("api_token"),
         {
             name: self.name,
             id: self.$route.params.id,
@@ -69,7 +69,7 @@ export default {
   },
   mounted: function(){
     let self = this;
-    axios.get(  '/api/menu/menu/edit?token=' + localStorage.getItem("api_token") + '&id=' + self.$route.params.id)
+    axios.get(  this.$apiAdress + '/api/menu/menu/edit?token=' + localStorage.getItem("api_token") + '&id=' + self.$route.params.id)
     .then(function (response) {
         self.name = response.data.menulist.name;
     }).catch(function (error) {

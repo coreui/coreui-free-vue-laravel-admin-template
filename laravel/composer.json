@@ -10,12 +10,13 @@
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
+        "fruitcake/laravel-cors": "^2.0",
         "laravel/framework": "^7.4",
         "laravel/tinker": "^2.0",
+        "laravel/ui": "^2.0",
         "spatie/laravel-medialibrary": "^7.19.0",
         "spatie/laravel-permission": "^3.6",
-        "tymon/jwt-auth": "^1.0.0",
-        "laravel/ui": "^2.0"
+        "tymon/jwt-auth": "^1.0.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

@@ -52,7 +52,7 @@ export default {
     },
     store() {
         let self = this;
-        axios.post(  '/api/mail?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/mail?token=' + localStorage.getItem("api_token"),
           self.template
         )
         .then(function (response) {

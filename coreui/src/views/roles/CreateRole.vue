@@ -54,7 +54,7 @@ export default {
     },
     store() {
         let self = this;
-        axios.post(  '/api/roles?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/roles?token=' + localStorage.getItem("api_token"),
           {
             name: self.role.name,
           }
@@ -93,7 +93,7 @@ export default {
   },
   mounted: function(){
     let self = this;
-    axios.get(  '/api/roles/create?token=' + localStorage.getItem("api_token"))
+    axios.get(  this.$apiAdress + '/api/roles/create?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
         self.statuses = response.data;
     }).catch(function (error) {

@@ -165,6 +165,45 @@ $ npm install
 
 ```
 
+## Usage
+
+### Test
+``` bash
+# test
+$ php vendor/bin/phpunit
+```
+
+### If you need separate backend and frontend
+
+``` bash
+# back to laravel directory
+$ cd ../laravel
+
+# start local server
+$ php artisan serve
+
+$ cd ../coreui
+
+$ npm run serve
+```
+Open your browser with address: [localhost:8080](localhost:8080)
+
+If you need change backend adress go to file /coreui/src/main.js
+And change line:
+```js
+Vue.prototype.$apiAdress = 'http://127.0.0.1:8000'
+```
+
+### If you don't need separate backend and frontend
+
+Go to file /laravel/routes/web.php
+And uncomment this lines:
+```php
+Route::get('/{any}', function () {
+    return view('coreui.homepage');
+})->where('any', '.*');
+```
+
 ``` bash
 # back to laravel directory
 $ cd ../laravel
@@ -174,19 +213,14 @@ $ npm run dev
 
 # and repeat generate mixing
 $ npm run dev
-```
 
-## Usage
-
-``` bash
 # start local server
 $ php artisan serve
-
-# test
-$ php vendor/bin/phpunit
 ```
+Open your browser with address: [localhost:8000](localhost:8000) 
 
-Open your browser with address: [localhost:8000](localhost:8000)  
+### When you have project open in browser
+
 Click "Login" on sidebar menu and log in with credentials:
 
 * E-mail: _admin@admin.com_

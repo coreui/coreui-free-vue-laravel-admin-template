@@ -49,7 +49,7 @@ export default {
     },
     store() {
         let self = this;
-        axios.post(  '/api/mailSend/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/mailSend/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
           {email: self.email}
         )
         .then(function (response) {
@@ -80,7 +80,7 @@ export default {
   },
   mounted: function(){
     let self = this;
-    axios.get(  '/api/prepareSend/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"))
+    axios.get(  this.$apiAdress + '/api/prepareSend/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
       self.template = response.data.template;
     }).catch(function (error) {

@@ -51,7 +51,7 @@ export default {
     },
     update() {
         let self = this;
-        axios.post(  '/api/roles/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/roles/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
         {
             _method: 'PUT',
             name:  self.role.name
@@ -80,7 +80,7 @@ export default {
   },
   mounted: function(){
     let self = this;
-    axios.get(  '/api/roles/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
+    axios.get(  this.$apiAdress + '/api/roles/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
         self.role = response.data;
     }).catch(function (error) {

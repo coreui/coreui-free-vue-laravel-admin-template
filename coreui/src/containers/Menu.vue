@@ -113,7 +113,8 @@ export default {
   },
   mounted () {
     let self = this;
-    axios.get(   '/api/menu?token=' + localStorage.getItem("api_token") + '&menu=' + 'top_menu')
+    console.log(this.$apiAdress)
+    axios.get( this.$apiAdress + '/api/menu?token=' + localStorage.getItem("api_token") + '&menu=' + 'top_menu' )
     .then(function (response) {
       self.nav = self.rebuildData(response.data);
     }).catch(function (error) {

@@ -38,7 +38,7 @@ export default {
     },   
     deleteMenu() {
       let self = this;
-      axios.get(  '/api/menu/element/delete?token=' + localStorage.getItem("api_token") + '&id=' + self.$route.params.id, {})
+      axios.get(  this.$apiAdress + '/api/menu/element/delete?token=' + localStorage.getItem("api_token") + '&id=' + self.$route.params.id, {})
       .then(function (response) {
         self.$router.go(-1)
       }).catch(function (error) {

@@ -50,7 +50,7 @@ export default {
   },
   mounted: function(){
     let self = this;
-    axios.get(  '/api/notes/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"))
+    axios.get(  this.$apiAdress + '/api/notes/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
       self.note = response.data;
     }).catch(function (error) {

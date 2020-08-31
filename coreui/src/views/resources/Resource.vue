@@ -57,7 +57,7 @@ export default {
     },
     getResource (){
       let self = this;
-      axios.get(  '/api/resource/' + self.$route.params.bread + '/resource/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token") )
+      axios.get(  this.$apiAdress + '/api/resource/' + self.$route.params.bread + '/resource/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token") )
       .then(function (response) {
         self.form = response.data.form
         self.columns = response.data.columns

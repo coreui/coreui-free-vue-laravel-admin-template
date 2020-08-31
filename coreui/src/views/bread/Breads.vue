@@ -107,7 +107,7 @@ export default {
     },
     getBreads (){
       let self = this;
-      axios.get(  '/api/bread?token=' + localStorage.getItem("api_token") )
+      axios.get(  this.$apiAdress + '/api/bread?token=' + localStorage.getItem("api_token") )
       .then(function (response) {
         self.items = response.data;
       }).catch(function (error) {

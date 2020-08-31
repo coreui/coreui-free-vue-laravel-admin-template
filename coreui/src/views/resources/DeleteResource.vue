@@ -38,7 +38,7 @@ export default {
     },   
     deleteBread() {
       let self = this;
-      axios.post(  '/api/resource/' + self.$route.params.bread + '/resource/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"), {
+      axios.post(  this.$apiAdress + '/api/resource/' + self.$route.params.bread + '/resource/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"), {
         _method: 'DELETE'
       })
       .then(function (response) {

@@ -208,7 +208,7 @@ And change this line:
 ```php
 'root' => public_path() . '/../../coreui/public/public',
 ```
-To:
+To this:
 ```php
 'root' => public_path('public'),
 ```
@@ -217,7 +217,7 @@ And change this line:
 ```js
 changePort: 'localhost:8080',
 ```
-To:
+To this:
 ```js
 changePort: 'localhost:8000',
 ```

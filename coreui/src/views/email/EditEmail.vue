@@ -49,7 +49,7 @@ export default {
     },
     update() {
         let self = this;
-        axios.post(  '/api/mail/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/mail/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
         {
             _method: 'PUT',
             name: self.template.name,
@@ -80,7 +80,7 @@ export default {
   },
   mounted: function(){
     let self = this;
-    axios.get(  '/api/mail/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
+    axios.get(  this.$apiAdress + '/api/mail/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
         self.template = response.data.template;
     }).catch(function (error) {

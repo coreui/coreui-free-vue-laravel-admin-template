@@ -50,7 +50,7 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => public_path('public'),
+            'root' => public_path() . '/../../coreui/public/public',
             'url' => env('APP_URL').'/public',
             'visibility' => 'public',
         ],

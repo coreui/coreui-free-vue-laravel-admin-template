@@ -106,7 +106,7 @@ export default {
     deleteRole ( id ) {
       let self = this;
       let noteId = id;
-      axios.post(  '/api/roles/' + id + '?token=' + localStorage.getItem("api_token"), {
+      axios.post(  this.$apiAdress + '/api/roles/' + id + '?token=' + localStorage.getItem("api_token"), {
         _method: 'DELETE'
       })
       .then(function (response) {
@@ -125,7 +125,7 @@ export default {
     },
     moveUp( id ){
       let self = this;
-      axios.get(  '/api/roles/move/move-up?id=' + id + '&token=' + localStorage.getItem("api_token"))
+      axios.get(  this.$apiAdress + '/api/roles/move/move-up?id=' + id + '&token=' + localStorage.getItem("api_token"))
       .then(function (response) {
           self.message = 'Successfully move role.';
           self.showAlert();
@@ -137,7 +137,7 @@ export default {
     },
     moveDown( id ){
       let self = this;
-      axios.get(  '/api/roles/move/move-down?id=' + id + '&token=' + localStorage.getItem("api_token"))
+      axios.get(  this.$apiAdress + '/api/roles/move/move-down?id=' + id + '&token=' + localStorage.getItem("api_token"))
       .then(function (response) {
           self.message = 'Successfully move role.';
           self.showAlert();
@@ -158,7 +158,7 @@ export default {
     },
     getRoles (){
       let self = this;
-      axios.get(  '/api/roles?token=' + localStorage.getItem("api_token") )
+      axios.get(  this.$apiAdress + '/api/roles?token=' + localStorage.getItem("api_token") )
       .then(function (response) {
         self.items = response.data;
       }).catch(function (error) {

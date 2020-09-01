@@ -90,7 +90,7 @@ export default {
     update(files, event){
       let self = this;
       let postData = self.preparePostDataForStore();
-      axios.post(   '/api/resource/' + self.$route.params.bread + '/resource/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
+      axios.post(   this.$apiAdress + '/api/resource/' + self.$route.params.bread + '/resource/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
         postData,
         { headers: {
             'Content-Type': 'multipart/form-data'
@@ -113,7 +113,7 @@ export default {
     },
     getFields (){
       let self = this;
-      axios.get(  '/api/resource/' + self.$route.params.bread + '/resource/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token") )
+      axios.get(  this.$apiAdress + '/api/resource/' + self.$route.params.bread + '/resource/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token") )
       .then(function (response) {
         self.form = response.data.form
         self.columns = response.data.columns

@@ -57,7 +57,7 @@ export default {
     },
     getData() {
       let self = this;
-      axios.get(  '/api/menu/element/show?token=' + localStorage.getItem("api_token") + '&id=' + self.$route.params.id )
+      axios.get(  this.$apiAdress + '/api/menu/element/show?token=' + localStorage.getItem("api_token") + '&id=' + self.$route.params.id )
       .then(function (response) {
         self.menuelement = response.data.menuElement
         self.menuroles = response.data.menuroles

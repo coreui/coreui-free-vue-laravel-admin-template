@@ -187,7 +187,7 @@ export default {
     update() {
         let self = this
         let postData = this.createPostDataForUpdate()
-        axios.post(  '/api/bread/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"), postData )
+        axios.post(  this.$apiAdress + '/api/bread/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"), postData )
         .then(function (response) {
             self.message = 'Successfully updated BREAD.'
             self.showAlert()
@@ -214,7 +214,7 @@ export default {
   },
   mounted: function(){
     let self = this
-    axios.get(  '/api/bread/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
+    axios.get(  this.$apiAdress + '/api/bread/' + self.$route.params.id + '/edit?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
         self.form       = response.data.form
         self.formFields = response.data.formFields

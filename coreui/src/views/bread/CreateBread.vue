@@ -165,7 +165,7 @@ export default {
     },
     choiceTableInDatabase(){
         let self = this
-        axios.post(  '/api/bread?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/bread?token=' + localStorage.getItem("api_token"),
           {
             marker: 'selectModel',
             model: self.tableNameInDatabase,
@@ -237,7 +237,7 @@ export default {
     store(){
         let self = this;
         let postData = self.createPostDataForStore();
-        axios.post(  '/api/bread?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/bread?token=' + localStorage.getItem("api_token"),
             postData
         )
         .then(function (response) {

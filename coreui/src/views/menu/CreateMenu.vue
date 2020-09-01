@@ -44,7 +44,7 @@ export default {
     },
     store() {
         let self = this;
-        axios.post(  '/api/menu/menu/store?token=' + localStorage.getItem("api_token"),
+        axios.post(  this.$apiAdress + '/api/menu/menu/store?token=' + localStorage.getItem("api_token"),
           { 'name': self.name }
         )
         .then(function (response) {

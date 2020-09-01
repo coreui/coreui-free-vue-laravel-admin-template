@@ -106,7 +106,7 @@ export default {
     },
     getResources (){
       let self = this;
-      axios.get(  '/api/resource/' + self.$route.params.bread + '/resource?token=' + localStorage.getItem("api_token") + '&page=' + self.activePage )
+      axios.get(  this.$apiAdress + '/api/resource/' + self.$route.params.bread + '/resource?token=' + localStorage.getItem("api_token") + '&page=' + self.activePage )
       .then(function (response) {
         self.items = response.data.datas
         self.fields = [];

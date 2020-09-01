@@ -40,7 +40,7 @@ export default {
   },
   mounted: function(){
     let self = this;
-    axios.get(  '/api/roles/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"))
+    axios.get(  this.$apiAdress + '/api/roles/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"))
     .then(function (response) {
       self.name = response.data.name
     }).catch(function (error) {

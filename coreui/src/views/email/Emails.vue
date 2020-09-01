@@ -103,7 +103,7 @@ export default {
     deleteEmail ( id ) {
       let self = this;
       let noteId = id;
-      axios.post(  '/api/mail/' + id + '?token=' + localStorage.getItem("api_token"), {
+      axios.post(  this.$apiAdress + '/api/mail/' + id + '?token=' + localStorage.getItem("api_token"), {
         _method: 'DELETE'
       })
       .then(function (response) {
@@ -126,7 +126,7 @@ export default {
     },
     getTemplates (){
       let self = this;
-      axios.get(  '/api/mail?token=' + localStorage.getItem("api_token") )
+      axios.get(  this.$apiAdress + '/api/mail?token=' + localStorage.getItem("api_token") )
       .then(function (response) {
         self.items = response.data;
       }).catch(function (error) {

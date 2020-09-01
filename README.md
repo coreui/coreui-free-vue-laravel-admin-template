@@ -196,14 +196,32 @@ Vue.prototype.$apiAdress = 'http://127.0.0.1:8000'
 
 ### If you don't need separate backend and frontend
 
-Go to file /laravel/routes/web.php
+1. Go to file /laravel/routes/web.php
 And uncomment this lines:
 ```php
 Route::get('/{any}', function () {
     return view('coreui.homepage');
 })->where('any', '.*');
 ```
-
+2. Go to file /laravel/config/filesystems.php
+And change this line:
+```php
+'root' => public_path() . '/../../coreui/public/public',
+```
+To:
+```php
+'root' => public_path('public'),
+```
+3. Go to file /coreui/src/views/media/Media.vue
+And change this line:
+```js
+changePort: 'localhost:8080',
+```
+To:
+```js
+changePort: 'localhost:8000',
+```
+4. 
 ``` bash
 # back to laravel directory
 $ cd ../laravel

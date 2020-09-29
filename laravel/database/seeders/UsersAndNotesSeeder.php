@@ -1,11 +1,13 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
 use Illuminate\Support\Str;
 use Spatie\Permission\Models\Role;
-use App\User;
+use App\Models\User;
 use App\Models\RoleHierarchy;
 
 class UsersAndNotesSeeder extends Seeder
@@ -28,7 +30,7 @@ class UsersAndNotesSeeder extends Seeder
             'Banned'
         );
         /* Create roles */
-        $adminRole = Role::create(['name' => 'admin']);
+        $adminRole = $roleAdmin = Role::create(['name' => 'admin']);
         RoleHierarchy::create([
             'role_id' => $adminRole->id,
             'hierarchy' => 1,
@@ -77,7 +79,7 @@ class UsersAndNotesSeeder extends Seeder
             'status' => 'Active'
         ]);
         $user->assignRole('user');
-        $user->assignRole('admin');
+        $user->assignRole($roleAdmin);
         for($i = 0; $i<$numberOfUsers; $i++){
             $user = User::create([
                 'name' => $faker->name(),

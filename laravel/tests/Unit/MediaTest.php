@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Spatie\Permission\Models\Role;
 use Tests\TestCase;
 use App\Models\Folder;
-
+use App\Models\User;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 
@@ -17,9 +17,9 @@ class MediaTest extends TestCase
     use DatabaseMigrations;
 
     public function testIndex(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $folder = new Folder();
         $folder->name = 'test1';
         $folder->save();
@@ -38,9 +38,9 @@ class MediaTest extends TestCase
     }
 
     public function testIndex2(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $folder = new Folder();
         $folder->name = 'test1';
         $folder->save();
@@ -63,17 +63,17 @@ class MediaTest extends TestCase
     }
 
     public function testFolderAdd(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $response = $this->actingAs($user, 'api')->get('api/media/folder/store?thisFolder=45' );
         $this->assertDatabaseHas('folder',['name' => 'New Folder', 'folder_id' => 45 ]);
     }
 
     public function testFolderUpdate(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $folder = new Folder();
         $folder->name = 'test1';
         $folder->save();
@@ -86,9 +86,9 @@ class MediaTest extends TestCase
     }
 
     public function testFolder(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $folder = new Folder();
         $folder->name = 'test1';
         $folder->save();
@@ -100,9 +100,9 @@ class MediaTest extends TestCase
     }
 
     public function testFolderMoveUp(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $folder = new Folder();
         $folder->name = 'test1';
         $folder->save();
@@ -123,9 +123,9 @@ class MediaTest extends TestCase
     }
 
     public function testFolderDelete(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $folder = new Folder();
         $folder->name = 'test1';
         $folder->save();
@@ -142,9 +142,9 @@ class MediaTest extends TestCase
     }
 
     public function testFileAdd(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $file = UploadedFile::fake()->image('file.jpg');
         $folder = new Folder();
         $folder->name = 'test1';
@@ -159,9 +159,9 @@ class MediaTest extends TestCase
     }
 
     public function testFile(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $file = UploadedFile::fake()->image('file.jpg');
         $folder = new Folder();
         $folder->name = 'test1';
@@ -185,9 +185,9 @@ class MediaTest extends TestCase
     }
 
     public function testFileDelete(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $file = UploadedFile::fake()->image('file.jpg');
         $folder = new Folder();
         $folder->name = 'test1';
@@ -203,9 +203,9 @@ class MediaTest extends TestCase
     }
 
     public function testFileUpdate(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $file = UploadedFile::fake()->image('file.jpg');
         $folder = new Folder();
         $folder->name = 'test1';
@@ -225,9 +225,9 @@ class MediaTest extends TestCase
     }
 
     public function testFileMoveUp(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $file = UploadedFile::fake()->image('file.jpg');
         $folder = new Folder();
         $folder->name = 'test1';
@@ -253,9 +253,9 @@ class MediaTest extends TestCase
     }
   
     public function testFileMove(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $file = UploadedFile::fake()->image('file.jpg');
         $folder = new Folder();
         $folder->name = 'test1';
@@ -285,9 +285,9 @@ class MediaTest extends TestCase
     }
 
     public function testFileCopy(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $file = UploadedFile::fake()->image('file.jpg');
         $folder = new Folder();
         $folder->name = 'test1';

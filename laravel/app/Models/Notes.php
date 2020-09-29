@@ -3,9 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Notes extends Model
 {
+
+    use HasFactory;
+
     protected $table = 'notes';
 
     /**
@@ -13,7 +17,7 @@ class Notes extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\User', 'users_id')->withTrashed();
+        return $this->belongsTo('App\Models\User', 'users_id')->withTrashed();
     }
 
     /**
@@ -21,6 +25,6 @@ class Notes extends Model
      */
     public function status()
     {
-        return $this->belongsTo('App\Status', 'status_id');
+        return $this->belongsTo('App\Models\Status', 'status_id');
     }
 }

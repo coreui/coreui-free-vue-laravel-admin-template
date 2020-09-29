@@ -11,6 +11,7 @@ use Tests\TestCase;
 use App\Models\Form;
 use App\Models\FormField;
 use App\Models\Status;
+use App\Models\User;
 
 class BreadTest extends TestCase
 {
@@ -70,9 +71,9 @@ class BreadTest extends TestCase
     }
     
     public function testIndex(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $this->helperCreateForm('Some test name');
         $response = $this->actingAs($user)->get('/api/bread');
         $response->assertStatus(200)->assertJson([
@@ -83,9 +84,9 @@ class BreadTest extends TestCase
     }
 
     public function testStore(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $postData = array(
             'model'     => 'some_not_existing_table_name',
             'marker'    => 'selectModel'
@@ -99,9 +100,9 @@ class BreadTest extends TestCase
     }
 
     public function testStore2(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $postData = array(
             'model'     => 'example',
             'marker'    => 'selectModel'
@@ -118,9 +119,13 @@ class BreadTest extends TestCase
     }
 
     public function testStore3(){
-        $user = factory('App\User')->states('admin')->create();
-        Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $adminRole = Role::where('name',  '=', 'admin')->first();
+        if(empty($adminRole)){
+            Role::create(['name' => 'admin']);
+            $adminRole = Role::where('name',  '=', 'admin')->first();
+        }
+        $user->assignRole($adminRole);
         $postData = array(
             'model'     => 'example',
             'marker'    => 'createForm',
@@ -169,9 +174,13 @@ class BreadTest extends TestCase
 
     public function testEdit(){
         $this->testStore3();
-        $user = factory('App\User')->states('admin')->create();
-        //Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $adminRole = Role::where('name',  '=', 'admin')->first();
+        if(empty($adminRole)){
+            Role::create(['name' => 'admin']);
+            $adminRole = Role::where('name',  '=', 'admin')->first();
+        }
+        $user->assignRole($adminRole);
         $response = $this->actingAs($user)->get('/api/bread/1/edit');
         $response->assertStatus(200)->assertJson([
             'roles'   => ['admin'],
@@ -184,9 +193,13 @@ class BreadTest extends TestCase
 
     public function testUpdate(){
         $this->testStore3();
-        $user = factory('App\User')->states('admin')->create();
-        //Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $adminRole = Role::where('name',  '=', 'admin')->first();
+        if(empty($adminRole)){
+            Role::create(['name' => 'admin']);
+            $adminRole = Role::where('name',  '=', 'admin')->first();
+        }
+        $user->assignRole($adminRole);
         $postData = array(
             'model'     => 'example',
             'marker'    => 'createForm',
@@ -225,9 +238,13 @@ class BreadTest extends TestCase
 
     public function testShow(){
         $this->testStore3();
-        $user = factory('App\User')->states('admin')->create();
-        //Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $adminRole = Role::where('name',  '=', 'admin')->first();
+        if(empty($adminRole)){
+            Role::create(['name' => 'admin']);
+            $adminRole = Role::where('name',  '=', 'admin')->first();
+        }
+        $user->assignRole($adminRole);
         $response = $this->actingAs($user)->get('/api/bread/1');
         $response->assertStatus(200)->assertJson([
             'form' => ['name' => 'form name 1']
@@ -237,9 +254,9 @@ class BreadTest extends TestCase
     /*
     public function testDelete(){
         $this->testStore3();
-        $user = factory('App\User')->states('admin')->create();
-        //Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        //$roleAdmin = Role::create(['name' => 'admin']);
+        $user->assignRole($roleAdmin);
         $response = $this->actingAs($user)->delete('/bread/1');
         $response->assertStatus(200);
         $response->assertSee('Are you sure?');
@@ -248,9 +265,13 @@ class BreadTest extends TestCase
 
     public function testDelete2(){
         $this->testStore3();
-        $user = factory('App\User')->states('admin')->create();
-        //Role::create(['name' => 'admin']);
-        $user->assignRole('admin');
+        $user = User::factory()->admin()->create();
+        $adminRole = Role::where('name',  '=', 'admin')->first();
+        if(empty($adminRole)){
+            Role::create(['name' => 'admin']);
+            $adminRole = Role::where('name',  '=', 'admin')->first();
+        }
+        $user->assignRole($adminRole);
         $form = Form::first();
         $response = $this->actingAs($user)->delete('/api/bread/1');
         $this->assertDatabaseMissing('form',['id' =>  $form->id ]);

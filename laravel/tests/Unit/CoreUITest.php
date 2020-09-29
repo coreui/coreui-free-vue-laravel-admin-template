@@ -17,8 +17,10 @@ class HomepageControllerTest extends TestCase
         //$this->testingClass = new HomepageController();
     }
 
+    /*
     public function testHomepage(){
         $response = $this->get( '/' );
         $response->assertStatus(200);
     }
+    */
 }

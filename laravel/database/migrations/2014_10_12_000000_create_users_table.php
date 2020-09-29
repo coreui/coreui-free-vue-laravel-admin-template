@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             ->nullable()
             ->default(null);
             $table->string('menuroles');
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();

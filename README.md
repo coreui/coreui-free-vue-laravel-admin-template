@@ -69,7 +69,6 @@ $ npm install
 ### If you choose SQLite
 
 ``` bash
-
 # create database
 $ touch database/database.sqlite
 ```
@@ -84,8 +83,10 @@ Then in file ".env" replace this database configuration:
 
 To this:
 
-* DB_CONNECTION=sqlite
-* DB_DATABASE=/path_to_your_project/database/database.sqlite
+```
+DB_CONNECTION=sqlite
+DB_DATABASE=/path_to_your_project/database/database.sqlite
+```
 
 ### If you choose PostgreSQL
 
@@ -121,23 +122,36 @@ Then in file ".env" replace this database configuration:
 
 To this:
 
-* DB_CONNECTION=pgsql
-* DB_HOST=127.0.0.1
-* DB_PORT=5432
-* DB_DATABASE=laravel
-* DB_USERNAME=laravel
-* DB_PASSWORD=password
+```
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=laravel
+DB_USERNAME=laravel
+DB_PASSWORD=password
+```
 
 ### If you choose MySQL
 
+1. Install MySQL
+2. Create database (this way or another)
+``` bash
+$ mysql -uroot -p
+mysql> create database laravel;
+```
+Create a user with privileges to the laravel database (root user may not work while it requires a sudo)
+
+3. Update .env file
 Copy file ".env.example", and change its name to ".env".
-Then in file ".env" complete this database configuration:
-* DB_CONNECTION=mysql
-* DB_HOST=127.0.0.1
-* DB_PORT=3306
-* DB_DATABASE=laravel
-* DB_USERNAME=root
-* DB_PASSWORD=
+Then in file ".env" complete database configuration:
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 ### Next step
 
@@ -349,17 +363,14 @@ If the column is a foreign key, it should be specified: in the field "Optional r
 #### E-mail Templates
 It is an example of managing e-mail templates. Allows you to create, edit and delete templates. It also allows you to send an E-mail to a selected address.
 
-
 ## Creators
 
-**Łukasz Holeczek**
-
+***Łukasz Holeczek***
 * <https://twitter.com/lukaszholeczek>
-* <https://github.com/mrholek>
+* <https://github.com/coreui>
 
-**Andrzej Kopański**
-
-* <https://github.com/xidedix>
+**CoreUI Team**
+* <https://github.com/orgs/coreui/people>
 
 ## Community
 
